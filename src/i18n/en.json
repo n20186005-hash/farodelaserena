@@ -1,10 +1,10 @@
 {
   "meta": {
-    "title": "Colonia del Sacramento Lighthouse | Faro de Colonia del Sacramento, Uruguay",
-    "description": "The complete guide to the Colonia del Sacramento Lighthouse (Faro de Colonia del Sacramento): history, the San Francisco convent ruins it stands on, photos, visitor reviews, and how to get there in Uruguay's UNESCO-listed old town."
+    "title": "Faro Monumental de La Serena | La Serena, Chile",
+    "description": "The complete guide to the Faro Monumental de La Serena: history, the Plan Serena and its neocolonial style, photos, visitor reviews, and how to get there in La Serena, Chile."
   },
   "header": {
-    "siteName": "Colonia del Sacramento Lighthouse",
+    "siteName": "Faro Monumental de La Serena",
     "home": "Home",
     "visit": "Visit",
     "transport": "Getting Here",
@@ -20,217 +20,218 @@
     "toggleTheme": "Toggle theme"
   },
   "hero": {
-    "title": "Colonia del Sacramento Lighthouse",
-    "subtitle": "A 19th-century lighthouse rising from the ruins of a 17th-century convent — a quiet sentinel over the Río de la Plata and Uruguay's UNESCO-listed old town.",
-    "rating": "4.6(8,706)",
-    "reviewCount": "8,706 reviews",
-    "hours": "Typically open daily, ~10:30–17:30",
+    "title": "Faro Monumental de La Serena",
+    "subtitle": "A neocolonial lighthouse-monument built by the Chilean Navy between 1950 and 1951 — a viewpoint and symbol of La Serena facing the Pacific.",
+    "rating": "4.2(25,923)",
+    "reviewCount": "25,923 reviews",
+    "hours": "Tue–Sun 10:00–14:00 and 14:30–17:00 · Mon closed",
     "openMaps": "View Location",
-    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "intro": {
-    "title": "Discover the Colonia del Sacramento Lighthouse",
-    "description": "The Colonia del Sacramento Lighthouse — known in Spanish as the Faro de Colonia del Sacramento — is a cylindrical stone tower built in 1857 atop the ruins of the Convent of San Francisco Javier, a 17th-century Franciscan monastery. Standing roughly 34 metres tall, it still guides vessels across the Río de la Plata while offering sweeping views of the Historic Quarter (Barrio Histórico), a UNESCO World Heritage Site since 1995. It is one of the most photographed landmarks of Colonia del Sacramento, a city that changed hands between Portugal and Spain eleven times.",
+    "title": "Discover the Faro Monumental de La Serena",
+    "description": "The Faro Monumental de La Serena is a neocolonial tower built by the Chilean Navy between 1950 and 1951, following the design of engineer Jorge Cisternas Larenas, within the framework of the Plan Serena promoted by President Gabriel González Videla. Around 28 metres tall and 4 metres in diameter at its base, it blends the silhouette of a lighthouse with that of a colonial fortress. It was declared a National Historic Monument of Chile on 9 June 2010 for its architectural value. Today it is one of the most photographed icons of La Serena and a public viewpoint over the Pacific Ocean.",
     "visitGuide": {
       "title": "Visitor Guide",
       "items": [
-        "Open most days, roughly 10:30–17:30; hours shift with the season, so confirm before you go.",
-        "Located on Calle de San Francisco, inside the walled Historic Quarter (Barrio Histórico).",
-        "A modest entry fee applies to climb the spiral staircase for the panoramic view.",
-        "Reached on foot in minutes from the ferry terminal and the main plaza."
+        "Open Tuesday to Sunday in two blocks: 10:00–14:00 and 14:30–17:00; closed on Mondays.",
+        "Located on Avenida del Mar at Avenida Francisco de Aguirre, facing the beach of La Serena.",
+        "Climb to the viewpoint for views of the Pacific coast and the mouth of the Elqui River.",
+        "The grounds, the small museum and the craft fair at the base are usually free or very low cost."
       ]
     },
     "alsoKnownAs": {
       "title": "Highlights",
       "items": [
-        "A working lighthouse built on 17th-century convent ruins",
-        "First lit in 1857, standing about 34 m tall",
-        "Panoramic views over the Río de la Plata and old town",
-        "Part of Colonia's UNESCO World Heritage Site (1995)"
+        "Lighthouse built by the Chilean Navy between 1950 and 1951",
+        "Neocolonial style imitating a Spanish fortress",
+        "About 28 m tall and a National Monument since 2010",
+        "Viewpoint and symbol of La Serena facing the Pacific"
       ]
     }
   },
   "transportSection": {
-    "title": "How to Reach the Lighthouse",
-    "subtitle": "From international arrival points to the last stretch through the old town, this section lays out the most practical ways to reach the Colonia del Sacramento Lighthouse.",
+    "title": "How to Reach the Faro Monumental",
+    "subtitle": "From arriving in La Serena by plane, bus or car to the final stretch along Avenida del Mar, here are the most common ways to reach the Faro Monumental.",
     "overviewTitle": "Start with where you are coming from",
-    "overviewText": "If you are travelling from within Uruguay, the usual pattern is to reach Colonia's bus terminal first and then finish the trip on foot, by bike or with a short taxi ride. If you are coming from Buenos Aires, the ferry is often the most direct cross-river connection. For most visitors, the lighthouse is a site reached by a final walk through the Historic Quarter rather than a doorstep stop for long-distance transport.",
+    "overviewText": "La Serena lies in northern Chile, about 470 km from Santiago along Route 5 Norte (the Pan-American Highway). If you are coming from afar, the usual pattern is to fly into La Florida Airport or take a long-distance bus; from there, the lighthouse is just a few minutes away by car, taxi or public transport along the seafront avenue. For most visitors, the Faro is an urban destination reached by a short final transfer.",
     "arrivalTitle": "Know this before you set out",
     "arrivalItems": [
-      "The lighthouse sits inside the Historic Quarter, so the last stretch is often along cobbled streets.",
-      "The ferry terminal, bus terminal and central hotel area are all relatively close to the site.",
-      "Weekends and high season afternoons are busier; mornings and late afternoons are usually calmer."
+      "The lighthouse sits on Avenida del Mar, La Serena's coastal artery, facing the beach.",
+      "The airport, the bus terminal and the city centre are relatively close and well connected.",
+      "In the summer season (January–February) and on weekends it is busier; mornings and late afternoons are usually calmer."
     ],
     "modes": [
       {
         "label": "Option 01",
         "title": "Air Travel",
-        "description": "The most common international air gateway is Carrasco International Airport (MVD) in Montevideo. Many visitors also fly to Buenos Aires and continue by ferry.",
+        "description": "The main air gateway is La Serena Airport (La Florida, LSC), with regular flights from Santiago and other Chilean cities.",
         "details": [
-          "From MVD you usually still need an intercity bus, private transfer or rental car onward to Colonia.",
-          "If you land in Buenos Aires, a very common route is airport to port, then ferry across to Colonia.",
-          "The lighthouse is not an airport-to-door attraction; the flight is almost always just the first leg."
+          "From Santiago the flight takes about 1 hour with LATAM, Sky Airline or JetSmart.",
+          "From the airport to the lighthouse it is about 15–20 minutes by taxi or transfer; urban buses and colectivos also run this way.",
+          "The lighthouse is not an airport-to-door attraction; the flight is just the first leg of the trip."
         ]
       },
       {
         "label": "Option 02",
         "title": "Train",
-        "description": "Rail is not currently a practical mainstream way to reach the lighthouse, and there is no mature passenger rail option that delivers visitors straight into the historic centre.",
+        "description": "Rail is not currently a practical way to reach La Serena: Chile has no consolidated long-distance passenger service on this route.",
         "details": [
-          "If your wider itinerary includes rail, you will generally still need to switch to road transport for the final approach.",
-          "For most travellers, bus, ferry, taxi or self-drive is simpler.",
-          "In other words, train works better as a regional add-on than as the core access method for the lighthouse."
+          "If trains are part of your wider itinerary, you will generally still need to switch to bus or car for the final approach.",
+          "For most travellers, bus, car or plane is simpler.",
+          "In other words, train works better as a regional experience than as the core access method for the lighthouse."
         ]
       },
       {
         "label": "Option 03",
         "title": "Public Transport",
-        "description": "This is the most balanced option in terms of cost and convenience, especially if you are arriving from Montevideo or elsewhere in Uruguay.",
+        "description": "This is the most economical option and a very common one, especially if you arrive from Santiago or other cities in central and northern Chile.",
         "details": [
-          "The usual pattern is an intercity bus to Colonia's terminal, followed by a walk or short taxi ride into the Historic Quarter.",
-          "The final stretch is straightforward, though large luggage makes it less comfortable.",
-          "If you arrive from Buenos Aires by ferry, ferry plus a short onward connection can also be treated as a public transport route."
+          "Long-distance buses arrive at La Serena's terminal; from there you can take an urban bus or taxi to Avenida del Mar.",
+          "La Serena has local bus and colectivo lines that run along the seafront.",
+          "The final stretch is straightforward, though large luggage makes it less comfortable than a taxi."
         ]
       },
       {
         "label": "Option 04",
-        "title": "Ferry",
-        "description": "From the Argentine side of the river, the ferry is often the most direct and most natural way to enter Colonia's travel rhythm.",
+        "title": "Long-Distance Bus",
+        "description": "The most common option from Santiago and the rest of Chile: a comfortable trip of about 6 to 7 hours along Route 5 Norte.",
         "details": [
-          "Passenger ferry links between Buenos Aires and Colonia are well established and widely used for day trips.",
-          "Once you arrive at the port terminal, you can continue on foot, by taxi or by bicycle.",
-          "If your main goal is the old town and the lighthouse, the ferry is usually easier than a more fragmented air-based route."
+          "Companies such as Pullman Bus, Condor Bus and Tur Bus connect Santiago with La Serena.",
+          "The bus terminal is a few minutes by car or taxi from the lighthouse, along the seafront avenue.",
+          "It is ideal if you prefer not to drive and want to enjoy the central valley and northern route scenery."
         ]
       },
       {
         "label": "Option 05",
         "title": "Taxi / Private Transfer",
-        "description": "For the last stretch from the bus terminal, ferry terminal or your hotel, a short taxi ride is one of the least tiring options.",
+        "description": "For the final stretch from the airport, the bus terminal or your hotel, a taxi or ride-hailing app is the most comfortable option.",
         "details": [
-          "It is especially helpful for travellers with children, older companions or heavy bags.",
-          "Some streets in the Historic Quarter are narrow or uneven, so the drop-off point may still be a short walk from the tower.",
-          "Within the city, fares are usually easier to manage than a longer intercity transfer."
+          "It is especially useful if you travel with children, older companions or heavy bags.",
+          "Avenida del Mar is wide and the lighthouse is an easy landmark to give the driver.",
+          "Within the city, fares are moderate and the transfer is short."
         ]
       },
       {
         "label": "Option 06",
         "title": "Self-Drive",
-        "description": "Driving works well if Colonia is one stop within a broader Uruguay road trip, but parking and the last walking segment still matter once you reach the old town.",
+        "description": "Driving works well if La Serena is one stop within a broader northern Chile road trip, though parking matters once you reach the coast.",
         "details": [
-          "From Montevideo, most drivers approach via Route 1.",
-          "It is usually best to park on the edge of the historic area or in authorised spaces, then continue on foot.",
-          "Inside the old quarter, the car is useful for reaching the city, not for closely exploring the lighthouse precinct itself."
+          "From Santiago, take Route 5 Norte (Pan-American Highway), about a 5 to 6 hour drive.",
+          "There is surface parking and meters along Avenida del Mar and the surrounding streets.",
+          "The lighthouse is steps from the beach, so it is best to park and finish on foot."
         ]
       },
       {
         "label": "Option 07",
         "title": "Cycling / Walking",
-        "description": "Once you are in Colonia, cycling or walking is often the most pleasant way to approach the lighthouse.",
+        "description": "Once in La Serena, walking or cycling along Avenida del Mar is often the most pleasant way to approach the lighthouse.",
         "details": [
-          "The historic centre is compact, and many sights connect naturally on foot.",
-          "Cycling saves time, but the cobbles call for more care, especially after rain or during busy hours.",
-          "If you want to absorb the ruins, old gates and waterfront atmosphere along the way, walking is usually the richest option."
+          "The seafront is flat, with bike lanes and pedestrian paths beside the beach.",
+          "Cycling saves time and avoids hunting for parking in high season.",
+          "At sunset, the walk from the Plaza de Armas to the lighthouse offers one of the city's best panoramas."
         ]
       }
     ],
     "localTipsTitle": "Useful tips for the final approach",
     "localTips": [
-      "Rolling large luggage through the old quarter is not ideal, so leave bags at your hotel or in storage first if possible.",
-      "The streets around the lighthouse reward a slower pace, so avoid planning the visit too tightly.",
-      "If you want to climb the tower, line up your transport timing with opening hours so you do not arrive after access has closed."
+      "In January and February Avenida del Mar fills up; go early or late for parking and better light for photos.",
+      "The lighthouse is closed on Mondays, so plan your visit between Tuesday and Sunday.",
+      "If you want to climb the viewpoint, line up your arrival with opening hours so you don't find it closed."
     ],
     "mapsCta": "View Map & Route",
-    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "officialManagement": {
     "title": "About the Lighthouse",
-    "text": "The lighthouse stands within the Historic Quarter of Colonia del Sacramento, a UNESCO World Heritage Site administered at the local level by the Intendencia de Colonia. The tower and the adjacent San Francisco ruins form a small museum complex that preserves one of the oldest layers of the city's Portuguese colonial past. As one of Uruguay's most visited monuments, it is maintained both as a navigational aid and as a public heritage site."
+    "text": "The Faro Monumental de La Serena was built by the Chilean Navy and handed over to the Municipality of La Serena on 7 November 1985 for tourist and cultural use. It is one of the landmarks of the Plan Serena, the 1950s urban renewal that gave the city its unified neocolonial image. Today the tower still serves as a navigation aid, while the grounds function as a viewpoint, a small museum and a civic meeting point facing the Pacific."
   },
   "knowledge": {
     "title": "History, Meaning & Legend of the Lighthouse",
     "sections": [
       {
         "id": "history",
-        "title": "Origins (1857)",
-        "content": "In the mid-19th century, the growing traffic on the Río de la Plata — and the many shipwrecks along this treacherous stretch of coast — created a clear need for a reliable navigation light. In 1857 the colonial authorities built a cylindrical lighthouse directly on top of one of the surviving towers of the Convent of San Francisco Javier. The convent, founded by the Portuguese in 1683, had been destroyed in 1704 when its gunpowder magazine exploded during the Spanish–Portuguese struggle for the city. Rather than clear the ruins, engineers simply built the new tower upon them — which is why the convent walls are still visible at the lighthouse's base today."
+        "title": "Origins (1950–1953)",
+        "content": "In the early 1950s, President Gabriel González Videla promoted the Plan Serena, an ambitious urban renewal to give La Serena a coherent neocolonial look. In that context, the Chilean Navy commissioned engineer Jorge Cisternas Larenas with a lighthouse that would serve not only as a beacon but also as a civic monument. Built between 1950 and 1951, it was officially inaugurated on 24 October 1953 and handed to the city on 7 November 1985 for tourist and cultural use."
       },
       {
         "id": "meaning",
-        "title": "Why Here?",
-        "content": "The lighthouse was placed on the San Francisco ruins for a practical reason: the spot already offered a solid, elevated foundation close to the river mouth. Symbolically, it also layers two centuries of history in a single structure — a 17th-century Franciscan convent and a 19th-century maritime beacon. The light itself was modernised over time, but the tower's silhouette has watched over the Río de la Plata almost unchanged for more than 160 years."
+        "title": "Why a fortress shape?",
+        "content": "The lighthouse was raised by the sea, at the point where Avenida del Mar receives those arriving in La Serena by the coast. Its neocolonial design, inspired by Spanish colonial fortifications, sought to recreate the historic identity of the oldest city of republican Chile, founded in 1544. Thus a modern signalling tower is dressed with battlements, stone walls and a fortress silhouette: 20th-century engineering with 16th-century scenery."
       },
       {
         "id": "legend",
         "title": "Local Stories",
-        "content": "Locals like to say the lighthouse keeps watch over the souls of those lost to the river's shipwrecks, its beam a quiet greeting to every vessel that makes it safely to port. Others note the quiet irony that a symbol of guidance now stands where a house of prayer once fell. Whether fact or folklore, the Faro remains the gentle meeting point of Colonia's sacred past and its maritime present."
+        "content": "Locals say that on foggy nights the lighthouse's beam converses with the fishing boats entering the port of Coquimbo and with sailors seeking the mouth of the Elqui River. Another popular tale says the lighthouse keeps the spirit of sereneño sailors and that, from its viewpoint, the city bids farewell to the sun each afternoon over the Pacific. Fact or folklore, the lighthouse is where La Serena meets its sea."
       },
       {
         "id": "significance",
-        "title": "A Symbol of Colonia",
-        "content": "Today the lighthouse is the unmistakable emblem of Colonia del Sacramento. Painted in the city's characteristic white, it anchors the postcard view of the old town and the waterfront promenade (Rambla). Alongside the cobbled Calle de los Suspiros and the Portón de Campo, it is the sight visitors remember longest — and the shortest climb to the best panorama in the city."
+        "title": "A Symbol of La Serena",
+        "content": "Today the Faro Monumental, alongside the neocolonial Cathedral and the Plaza de Armas, is the most recognisable face of La Serena. Its battlemented silhouette presides over Avenida del Mar and appears on postcards, souvenirs and in the memory of those who grew up watching the Pacific from its feet. Declared a National Monument in 2010, it is also the only lighthouse in Chile to hold that distinction while functioning at the same time as a public viewpoint."
       }
     ]
   },
   "gallery": {
     "title": "Photo Gallery",
-    "subtitle": "The lighthouse and the timeless streets of Colonia's Historic Quarter",
-    "photoAlt": "Colonia del Sacramento Lighthouse on the ruins of the San Francisco convent",
+    "subtitle": "The Faro Monumental and La Serena's Avenida del Mar",
+    "photoAlt": "Faro Monumental de La Serena in neocolonial style facing the Pacific Ocean",
     "viewAll": "View Location on Google Maps",
     "showMore": "Show More Photos",
-    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "reviews": {
     "title": "Visitor Reviews",
     "declaration": "Visitor feedback is available on Google Maps (external link).",
     "moreReviews": "View on Google Maps",
-    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7",
     "items": [
       {
-        "name": "James H.",
+        "name": "Camila R.",
         "date": "March 2026",
         "rating": 5,
-        "text": "A must in Colonia. We climbed just before sunset and the view over the Río de la Plata was unforgettable. The entry fee is tiny and the old convent ruins at the base are fascinating."
+        "text": "You can't come to La Serena without climbing the lighthouse. The views over the Pacific and the Elqui River mouth are incredible, and the neocolonial architecture gives it a unique touch."
       },
       {
-        "name": "Maria S.",
+        "name": "Diego M.",
         "date": "February 2026",
-        "rating": 5,
-        "text": "Such a peaceful spot right in the Historic Quarter. Our guide explained how the lighthouse was built on the 17th-century convent ruins — that made the visit so much richer."
-      },
-      {
-        "name": "Thomas K.",
-        "date": "January 2026",
         "rating": 4,
-        "text": "Iconic photo stop and an easy climb. It gets busy midday, so go early. The white tower against the blue river is exactly the Colonia postcard."
+        "text": "Very pretty and well kept. We climbed to the viewpoint in the afternoon; go early because it gets busy in season. The craft fair at the base is fun."
       },
       {
-        "name": "Anna L.",
-        "date": "December 2025",
+        "name": "Francisca L.",
+        "date": "January 2026",
         "rating": 5,
-        "text": "We came back twice — by day and at golden hour. Each time it felt different. A true symbol of the city and a perfect first stop in the old town."
+        "text": "I loved the Plan Serena history explained in the small museum. It's a family-friendly spot with good shade to rest, close to the beach."
+      },
+      {
+        "name": "Tomás G.",
+        "date": "December 2025",
+        "rating": 4,
+        "text": "A city icon. The climb is short and the reward is the panorama of the whole bay. Free or nearly, so it's absolutely worth it."
       }
     ]
   },
   "mapSection": {
     "title": "How to Get Here",
-    "subtitle": "Calle de San Francisco, Barrio Histórico, Colonia del Sacramento, Uruguay",
+    "subtitle": "Avenida del Mar at Avenida Francisco de Aguirre, La Serena, Coquimbo Region, Chile",
     "openMaps": "Open in Google Maps",
-    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "footer": {
-    "siteName": "Colonia del Sacramento Lighthouse",
-    "rights": "© 2026 Colonia del Sacramento Lighthouse — Independent Travel Guide. All rights reserved.",
+    "siteName": "Faro Monumental de La Serena",
+    "rights": "© 2026 Faro Monumental de La Serena — Independent, non-profit travel guide. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "cookies": "Cookie Settings",
     "officialResourcesTitle": "Official & Reference Resources",
     "mapsLabel": "Google Maps →",
-    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7",
     "officialLinksList": [
-      { "name": "Ministerio de Turismo (Uruguay)", "url": "https://www.gub.uy/ministerio-turismo/" },
-      { "name": "Uruguay Natural — Official Tourism", "url": "https://uruguaynatural.com/" },
-      { "name": "Intendencia de Colonia", "url": "https://www.colonia.gub.uy/" },
-      { "name": "Ministerio de Educación y Cultura", "url": "https://www.gub.uy/ministerio-educacion-cultura/" }
+      { "name": "Servicio Nacional de Turismo (SERNATUR)", "url": "https://www.sernatur.cl/" },
+      { "name": "Chile Travel — Tourism of Chile", "url": "https://www.chile.travel/" },
+      { "name": "Municipality of La Serena (Ilustre Municipalidad de La Serena)", "url": "https://www.laserena.cl/" },
+      { "name": "Regional Government of Coquimbo", "url": "https://www.gorecoquimbo.cl/" },
+      { "name": "Ministry of Cultures, Arts and Heritage", "url": "https://www.cultura.gob.cl/" }
     ],
     "disclaimer": "This is an independent, non-profit visitor information project. We are not affiliated with any government body or official institution."
   },
@@ -299,14 +300,14 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Practical information on facilities, history and planning your visit to the Colonia del Sacramento Lighthouse.",
+    "subtitle": "Practical information on facilities, history and planning your visit to the Faro Monumental de La Serena.",
     "amenities": {
       "title": "Facilities nearby",
       "items": [
-        { "icon": "🅿️", "label": "Parking", "value": "Street parking & nearby lots" },
-        { "icon": "🚻", "label": "Restrooms", "value": "At museums & cafés" },
-        { "icon": "🔌", "label": "Fuel / EV", "value": "Stations in town centre" },
-        { "icon": "♿", "label": "Accessibility", "value": "Old town pavements, ramp to base" }
+        { "icon": "🅿️", "label": "Parking", "value": "Avenida del Mar & nearby streets" },
+        { "icon": "🚻", "label": "Restrooms", "value": "Grounds, museum & cafés" },
+        { "icon": "🔌", "label": "Fuel / EV", "value": "Chargers & petrol stations in La Serena" },
+        { "icon": "♿", "label": "Accessibility", "value": "Ramp & paths to the viewpoint" }
       ]
     },
     "categories": [
@@ -316,15 +317,15 @@
         "items": [
           {
             "q": "Is there parking nearby? How much does it cost?",
-            "a": "The lighthouse sits inside the pedestrian-friendly Historic Quarter, where cars are restricted. There is paid street parking (zonas azules) and a few lots just outside the walled old town, a short walk away. Rates are modest (a few hundred pesos per hour); in high season (December–February) spaces fill early, so walking or cycling in is easiest."
+            "a": "Yes. Along Avenida del Mar and the surrounding streets there is surface parking (paid zones) and a few car parks. In high season (January–February) and on weekends demand is high, so it is best to arrive early or use public transport or a taxi. Rates follow the city's standard tariff; check the meter on site."
           },
           {
             "q": "Can wheelchairs or strollers get close?",
-            "a": "Yes. The old town's cobbled streets are flat but uneven in places; the approach to the lighthouse base is reachable, and there is step-free access to the exterior and the ruins. Climbing the spiral staircase to the top, however, is not wheelchair accessible."
+            "a": "Yes. Access to the grounds and the base of the lighthouse is mostly flat, with ramps and paths that allow approach by wheelchair or stroller. The climb to the upper viewpoint, however, is by stairs, so that part is not wheelchair accessible."
           },
           {
             "q": "Are there restrooms or food nearby?",
-            "a": "There are no public restrooms at the lighthouse itself, but the surrounding old town is full of cafés, restaurants and small museums (several with toilets) within a one-minute walk. The riverside Rambla and plaza also have kiosks."
+            "a": "The lighthouse grounds usually have facilities and a small museum; in addition, a craft fair operates at the base and there are cafés and restaurants a few steps away along Avenida del Mar. The beach and seafront also have kiosks in season."
           }
         ]
       },
@@ -333,12 +334,12 @@
         "title": "History & Trivia",
         "items": [
           {
-            "q": "Why was the lighthouse built on a convent?",
-            "a": "The Convent of San Francisco Javier was a 17th-century Franciscan monastery destroyed in 1704 when its gunpowder store exploded. When the city needed a navigation light in 1857, engineers reused one of the convent's still-standing tower bases as the foundation — so the lighthouse literally grows out of colonial church ruins."
+            "q": "Why does the lighthouse look like a fortress?",
+            "a": "Because it was designed within the Plan Serena, the 1950s urban renewal that gave La Serena a unified neocolonial style. Engineer Jorge Cisternas Larenas conceived it as a 'monumental' lighthouse imitating Spanish colonial fortifications: battlements, stone walls and a castle silhouette, blending the function of a beacon with that of a civic landmark."
           },
           {
             "q": "How tall is it and can you go inside?",
-            "a": "The cylindrical tower is about 34 m (roughly 110 ft) tall with a spiral staircase up to the lantern. It is open to visitors for a modest fee, and you can climb to the top for a sweeping view of the Río de la Plata and the old-town rooftops."
+            "a": "The tower is about 28 metres tall and roughly 4 metres in diameter at its base. You can climb to the interior viewpoint to contemplate the Pacific coast, the mouth of the Elqui River and the bay of La Serena; confirm access and cost on site."
           }
         ]
       },
@@ -348,15 +349,15 @@
         "items": [
           {
             "q": "Is there an entrance fee?",
-            "a": "Yes, climbing the lighthouse costs a small symbolic fee (around 100 Uruguayan pesos; confirm on site). The exterior, the San Francisco ruins and the surrounding Historic Quarter are free to walk."
+            "a": "The grounds, the viewpoint and the small base museum are usually free or of a very low symbolic cost; the craft fair is free. In high season there may be access control. We recommend confirming the current value on arrival."
           },
           {
             "q": "How long does a visit take?",
-            "a": "Plan 20–40 minutes: buy the ticket, climb the spiral staircase, enjoy the view and read the small on-site museum panels. Combined with a stroll through the old town, it easily fills a morning or afternoon."
+            "a": "A typical visit lasts 30–45 minutes: walk the grounds, climb to the viewpoint, read the museum panels and stroll the craft fair. Add a walk along Avenida del Mar and the beach and it easily fills a morning or afternoon."
           },
           {
             "q": "Can I go in bad weather?",
-            "a": "The old town and ruins are open-air and fine in any weather, but the climb is exposed to wind and may close in storms or heavy rain. On very hot summer days go early or late to avoid the sun on the metal stairs."
+            "a": "The base and museum are covered spaces and are fine in any weather; however, the climb to the viewpoint is exposed to the Pacific wind and may close in heavy rain or strong wind. On very hot days go early or late to avoid the sun on the stairs."
           }
         ]
       },
@@ -366,25 +367,25 @@
         "items": [
           {
             "q": "After visiting, what else do you recommend nearby?",
-            "a": "Steps away are the Calle de los Suspiros (Street of Sighs), the Portón de Campo city gate, the Basílica del Santísimo Sacramento and the Portuguese Museum, all inside the UNESCO old town. The ferry terminal offers day trips to Buenos Aires, and the riverside Rambla is perfect for sunset."
+            "a": "Close by are the Plaza de Armas and the neocolonial Cathedral of La Serena, the Casa Museo Gabriel González Videla and the Archaeological Museum. On the same Avenida del Mar is the Jardín del Corazón (Japanese garden). A bit further, the Elqui Valley and astronomical observatories, and neighbouring Coquimbo with the Cruz del Tercer Milenio, round out the visit."
           }
         ]
       }
     ]
   },
   "recommendations": {
-    "title": "Discover More in Colonia del Sacramento",
+    "title": "Discover More in La Serena & Coquimbo",
     "attractionsTitle": "Nearby Attractions",
     "toursTitle": "Recommended Tours & Activities",
     "attractions": [
-      { "name": "Calle de los Suspiros (Street of Sighs)", "url": "https://uruguaynatural.com/" },
-      { "name": "Portuguese Museum (Museo Portugués)", "url": "https://www.colonia.gub.uy/" },
-      { "name": "Basílica del Santísimo Sacramento", "url": "https://www.gub.uy/ministerio-turismo/" }
+      { "name": "Plaza de Armas & Cathedral of La Serena", "url": "https://www.laserena.cl/" },
+      { "name": "Casa Museo Gabriel González Videla", "url": "https://www.laserena.cl/" },
+      { "name": "Jardín del Corazón (Avenida del Mar)", "url": "https://www.chile.travel/" }
     ],
     "tours": [
-      { "name": "Historic Quarter walking tour", "url": "https://uruguaynatural.com/" },
-      { "name": "Colonia bike tour", "url": "https://uruguaynatural.com/" },
-      { "name": "Buenos Aires ferry day trip", "url": "https://www.gub.uy/ministerio-turismo/" }
+      { "name": "La Serena & Coquimbo city tour", "url": "https://www.chile.travel/" },
+      { "name": "Elqui Valley day trip", "url": "https://www.chile.travel/" },
+      { "name": "Astronomy observatory tour", "url": "https://www.sernatur.cl/" }
     ]
   }
 }
