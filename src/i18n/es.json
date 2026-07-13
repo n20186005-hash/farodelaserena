@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "title": "Faro de Colonia del Sacramento | Uruguay",
+    "description": "Guía completa del Faro de Colonia del Sacramento: historia, las ruinas del convento de San Francisco sobre las que se levanta, fotos, opiniones de visitantes y cómo llegar en el barrio histórico declarado Patrimonio de la Humanidad."
+  },
+  "header": {
+    "siteName": "Faro de Colonia del Sacramento",
+    "home": "Inicio",
+    "visit": "Visita",
+    "transport": "Cómo llegar",
+    "history": "Historia",
+    "gallery": "Galería",
+    "reviews": "Opiniones",
+    "faq": "FAQ",
+    "map": "Mapa",
+    "backToHome": "Volver al inicio"
+  },
+  "common": {
+    "changeLanguage": "Cambiar idioma",
+    "toggleTheme": "Cambiar tema"
+  },
+  "hero": {
+    "title": "Faro de Colonia del Sacramento",
+    "subtitle": "Un faro del siglo XIX que se alza sobre las ruinas de un convento del siglo XVII, centinela silencioso del Río de la Plata y del casco histórico de Uruguay Patrimonio de la Humanidad.",
+    "rating": "4.6(8.706)",
+    "reviewCount": "8.706 opiniones",
+    "hours": "Suele abrir todos los días, ~10:30–17:30",
+    "openMaps": "Ver ubicación",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "intro": {
+    "title": "Descubre el Faro de Colonia del Sacramento",
+    "description": "El Faro de Colonia del Sacramento es una torre cilíndrica de piedra construida en 1857 sobre las ruinas del Convento de San Francisco Javier, un monasterio franciscano del siglo XVII. Con unos 34 metros de altura, sigue guiando a las embarcaciones en el Río de la Plata y ofrece vistas panorámicas del Barrio Histórico, declarado Patrimonio de la Humanidad por la UNESCO en 1995. Es uno de los monumentos más fotografiados de Colonia del Sacramento, ciudad que cambió de manos once veces entre Portugal y España.",
+    "visitGuide": {
+      "title": "Guía de visita",
+      "items": [
+        "Abierto casi todos los días, de 10:30 a 17:30 aproximadamente; el horario varía según la temporada, confirma antes de ir.",
+        "Ubicado en la Calle de San Francisco, dentro del amurallado Barrio Histórico.",
+        "Subir la escalera de caracol cuesta una pequeña entrada.",
+        "A pocos minutos a pie de la terminal de ferry y de la plaza principal."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Destacados",
+      "items": [
+        "Un faro en funcionamiento sobre ruinas conventuales del siglo XVII",
+        "Encendido por primera vez en 1857, unos 34 m de altura",
+        "Vistas panorámicas del Río de la Plata y el casco antiguo",
+        "Parte del Patrimonio de la Humanidad de Colonia (1995)"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "Cómo llegar al faro",
+    "subtitle": "Desde la llegada internacional hasta el último tramo a pie por el casco histórico, aquí tienes una guía clara de las formas más habituales de llegar al Faro de Colonia del Sacramento.",
+    "overviewTitle": "Primero define tu punto de partida",
+    "overviewText": "Si viajas desde Uruguay, lo más habitual es llegar a la terminal de ómnibus de Colonia y completar el tramo final caminando, en bici o en taxi corto. Si vienes desde Buenos Aires, el ferry suele ser la conexión más directa. Para la mayoría de los visitantes, el faro es un lugar al que se llega con una última aproximación peatonal dentro del Barrio Histórico.",
+    "arrivalTitle": "Antes de salir",
+    "arrivalItems": [
+      "El faro está dentro del Barrio Histórico, así que el último tramo suele hacerse por calles empedradas.",
+      "La terminal de ferry, la terminal de buses y la zona hotelera del centro quedan relativamente cerca.",
+      "En temporada alta y los fines de semana por la tarde hay más movimiento; por la mañana o al final del día suele ser más llevadero."
+    ],
+    "modes": [
+      {
+        "label": "Opción 01",
+        "title": "Avión",
+        "description": "La puerta aérea internacional más habitual es el Aeropuerto de Carrasco (MVD), en Montevideo. Muchos visitantes también vuelan a Buenos Aires y continúan por barco.",
+        "details": [
+          "Desde MVD normalmente hace falta combinar con bus interdepartamental, traslado privado o coche de alquiler hasta Colonia.",
+          "Si aterrizas en Buenos Aires, una ruta muy común es ir al puerto y seguir en ferry hasta Colonia.",
+          "El faro no es un destino de acceso aéreo directo: el vuelo casi siempre es solo la primera etapa del viaje."
+        ]
+      },
+      {
+        "label": "Opción 02",
+        "title": "Tren",
+        "description": "Hoy el tren no es una forma práctica ni habitual de llegar al faro, y no existe una opción ferroviaria consolidada que deje al visitante directamente en el casco histórico.",
+        "details": [
+          "Si tu viaje incluye tren, lo normal es tener que completar el trayecto con transporte por carretera.",
+          "Para la mayoría de los viajeros es más simple ir en bus, ferry, taxi o coche.",
+          "En la práctica, el tren funciona mejor como complemento regional que como acceso principal al faro."
+        ]
+      },
+      {
+        "label": "Opción 03",
+        "title": "Transporte público",
+        "description": "Es la alternativa más equilibrada entre coste y comodidad, sobre todo para quienes salen de Montevideo u otras ciudades uruguayas.",
+        "details": [
+          "Lo habitual es tomar un ómnibus interdepartamental hasta la terminal de Colonia y después caminar o tomar un taxi corto.",
+          "El tramo final es sencillo, pero con equipaje grande resulta menos cómodo.",
+          "Si llegas desde Buenos Aires en ferry, también puedes considerar el conjunto ferry + caminata o conexión corta como una solución de transporte público."
+        ]
+      },
+      {
+        "label": "Opción 04",
+        "title": "Ferry",
+        "description": "Desde la orilla argentina, el ferry suele ser la vía más directa y natural para entrar en el ritmo de viaje de Colonia.",
+        "details": [
+          "Las conexiones de pasajeros entre Buenos Aires y Colonia están bien establecidas y son muy usadas por quienes van por el día.",
+          "Una vez en la terminal portuaria, puedes seguir a pie, en taxi o en bicicleta hacia el Barrio Histórico.",
+          "Si tu objetivo principal es el casco antiguo y el faro, el ferry suele ser más práctico que una combinación aérea con más transbordos."
+        ]
+      },
+      {
+        "label": "Opción 05",
+        "title": "Taxi / traslado privado",
+        "description": "Para moverte desde la terminal de buses, el puerto o tu alojamiento, el taxi corto es una de las formas más cómodas de resolver el último tramo.",
+        "details": [
+          "Es especialmente útil si viajas con personas mayores, niños o equipaje pesado.",
+          "En algunas calles del casco histórico el coche puede dejarte cerca, pero no siempre exactamente frente al faro.",
+          "Dentro de la ciudad, el coste suele ser más controlable que en un traslado interurbano largo."
+        ]
+      },
+      {
+        "label": "Opción 06",
+        "title": "Coche",
+        "description": "Conducir encaja bien en una ruta más amplia por Uruguay, aunque al llegar al casco histórico conviene pensar en el aparcamiento y en el tramo a pie.",
+        "details": [
+          "Desde Montevideo, la llegada más habitual es por la Ruta 1.",
+          "Conviene dejar el vehículo en el perímetro del centro histórico o en zonas habilitadas y seguir caminando.",
+          "Dentro del casco antiguo, el coche sirve para llegar a la ciudad; no es la mejor herramienta para visitar el faro calle a calle."
+        ]
+      },
+      {
+        "label": "Opción 07",
+        "title": "Bicicleta / a pie",
+        "description": "Una vez en Colonia, caminar o ir en bici suele ser la manera más agradable de acercarse al faro.",
+        "details": [
+          "El centro histórico es compacto y muchas visitas se enlazan naturalmente a pie.",
+          "La bici acorta tiempos, pero el empedrado exige más atención, sobre todo si llovió o hay mucha gente.",
+          "Si quieres disfrutar también de las ruinas, las murallas y la Rambla, caminar sigue siendo la experiencia más completa."
+        ]
+      }
+    ],
+    "localTipsTitle": "Consejos para el último tramo",
+    "localTips": [
+      "Entrar al casco histórico con maletas grandes no es lo más cómodo; si puedes, deja el equipaje antes en el hotel o en guarda.",
+      "Las calles alrededor del faro invitan a caminar despacio, así que conviene no planificar una visita demasiado apurada.",
+      "Si quieres subir al mirador, coordina tu llegada con el horario de apertura para no perder la entrada por llegar tarde."
+    ],
+    "mapsCta": "Ver mapa y ruta",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "officialManagement": {
+    "title": "Acerca del Faro",
+    "text": "El faro se encuentra dentro del Barrio Histórico de Colonia del Sacramento, un sitio Patrimonio de la Humanidad de la UNESCO administrado a nivel local por la Intendencia de Colonia. La torre y las adyacentes ruinas de San Francisco forman un pequeño complejo museístico que preserva una de las capas más antiguas del pasado colonial portugués de la ciudad. Como uno de los monumentos más visitados del Uruguay, se mantiene tanto como ayuda a la navegación como sitio patrimonial público."
+  },
+  "knowledge": {
+    "title": "Historia, significado y leyenda del Faro",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Orígenes (1857)",
+        "content": "A mediados del siglo XIX, el creciente tráfico del Río de la Plata —y los numerosos naufragios en este tramo tan traicionero de la costa— crearon una clara necesidad de una luz de navegación fiable. En 1857 las autoridades coloniales construyeron un faro cilíndrico justo sobre una de las torres que aún quedaban en pie del Convento de San Francisco Javier. El convento, fundado por los portugueses en 1683, había sido destruido en 1704 cuando su polvorín estalló durante la lucha hispano-portuguesa por la ciudad. En lugar de retirar las ruinas, los ingenieros simplemente levantaron la nueva torre sobre ellas: por eso hoy aún se ven los muros del convento en la base del faro."
+      },
+      {
+        "id": "meaning",
+        "title": "¿Por qué aquí?",
+        "content": "El faro se situó sobre las ruinas de San Francisco por una razón práctica: el lugar ya ofrecía una base sólida y elevada cerca de la desembocadura del río. Simbólicamente, también superpone dos siglos de historia en una sola estructura: un convento franciscano del siglo XVII y una baliza marítima del siglo XIX. La luz se modernizó con el tiempo, pero la silueta de la torre vigila el Río de la Plata casi sin cambios desde hace más de 160 años."
+      },
+      {
+        "id": "legend",
+        "title": "Leyendas locales",
+        "content": "Los lugareños suelen decir que el faro vela por las almas de quienes se perdieron en los naufragios del río, y que su haz es un saludo silencioso a cada barco que llega a puerto sano. Otros señalan la tranquila ironía de que un símbolo de guía se levante donde antes cayó una casa de oración. Sea hecho o folclore, el Faro sigue siendo el dulce punto de encuentro entre el pasado sagrado y el presente marítimo de Colonia."
+      },
+      {
+        "id": "significance",
+        "title": "Un símbolo de Colonia",
+        "content": "Hoy el faro es el emblema inconfundible de Colonia del Sacramento. Pintado de blanco, como es característico en la ciudad, sostiene la imagen de postal del casco antiguo y de la Rambla. Junto a la empedrada Calle de los Suspiros y el Portón de Campo, es lo que los visitantes recuerdan más tiempo: y la subida más corta a la mejor panorámica de la ciudad."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galería de fotos",
+    "subtitle": "El faro y las calles intemporales del Barrio Histórico de Colonia",
+    "photoAlt": "Faro de Colonia del Sacramento sobre las ruinas del convento de San Francisco",
+    "viewAll": "Ver ubicación en Google Maps",
+    "showMore": "Mostrar más fotos",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "reviews": {
+    "title": "Opiniones de los visitantes",
+    "declaration": "Las opiniones de los visitantes están disponibles en Google Maps (enlace externo).",
+    "moreReviews": "Ver en Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "items": [
+      {
+        "name": "James H.",
+        "date": "Marzo 2026",
+        "rating": 5,
+        "text": "Imperdible en Colonia. Subimos justo antes del atardecer y la vista sobre el Río de la Plata fue inolvidable. La entrada cuesta casi nada y las ruinas del convento en la base son fascinantes."
+      },
+      {
+        "name": "Maria S.",
+        "date": "Febrero 2026",
+        "rating": 5,
+        "text": "Un rincón muy tranquilo, dentro del Barrio Histórico. Nuestro guía explicó cómo se construyó el faro sobre el convento del siglo XVII y la visita ganó mucha profundidad."
+      },
+      {
+        "name": "Thomas K.",
+        "date": "Enero 2026",
+        "rating": 4,
+        "text": "Un lugar icónico para fotografiar y una subida fácil. Se llena al mediodía, así que ve temprano. La torre blanca contra el río azul es la postal de Colonia."
+      },
+      {
+        "name": "Anna L.",
+        "date": "Diciembre 2025",
+        "rating": 5,
+        "text": "Volvimos dos veces: de día y a la hora dorada. Cada vez se siente distinto. Un verdadero símbolo de la ciudad y una perfecta primera parada en el casco antiguo."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Cómo llegar",
+    "subtitle": "Calle de San Francisco, Barrio Histórico, Colonia del Sacramento, Uruguay",
+    "openMaps": "Abrir en Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "footer": {
+    "siteName": "Faro de Colonia del Sacramento",
+    "rights": "© 2026 Faro de Colonia del Sacramento — Guía de viaje independiente. Todos los derechos reservados.",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio",
+    "cookies": "Configuración de cookies",
+    "officialResourcesTitle": "Recursos oficiales y de referencia",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "officialLinksList": [
+      { "name": "Ministerio de Turismo (Uruguay)", "url": "https://www.gub.uy/ministerio-turismo/" },
+      { "name": "Uruguay Natural — Turismo Oficial", "url": "https://uruguaynatural.com/" },
+      { "name": "Intendencia de Colonia", "url": "https://www.colonia.gub.uy/" },
+      { "name": "Ministerio de Educación y Cultura", "url": "https://www.gub.uy/ministerio-educacion-cultura/" }
+    ],
+    "disclaimer": "Este es un proyecto independiente y sin fines de lucro de información para visitantes. No estamos afiliados con ningún organismo gubernamental ni institución oficial."
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Recopilación de información",
+        "content": "Por lo general, no recopilamos activamente información personal identificable de los usuarios. Cualquier información que nos proporciones mediante formularios de contacto o correos electrónicos se mantendrá estrictamente confidencial."
+      },
+      {
+        "heading": "2. Uso de la información",
+        "content": "La información que recopilamos se utiliza únicamente para ofrecer, mantener y mejorar nuestros servicios, y para comunicarnos contigo. No vendemos ni compartimos tu información personal con terceros con fines de marketing."
+      },
+      {
+        "heading": "3. Cookies y seguimiento",
+        "content": "Utilizamos cookies y tecnologías de seguimiento similares para monitorear la actividad en nuestro sitio web y almacenar cierta información. Puedes configurar tu navegador para rechazar todas las cookies o para avisarte cuando se envía una cookie."
+      },
+      {
+        "heading": "4. Seguridad de los datos",
+        "content": "La seguridad de tus datos es importante para nosotros. Utilizamos medios comercialmente aceptables para proteger tus datos personales, aunque ningún método de transmisión por Internet es 100% seguro."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Términos del servicio",
+    "lastUpdated": "Última actualización: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Aceptación de los términos",
+        "content": "Al acceder y utilizar este sitio web, aceptas quedar vinculado por estos términos del servicio. Si no estás de acuerdo con alguna parte de los términos, no podrás acceder al servicio."
+      },
+      {
+        "heading": "2. Uso del servicio",
+        "content": "Este sitio web es un proyecto independiente y sin fines de lucro de información para visitantes. La información proporcionada es solo para fines informativos generales. Aceptas utilizar el sitio de manera responsable y lícita."
+      },
+      {
+        "heading": "3. Propiedad intelectual",
+        "content": "Todo el contenido de este sitio web, incluidos textos, imágenes y logotipos, es propiedad del titular del sitio salvo que se indique lo contrario. Queda estrictamente prohibido el uso, reproducción o distribución no autorizados."
+      },
+      {
+        "heading": "4. Limitación de responsabilidad",
+        "content": "No nos hacemos responsables de ningún daño directo, indirecto, incidental o consecuente derivado del uso o la imposibilidad de usar este sitio web o la información que contiene."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Configuración de cookies",
+    "description": "Gestiona tus preferencias de cookies.",
+    "essential": {
+      "title": "Cookies estrictamente necesarias",
+      "description": "Requeridas para la funcionalidad básica del sitio web.",
+      "badge": "Siempre activas"
+    },
+    "analytics": {
+      "title": "Cookies de analítica",
+      "description": "Nos ayudan a entender cómo interactúan los visitantes con el sitio."
+    },
+    "marketing": {
+      "title": "Cookies de marketing",
+      "description": "Se utilizan para rastrear a los visitantes entre sitios web."
+    },
+    "save": "Guardar preferencias",
+    "saved": "¡Preferencias guardadas!"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "subtitle": "Información práctica sobre servicios, historia y planificación de tu visita al Faro de Colonia del Sacramento.",
+    "amenities": {
+      "title": "Servicios en la zona",
+      "items": [
+        { "icon": "🅿️", "label": "Estacionamiento", "value": "Zona azul y estacionamientos" },
+        { "icon": "🚻", "label": "Baños", "value": "En museos y cafés" },
+        { "icon": "🔌", "label": "Carga / Gasolina", "value": "Estaciones en el centro" },
+        { "icon": "♿", "label": "Accesibilidad", "value": "Veredas del casco, rampa a la base" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transporte e infraestructura",
+        "items": [
+          {
+            "q": "¿Hay estacionamiento en la zona? ¿Cuánto cuesta?",
+            "a": "El faro está dentro del peatonal Barrio Histórico, donde el tránsito de autos está restringido. Hay estacionamiento de zona azul de pago y algunos estacionamientos justo afuera del casco amurallado, a pocos pasos. Las tarifas son modestas (algunos cientos de pesos por hora); en temporada alta (diciembre a febrero) se llena temprano, así que lo más fácil es ir caminando o en bicicleta."
+          },
+          {
+            "q": "¿Se puede acceder con silla de ruedas o coche de bebé?",
+            "a": "Sí. Las calles empedradas del casco son planas pero irregulares en algunos tramos; se llega a la base del faro y hay acceso sin escalones al exterior y a las ruinas. Subir la escalera de caracol hasta arriba, en cambio, no es accesible en silla de ruedas."
+          },
+          {
+            "q": "¿Hay baños o servicios de comida en la zona?",
+            "a": "No hay baños públicos en el faro mismo, pero el casco histórico está lleno de cafés, restaurantes y pequeños museos (varios con baño) a un minuto a pie. La Rambla y la plaza también tienen kioscos."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "Historia y curiosidades",
+        "items": [
+          {
+            "q": "¿Por qué se construyó el faro sobre un convento?",
+            "a": "El Convento de San Francisco Javier era un monasterio franciscano del siglo XVII destruido en 1704 cuando estalló su polvorín. Cuando la ciudad necesitó una luz de navegación en 1857, los ingenieros reutilizaron una de las torres que aún quedaba en pie como cimiento: por eso el faro crece literalmente de las ruinas de la iglesia colonial."
+          },
+          {
+            "q": "¿Cuánto mide y se puede entrar?",
+            "a": "La torre cilíndrica mide unos 34 m (unos 110 pies) y tiene una escalera de caracol hasta la linterna. Está abierta a los visitantes por una pequeña entrada, y se puede subir hasta arriba para una vista panorámica del Río de la Plata y de los tejados del casco antiguo."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planificación y entradas",
+        "items": [
+          {
+            "q": "¿Se paga entrada?",
+            "a": "Sí, subir al faro cuesta una pequeña entrada simbólica (unos 100 pesos uruguayos; confirma en el lugar). El exterior, las ruinas de San Francisco y el entorno del Barrio Histórico se recorren gratis."
+          },
+          {
+            "q": "¿Cuánto tiempo se necesita para visitarlo?",
+            "a": "Calcula de 20 a 40 minutos: comprar la entrada, subir la escalera de caracol, disfrutar la vista y leer los paneles del pequeño museo. Sumado a un paseo por el casco antiguo, la experiencia llena fácilmente una mañana o una tarde."
+          },
+          {
+            "q": "¿Se puede ir con mal tiempo?",
+            "a": "El casco antiguo y las ruinas son al aire libre y se ven bien con cualquier clima, pero la subida está expuesta al viento y puede cerrar con tormenta o lluvia fuerte. En los días muy calurosos del verano, ve temprano o al final del día para evitar el sol en la escalera metálica."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "Qué ver cerca",
+        "items": [
+          {
+            "q": "Terminando la visita, ¿qué otros lugares recomiendan cerca?",
+            "a": "A pasos están la Calle de los Suspiros, el Portón de Campo, la Basílica del Santísimo Sacramento y el Museo Portugués, todo dentro del casco histórico UNESCO. La terminal de ferry ofrece excursiones de un día a Buenos Aires, y la Rambla es perfecta para el atardecer."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Descubre más en Colonia del Sacramento",
+    "attractionsTitle": "Atracciones cercanas",
+    "toursTitle": "Tours y actividades recomendados",
+    "attractions": [
+      { "name": "Calle de los Suspiros", "url": "https://uruguaynatural.com/" },
+      { "name": "Museo Portugués", "url": "https://www.colonia.gub.uy/" },
+      { "name": "Basílica del Santísimo Sacramento", "url": "https://www.gub.uy/ministerio-turismo/" }
+    ],
+    "tours": [
+      { "name": "Visita a pie por el Barrio Histórico", "url": "https://uruguaynatural.com/" },
+      { "name": "Tour en bicicleta por Colonia", "url": "https://uruguaynatural.com/" },
+      { "name": "Excursión de un día a Buenos Aires en ferry", "url": "https://www.gub.uy/ministerio-turismo/" }
+    ]
+  }
+}

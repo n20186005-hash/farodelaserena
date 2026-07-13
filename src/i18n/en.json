@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "title": "Colonia del Sacramento Lighthouse | Faro de Colonia del Sacramento, Uruguay",
+    "description": "The complete guide to the Colonia del Sacramento Lighthouse (Faro de Colonia del Sacramento): history, the San Francisco convent ruins it stands on, photos, visitor reviews, and how to get there in Uruguay's UNESCO-listed old town."
+  },
+  "header": {
+    "siteName": "Colonia del Sacramento Lighthouse",
+    "home": "Home",
+    "visit": "Visit",
+    "transport": "Getting Here",
+    "history": "History",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "faq": "FAQ",
+    "map": "Map",
+    "backToHome": "Back to Home"
+  },
+  "common": {
+    "changeLanguage": "Switch language",
+    "toggleTheme": "Toggle theme"
+  },
+  "hero": {
+    "title": "Colonia del Sacramento Lighthouse",
+    "subtitle": "A 19th-century lighthouse rising from the ruins of a 17th-century convent — a quiet sentinel over the Río de la Plata and Uruguay's UNESCO-listed old town.",
+    "rating": "4.6(8,706)",
+    "reviewCount": "8,706 reviews",
+    "hours": "Typically open daily, ~10:30–17:30",
+    "openMaps": "View Location",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "intro": {
+    "title": "Discover the Colonia del Sacramento Lighthouse",
+    "description": "The Colonia del Sacramento Lighthouse — known in Spanish as the Faro de Colonia del Sacramento — is a cylindrical stone tower built in 1857 atop the ruins of the Convent of San Francisco Javier, a 17th-century Franciscan monastery. Standing roughly 34 metres tall, it still guides vessels across the Río de la Plata while offering sweeping views of the Historic Quarter (Barrio Histórico), a UNESCO World Heritage Site since 1995. It is one of the most photographed landmarks of Colonia del Sacramento, a city that changed hands between Portugal and Spain eleven times.",
+    "visitGuide": {
+      "title": "Visitor Guide",
+      "items": [
+        "Open most days, roughly 10:30–17:30; hours shift with the season, so confirm before you go.",
+        "Located on Calle de San Francisco, inside the walled Historic Quarter (Barrio Histórico).",
+        "A modest entry fee applies to climb the spiral staircase for the panoramic view.",
+        "Reached on foot in minutes from the ferry terminal and the main plaza."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Highlights",
+      "items": [
+        "A working lighthouse built on 17th-century convent ruins",
+        "First lit in 1857, standing about 34 m tall",
+        "Panoramic views over the Río de la Plata and old town",
+        "Part of Colonia's UNESCO World Heritage Site (1995)"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "How to Reach the Lighthouse",
+    "subtitle": "From international arrival points to the last stretch through the old town, this section lays out the most practical ways to reach the Colonia del Sacramento Lighthouse.",
+    "overviewTitle": "Start with where you are coming from",
+    "overviewText": "If you are travelling from within Uruguay, the usual pattern is to reach Colonia's bus terminal first and then finish the trip on foot, by bike or with a short taxi ride. If you are coming from Buenos Aires, the ferry is often the most direct cross-river connection. For most visitors, the lighthouse is a site reached by a final walk through the Historic Quarter rather than a doorstep stop for long-distance transport.",
+    "arrivalTitle": "Know this before you set out",
+    "arrivalItems": [
+      "The lighthouse sits inside the Historic Quarter, so the last stretch is often along cobbled streets.",
+      "The ferry terminal, bus terminal and central hotel area are all relatively close to the site.",
+      "Weekends and high season afternoons are busier; mornings and late afternoons are usually calmer."
+    ],
+    "modes": [
+      {
+        "label": "Option 01",
+        "title": "Air Travel",
+        "description": "The most common international air gateway is Carrasco International Airport (MVD) in Montevideo. Many visitors also fly to Buenos Aires and continue by ferry.",
+        "details": [
+          "From MVD you usually still need an intercity bus, private transfer or rental car onward to Colonia.",
+          "If you land in Buenos Aires, a very common route is airport to port, then ferry across to Colonia.",
+          "The lighthouse is not an airport-to-door attraction; the flight is almost always just the first leg."
+        ]
+      },
+      {
+        "label": "Option 02",
+        "title": "Train",
+        "description": "Rail is not currently a practical mainstream way to reach the lighthouse, and there is no mature passenger rail option that delivers visitors straight into the historic centre.",
+        "details": [
+          "If your wider itinerary includes rail, you will generally still need to switch to road transport for the final approach.",
+          "For most travellers, bus, ferry, taxi or self-drive is simpler.",
+          "In other words, train works better as a regional add-on than as the core access method for the lighthouse."
+        ]
+      },
+      {
+        "label": "Option 03",
+        "title": "Public Transport",
+        "description": "This is the most balanced option in terms of cost and convenience, especially if you are arriving from Montevideo or elsewhere in Uruguay.",
+        "details": [
+          "The usual pattern is an intercity bus to Colonia's terminal, followed by a walk or short taxi ride into the Historic Quarter.",
+          "The final stretch is straightforward, though large luggage makes it less comfortable.",
+          "If you arrive from Buenos Aires by ferry, ferry plus a short onward connection can also be treated as a public transport route."
+        ]
+      },
+      {
+        "label": "Option 04",
+        "title": "Ferry",
+        "description": "From the Argentine side of the river, the ferry is often the most direct and most natural way to enter Colonia's travel rhythm.",
+        "details": [
+          "Passenger ferry links between Buenos Aires and Colonia are well established and widely used for day trips.",
+          "Once you arrive at the port terminal, you can continue on foot, by taxi or by bicycle.",
+          "If your main goal is the old town and the lighthouse, the ferry is usually easier than a more fragmented air-based route."
+        ]
+      },
+      {
+        "label": "Option 05",
+        "title": "Taxi / Private Transfer",
+        "description": "For the last stretch from the bus terminal, ferry terminal or your hotel, a short taxi ride is one of the least tiring options.",
+        "details": [
+          "It is especially helpful for travellers with children, older companions or heavy bags.",
+          "Some streets in the Historic Quarter are narrow or uneven, so the drop-off point may still be a short walk from the tower.",
+          "Within the city, fares are usually easier to manage than a longer intercity transfer."
+        ]
+      },
+      {
+        "label": "Option 06",
+        "title": "Self-Drive",
+        "description": "Driving works well if Colonia is one stop within a broader Uruguay road trip, but parking and the last walking segment still matter once you reach the old town.",
+        "details": [
+          "From Montevideo, most drivers approach via Route 1.",
+          "It is usually best to park on the edge of the historic area or in authorised spaces, then continue on foot.",
+          "Inside the old quarter, the car is useful for reaching the city, not for closely exploring the lighthouse precinct itself."
+        ]
+      },
+      {
+        "label": "Option 07",
+        "title": "Cycling / Walking",
+        "description": "Once you are in Colonia, cycling or walking is often the most pleasant way to approach the lighthouse.",
+        "details": [
+          "The historic centre is compact, and many sights connect naturally on foot.",
+          "Cycling saves time, but the cobbles call for more care, especially after rain or during busy hours.",
+          "If you want to absorb the ruins, old gates and waterfront atmosphere along the way, walking is usually the richest option."
+        ]
+      }
+    ],
+    "localTipsTitle": "Useful tips for the final approach",
+    "localTips": [
+      "Rolling large luggage through the old quarter is not ideal, so leave bags at your hotel or in storage first if possible.",
+      "The streets around the lighthouse reward a slower pace, so avoid planning the visit too tightly.",
+      "If you want to climb the tower, line up your transport timing with opening hours so you do not arrive after access has closed."
+    ],
+    "mapsCta": "View Map & Route",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "officialManagement": {
+    "title": "About the Lighthouse",
+    "text": "The lighthouse stands within the Historic Quarter of Colonia del Sacramento, a UNESCO World Heritage Site administered at the local level by the Intendencia de Colonia. The tower and the adjacent San Francisco ruins form a small museum complex that preserves one of the oldest layers of the city's Portuguese colonial past. As one of Uruguay's most visited monuments, it is maintained both as a navigational aid and as a public heritage site."
+  },
+  "knowledge": {
+    "title": "History, Meaning & Legend of the Lighthouse",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Origins (1857)",
+        "content": "In the mid-19th century, the growing traffic on the Río de la Plata — and the many shipwrecks along this treacherous stretch of coast — created a clear need for a reliable navigation light. In 1857 the colonial authorities built a cylindrical lighthouse directly on top of one of the surviving towers of the Convent of San Francisco Javier. The convent, founded by the Portuguese in 1683, had been destroyed in 1704 when its gunpowder magazine exploded during the Spanish–Portuguese struggle for the city. Rather than clear the ruins, engineers simply built the new tower upon them — which is why the convent walls are still visible at the lighthouse's base today."
+      },
+      {
+        "id": "meaning",
+        "title": "Why Here?",
+        "content": "The lighthouse was placed on the San Francisco ruins for a practical reason: the spot already offered a solid, elevated foundation close to the river mouth. Symbolically, it also layers two centuries of history in a single structure — a 17th-century Franciscan convent and a 19th-century maritime beacon. The light itself was modernised over time, but the tower's silhouette has watched over the Río de la Plata almost unchanged for more than 160 years."
+      },
+      {
+        "id": "legend",
+        "title": "Local Stories",
+        "content": "Locals like to say the lighthouse keeps watch over the souls of those lost to the river's shipwrecks, its beam a quiet greeting to every vessel that makes it safely to port. Others note the quiet irony that a symbol of guidance now stands where a house of prayer once fell. Whether fact or folklore, the Faro remains the gentle meeting point of Colonia's sacred past and its maritime present."
+      },
+      {
+        "id": "significance",
+        "title": "A Symbol of Colonia",
+        "content": "Today the lighthouse is the unmistakable emblem of Colonia del Sacramento. Painted in the city's characteristic white, it anchors the postcard view of the old town and the waterfront promenade (Rambla). Alongside the cobbled Calle de los Suspiros and the Portón de Campo, it is the sight visitors remember longest — and the shortest climb to the best panorama in the city."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Photo Gallery",
+    "subtitle": "The lighthouse and the timeless streets of Colonia's Historic Quarter",
+    "photoAlt": "Colonia del Sacramento Lighthouse on the ruins of the San Francisco convent",
+    "viewAll": "View Location on Google Maps",
+    "showMore": "Show More Photos",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "reviews": {
+    "title": "Visitor Reviews",
+    "declaration": "Visitor feedback is available on Google Maps (external link).",
+    "moreReviews": "View on Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "items": [
+      {
+        "name": "James H.",
+        "date": "March 2026",
+        "rating": 5,
+        "text": "A must in Colonia. We climbed just before sunset and the view over the Río de la Plata was unforgettable. The entry fee is tiny and the old convent ruins at the base are fascinating."
+      },
+      {
+        "name": "Maria S.",
+        "date": "February 2026",
+        "rating": 5,
+        "text": "Such a peaceful spot right in the Historic Quarter. Our guide explained how the lighthouse was built on the 17th-century convent ruins — that made the visit so much richer."
+      },
+      {
+        "name": "Thomas K.",
+        "date": "January 2026",
+        "rating": 4,
+        "text": "Iconic photo stop and an easy climb. It gets busy midday, so go early. The white tower against the blue river is exactly the Colonia postcard."
+      },
+      {
+        "name": "Anna L.",
+        "date": "December 2025",
+        "rating": 5,
+        "text": "We came back twice — by day and at golden hour. Each time it felt different. A true symbol of the city and a perfect first stop in the old town."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "How to Get Here",
+    "subtitle": "Calle de San Francisco, Barrio Histórico, Colonia del Sacramento, Uruguay",
+    "openMaps": "Open in Google Maps",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "footer": {
+    "siteName": "Colonia del Sacramento Lighthouse",
+    "rights": "© 2026 Colonia del Sacramento Lighthouse — Independent Travel Guide. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings",
+    "officialResourcesTitle": "Official & Reference Resources",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "officialLinksList": [
+      { "name": "Ministerio de Turismo (Uruguay)", "url": "https://www.gub.uy/ministerio-turismo/" },
+      { "name": "Uruguay Natural — Official Tourism", "url": "https://uruguaynatural.com/" },
+      { "name": "Intendencia de Colonia", "url": "https://www.colonia.gub.uy/" },
+      { "name": "Ministerio de Educación y Cultura", "url": "https://www.gub.uy/ministerio-educacion-cultura/" }
+    ],
+    "disclaimer": "This is an independent, non-profit visitor information project. We are not affiliated with any government body or official institution."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": [
+      {
+        "heading": "1. Information Collection",
+        "content": "We generally do not actively collect personally identifiable information from users. Any information provided by you through contact forms or emails will be kept strictly confidential."
+      },
+      {
+        "heading": "2. Use of Information",
+        "content": "The information we collect is used solely to provide, maintain, and improve our services, and to communicate with you. We do not sell or share your personal information with third parties for marketing purposes."
+      },
+      {
+        "heading": "3. Cookies and Tracking",
+        "content": "We use cookies and similar tracking technologies to track the activity on our website and hold certain information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent."
+      },
+      {
+        "heading": "4. Data Security",
+        "content": "The security of your data is important to us. We use commercially acceptable means to protect your Personal Data, though no method of transmission over the Internet is 100% secure."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: March 2026",
+    "sections": [
+      {
+        "heading": "1. Acceptance of Terms",
+        "content": "By accessing and using this website, you agree to be bound by these terms of service. If you disagree with any part of the terms, you may not access the service."
+      },
+      {
+        "heading": "2. Use of Service",
+        "content": "This website is an independent, non-profit visitor information project. The information provided is for general informational purposes only. You agree to use the site responsibly and lawfully."
+      },
+      {
+        "heading": "3. Intellectual Property",
+        "content": "All content on this website, including texts, images, and logos, is the property of the website owner unless otherwise stated. Unauthorized use, reproduction, or distribution is strictly prohibited."
+      },
+      {
+        "heading": "4. Limitation of Liability",
+        "content": "We shall not be held liable for any direct, indirect, incidental, or consequential damages resulting from the use or inability to use this website or the information contained herein."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie Settings",
+    "description": "Manage your cookie preferences.",
+    "essential": {
+      "title": "Strictly Necessary Cookies",
+      "description": "Required for basic website functionality.",
+      "badge": "Always active"
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "Help us understand how visitors interact with the site."
+    },
+    "marketing": {
+      "title": "Marketing Cookies",
+      "description": "Used to track visitors across websites."
+    },
+    "save": "Save Preferences",
+    "saved": "Preferences saved!"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Practical information on facilities, history and planning your visit to the Colonia del Sacramento Lighthouse.",
+    "amenities": {
+      "title": "Facilities nearby",
+      "items": [
+        { "icon": "🅿️", "label": "Parking", "value": "Street parking & nearby lots" },
+        { "icon": "🚻", "label": "Restrooms", "value": "At museums & cafés" },
+        { "icon": "🔌", "label": "Fuel / EV", "value": "Stations in town centre" },
+        { "icon": "♿", "label": "Accessibility", "value": "Old town pavements, ramp to base" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transport & Facilities",
+        "items": [
+          {
+            "q": "Is there parking nearby? How much does it cost?",
+            "a": "The lighthouse sits inside the pedestrian-friendly Historic Quarter, where cars are restricted. There is paid street parking (zonas azules) and a few lots just outside the walled old town, a short walk away. Rates are modest (a few hundred pesos per hour); in high season (December–February) spaces fill early, so walking or cycling in is easiest."
+          },
+          {
+            "q": "Can wheelchairs or strollers get close?",
+            "a": "Yes. The old town's cobbled streets are flat but uneven in places; the approach to the lighthouse base is reachable, and there is step-free access to the exterior and the ruins. Climbing the spiral staircase to the top, however, is not wheelchair accessible."
+          },
+          {
+            "q": "Are there restrooms or food nearby?",
+            "a": "There are no public restrooms at the lighthouse itself, but the surrounding old town is full of cafés, restaurants and small museums (several with toilets) within a one-minute walk. The riverside Rambla and plaza also have kiosks."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "History & Trivia",
+        "items": [
+          {
+            "q": "Why was the lighthouse built on a convent?",
+            "a": "The Convent of San Francisco Javier was a 17th-century Franciscan monastery destroyed in 1704 when its gunpowder store exploded. When the city needed a navigation light in 1857, engineers reused one of the convent's still-standing tower bases as the foundation — so the lighthouse literally grows out of colonial church ruins."
+          },
+          {
+            "q": "How tall is it and can you go inside?",
+            "a": "The cylindrical tower is about 34 m (roughly 110 ft) tall with a spiral staircase up to the lantern. It is open to visitors for a modest fee, and you can climb to the top for a sweeping view of the Río de la Plata and the old-town rooftops."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planning & Tickets",
+        "items": [
+          {
+            "q": "Is there an entrance fee?",
+            "a": "Yes, climbing the lighthouse costs a small symbolic fee (around 100 Uruguayan pesos; confirm on site). The exterior, the San Francisco ruins and the surrounding Historic Quarter are free to walk."
+          },
+          {
+            "q": "How long does a visit take?",
+            "a": "Plan 20–40 minutes: buy the ticket, climb the spiral staircase, enjoy the view and read the small on-site museum panels. Combined with a stroll through the old town, it easily fills a morning or afternoon."
+          },
+          {
+            "q": "Can I go in bad weather?",
+            "a": "The old town and ruins are open-air and fine in any weather, but the climb is exposed to wind and may close in storms or heavy rain. On very hot summer days go early or late to avoid the sun on the metal stairs."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "What to see nearby",
+        "items": [
+          {
+            "q": "After visiting, what else do you recommend nearby?",
+            "a": "Steps away are the Calle de los Suspiros (Street of Sighs), the Portón de Campo city gate, the Basílica del Santísimo Sacramento and the Portuguese Museum, all inside the UNESCO old town. The ferry terminal offers day trips to Buenos Aires, and the riverside Rambla is perfect for sunset."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Discover More in Colonia del Sacramento",
+    "attractionsTitle": "Nearby Attractions",
+    "toursTitle": "Recommended Tours & Activities",
+    "attractions": [
+      { "name": "Calle de los Suspiros (Street of Sighs)", "url": "https://uruguaynatural.com/" },
+      { "name": "Portuguese Museum (Museo Portugués)", "url": "https://www.colonia.gub.uy/" },
+      { "name": "Basílica del Santísimo Sacramento", "url": "https://www.gub.uy/ministerio-turismo/" }
+    ],
+    "tours": [
+      { "name": "Historic Quarter walking tour", "url": "https://uruguaynatural.com/" },
+      { "name": "Colonia bike tour", "url": "https://uruguaynatural.com/" },
+      { "name": "Buenos Aires ferry day trip", "url": "https://www.gub.uy/ministerio-turismo/" }
+    ]
+  }
+}

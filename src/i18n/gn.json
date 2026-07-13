@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "title": "Colonia del Sacramento Faro | Uruguay",
+    "description": "Colonia del Sacramento Faro (Faro de Colonia del Sacramento) mboyerovia: jeréia, San Francisco convento ryakuã, ta'anga, jeikuaa ha mba'éichapa ogusteta Uruguay tetãygua Barrio Histórico-pe."
+  },
+  "header": {
+    "siteName": "Colonia del Sacramento Faro",
+    "home": "Ñepyrũ",
+    "visit": "Jeguata",
+    "transport": "Mba'éichapa og̃uahẽ",
+    "history": "Jeréia",
+    "gallery": "Ta'anga aty",
+    "reviews": "Jeikuaa",
+    "faq": "Porandu",
+    "map": "Mapa",
+    "backToHome": "Eju ñepyrũ"
+  },
+  "common": {
+    "changeLanguage": "Emoambue ñe'ẽ",
+    "toggleTheme": "Emoambue téma"
+  },
+  "hero": {
+    "title": "Colonia del Sacramento Faro",
+    "subtitle": "Siglo XIX faro oúva siglo XVII convento ryakuã gui, Río de la Plata ha Uruguay UNESCO Barrio Histórico ñangarekohára.",
+    "rating": "4.6(8.706)",
+    "reviewCount": "Jeikuaa 8.706",
+    "hours": "Arapýpe oĩ, ~10:30–17:30",
+    "openMaps": "Ehecha tenda",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "intro": {
+    "title": "Eikuaa Colonia del Sacramento Faro",
+    "description": "Colonia del Sacramento Faro — ojehero Faro de Colonia del Sacramento — ha'e kuatiá pytã oguejy vaekue 1857-pe San Francisco Javier convento ryakuã ári, siglo XVII franciscano monasterio. 34 metro rupi, oñangareko yga Río de la Plata-pe ha ohecha Barrio Histórico, UNESCO 1995 guive. Ha'e Colonia del Sacramento ta'anga ipyahuvéva apytépe, táva oĩva Portugal ha España mbytére 11 jey.",
+    "visitGuide": {
+      "title": "Jeguata reko",
+      "items": [
+        "Arapýpe oĩ, 10:30 guive 17:30 peve; ára oñemoambue temporada rupive, ehecha mboyve.",
+        "Oĩva Calle de San Francisco-pe, Barrio Histórico mba'éva.",
+        "Eguahẽ hupápe oĩva viru michĩ.",
+        "Pé Centro guive ha puerto terminal guive 1 aravo rasa."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Mba'evai",
+      "items": [
+        "Faro oĩva siglo XVII convento ryakuã ári",
+        "1857-pe oñembopu, 34 metro rupi",
+        "Ohecha Río de la Plata ha táva ypykue",
+        "Colonia UNESCO 1995 mba'e"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "Mba'éichapa reg̃uahẽ farópe",
+    "subtitle": "Aeropuerto guive, terminal guive ha ipahápe Barrio Histórico rupi guata hag̃uáicha, ko sección ombyaty tape ojepuruvéva Faro de Colonia del Sacramento-pe hag̃ua.",
+    "overviewTitle": "Ehecha moõ guipa reju",
+    "overviewText": "Uruguay ryepýgui reju ramo, jepive hag̃ua reg̃uahẽ terminal de ómnibus Colonia-pe ha upéi reguata, reho bicicleta-pe térã taxi mbykymíme Barrio Histórico peve. Buenos Aires guive reju ramo, ferry ha'e jepi tape rectovéva. Hetaiterei visitante-pe g̃uarã, faro ha'e peteĩ tenda ipahápe og̃uahẽva ojeguatáva.",
+    "arrivalTitle": "Neresẽ mboyve",
+    "arrivalItems": [
+      "Faro oĩ Barrio Histórico ryepýpe, upévare ipahápe jepi reguata tape itá rehe.",
+      "Terminal de ferry, terminal de ómnibus ha hotel-kuéra centropegua ndaha'éi mombyry.",
+      "Temporada alta ha fin de semana ka'aru jave oĩ hetave tapicha; pyhareve térã ka'aru hag̃uépe ipy'aguapýve."
+    ],
+    "modes": [
+      {
+        "label": "Tape 01",
+        "title": "Avión",
+        "description": "Aeropuerto internacional ojepuruvéva ha'e Carrasco (MVD), Montevideo-pe. Heta tapicha og̃uahẽ avei Buenos Aires-pe ha upéi ohasa ferry rupi.",
+        "details": [
+          "MVD guive jepive reguerekóta ómnibus interdepartamental, traslado privado térã auto alquilado Colonia peve.",
+          "Buenos Aires-pe reg̃uahẽ ramo, peteĩ tape jepivegua ha'e aeropuerto guive puerto peve ha upéi ferry Colonia peve.",
+          "Faro ndaha'éi peteĩ tenda avión guive reg̃uahẽ hag̃uáicha peteĩ jey; vuelo ha'e jepi ñepyrũnte."
+        ]
+      },
+      {
+        "label": "Tape 02",
+        "title": "Tren",
+        "description": "Ko'ág̃a tren ndaha'éi peteĩ opción práctica farópe hag̃ua, ha ndaipóri peteĩ servicio ferroviario porãva ogueraháva visitante-kuérape directamente casco histórico-pe.",
+        "details": [
+          "Nde viaje tren rehe oñemopyenda ramo, jepive reikotevẽta remoambue transporte rutero rehe.",
+          "Heta viajero-pe g̃uarã iporãve bus, ferry, taxi térã auto.",
+          "Upévare tren oiko porãve viaje regional peteĩ parte ramo, ndaha'éi acceso principal ramo."
+        ]
+      },
+      {
+        "label": "Tape 03",
+        "title": "Transporte público",
+        "description": "Ko opción ombojoja porã costo ha comodidad, ko'ýte Montevideo térã ambue táva Uruguaygua guive reju ramo.",
+        "details": [
+          "Jepive reg̃uahẽ ómnibus rupive terminal Colonia-pe ha upéi reguata térã reho taxi mbykymíme.",
+          "Ipahápe tape ndahasýi, péro equipaje guasu reheve ndoiko porãiite.",
+          "Buenos Aires guive ferry-pe reg̃uahẽ ramo, ferry + conexión mbykymi ikatu avei oñeñe'ẽ transporte público ramo."
+        ]
+      },
+      {
+        "label": "Tape 04",
+        "title": "Ferry",
+        "description": "Argentina guive reju ramo, ferry ha'e jepi tape directovéva ha naturalvéva Colonia-pe hag̃ua.",
+        "details": [
+          "Buenos Aires ha Colonia apytépe ferry de pasajeros oiko porãma ha heta ojepuru excursión peteĩ árape g̃uarã.",
+          "Puerto-pe reg̃uahẽ rire ikatu reguata, reho taxi-pe térã bicicleta-pe Barrio Histórico peve.",
+          "Nde objetivo principal ramo casco antiguo ha faro, ferry jepi hasy'ỹve ambue combinación-gui."
+        ]
+      },
+      {
+        "label": "Tape 05",
+        "title": "Taxi / traslado privado",
+        "description": "Terminal de ómnibus, terminal de ferry térã hotel guive, taxi mbykymi ha'e peteĩ opción ndive'ỹ hag̃uáicha ipahápe hag̃ua.",
+        "details": [
+          "Iporãite mitã, tuja térã equipaje pohýi ndive reho ramo.",
+          "Barrio Histórico-pe oĩ calle ipo'í ha itáva, upévare sapy'ánte reikóta peteĩ punto hi'aguĩvape ha upéi reguata.",
+          "Táva ryepýpe precio jepi ikontrolakuaa porãve peteĩ viaje puku hag̃uágui."
+        ]
+      },
+      {
+        "label": "Tape 06",
+        "title": "Auto",
+        "description": "Auto iporã Colonia omoĩramo peteĩ ruta tuichavévape Uruguay rupi, péro casco histórico-pe reg̃uahẽvo reikuaava'erã moõpa remoĩta ha reguata hag̃uáicha.",
+        "details": [
+          "Montevideo guive hetave tapicha og̃uahẽ Ruta 1 rupi.",
+          "Iporãve remoĩ auto perímetro térã tenda autorizada-pe ha upéi reguata.",
+          "Casco antiguo ryepýpe auto iporãve távape hag̃uánte, ndaha'éi visita detallada-rã."
+        ]
+      },
+      {
+        "label": "Tape 07",
+        "title": "Bicicleta / guata",
+        "description": "Colonia-pe reg̃uahẽ rire, bicicleta térã guata ha'e jepi tape iporãvéva farópe hag̃uáicha.",
+        "details": [
+          "Centro histórico michĩ ha heta tenda ikatu ojoaju ojeguatáva.",
+          "Bicicleta ombyky aravo, péro tape itáva ojerure atenciónve, ko'ýte oky rire térã tapicha hetáramo.",
+          "Ryakuã, muralla ha Rambla rehe avei remaña ramo, guata jepi experiencia hekovéva."
+        ]
+      }
+    ],
+    "localTipsTitle": "Consejo ipahápe g̃uarã",
+    "localTips": [
+      "Equipaje guasu reheve reguata hag̃ua Barrio Histórico-pe ndahasýi, upévare iporãve eheja hotel térã guardería-pe ikatúrõ.",
+      "Faro jerére umi calle ojerure py'aguapy, ani remoĩ agenda pohýieterei.",
+      "Ehupiséramo yvate, embojoaju nde transporte horario de apertura ndive ani hag̃ua reg̃uahẽ tarde."
+    ],
+    "mapsCta": "Ehecha mapa ha tape",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "officialManagement": {
+    "title": "Faro ñemombe'u",
+    "text": "Faro oĩva Colonia del Sacramento Barrio Histórico-pe, UNESCO mba'e Intendencia de Colonia oñangarekóva. Kuatiá ha San Francisco ryakuã ha'e museo michĩ, oñangarekóva Portugal jeréia ypykue. Uruguay visita hetavéva apytépe, oñangareko yga ha jeguata mba'e ramo."
+  },
+  "knowledge": {
+    "title": "Faro jeréia, hesa'ỹ ha ñe'ẽnga",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Jeipuru (1857)",
+        "content": "Siglo XIX mbytére, Río de la Plata mba'ey rusúpe ha naufragio heta rupive, oiko peteĩ nececidad de faro. 1857-pe ojapo peteĩ faro San Francisco Javier convento mba'e yvága ári, convento Portugal ojapo 1683-pe, oñembyai 1704-pe pólvora rupive. Oñangareko ryakuã ári, upéicha ko'ágã ohecha convento mba'e faro yvága-pe."
+      },
+      {
+        "id": "meaning",
+        "title": "Mba'ére ko'ápe?",
+        "content": "Faro oĩva San Francisco ryakuã ári mba'e práctico rupive: oĩva yvy tuicha ha ypýpe. Hesa'ỹme, ojoaju siglo XVII convento ha siglo XIX faro. Tembiporu oñemoambue, hána faro ohecha Río de la Plata 160 ary rasa."
+      },
+      {
+        "id": "legend",
+        "title": "Ñe'ẽnga",
+        "content": "Tapicha he'i faro oñangareko naufragio rupive omanóva ánima, ha oku'e yga oguahẽ vaekue. Ambue kuéra he'i peteĩ tembiporu oĩva tenda oración oñembyai vaekue. Mba'e térã ñe'ẽnga, faro ha'e Colonia jeréia ha ygarusu joajúpe."
+      },
+      {
+        "id": "significance",
+        "title": "Colonia ta'anga",
+        "content": "Ko'ágã faro ha'e Colonia del Sacramento ta'anga tee. Hupi mandyju, ohecha táva ypykue ha Rambla. Calle de los Suspiros ha Portón de Campo ndive, ha'e jehecha porãvéva ha hupá peve michĩvéva."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Ta'anga aty",
+    "subtitle": "Faro ha Colonia Barrio Histórico tape",
+    "photoAlt": "Colonia del Sacramento Faro San Francisco convento ryakuã ári",
+    "viewAll": "Ehecha Google Maps-pe",
+    "showMore": "Ehecha ta'angave",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "reviews": {
+    "title": "Visitante jeikuaa",
+    "declaration": "Visitante jeikuaa oĩ Google Maps-pe (enlace externo).",
+    "moreReviews": "Ehecha Google Maps-pe",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "items": [
+      {
+        "name": "Carlos R.",
+        "date": "Marzo 2026",
+        "rating": 5,
+        "text": "Colonia-pe ipyahuvéva. Kuarahy oity mboyve roguyhy, Río de la Plata ohecha porã. Viru michĩ ha convento ryakuã porã."
+      },
+      {
+        "name": "Sofía M.",
+        "date": "Febrero 2026",
+        "rating": 5,
+        "text": "Tenda oiko'ãva Barrio Histórico-pe. Ñane guía oñemombe'u faro convento siglo XVII ári, porãve."
+      },
+      {
+        "name": "Diego G.",
+        "date": "Enero 2026",
+        "rating": 4,
+        "text": "Ta'anga porã ha hupá pya'e. Kuarahy mbyteve oĩ tapicha, upéicha árapytu'ũme eguahẽ. Kuatiá mandyju para ykére ha'e Colonia postal."
+      },
+      {
+        "name": "Valeria P.",
+        "date": "Diciembre 2025",
+        "rating": 5,
+        "text": "Rogue ñande kuatia 2 jey: ára ha kuarahy oity. Oĩva mbovyve. Táva ta'anga ha ñepyrũ porãva Barrio Histórico-pe."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Mba'éichapa ogusteta",
+    "subtitle": "Calle de San Francisco, Barrio Histórico, Colonia del Sacramento, Uruguay",
+    "openMaps": "Eipe'a Google Maps-pe",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6"
+  },
+  "footer": {
+    "siteName": "Colonia del Sacramento Faro",
+    "rights": "© 2026 Colonia del Sacramento Faro — Jeheka peteĩha. Opaite derecho oñongatu.",
+    "privacy": "Privacidad reko",
+    "terms": "Eipuru reko",
+    "cookies": "Cookie",
+    "officialResourcesTitle": "Oficial ha referencia",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/eo5dSdxMzLinv3Qw6",
+    "officialLinksList": [
+      { "name": "Ministerio de Turismo (Uruguay)", "url": "https://www.gub.uy/ministerio-turismo/" },
+      { "name": "Uruguay Natural — Turismo", "url": "https://uruguaynatural.com/" },
+      { "name": "Intendencia de Colonia", "url": "https://www.colonia.gub.uy/" },
+      { "name": "Ministerio de Educación y Cultura", "url": "https://www.gub.uy/ministerio-educacion-cultura/" }
+    ],
+    "disclaimer": "Ko ha'e peteĩ jeheka peteĩha, ndaha'éi mba'e oficiable. Ndaroikuaa gobierno térã institución oficial ndive."
+  },
+  "privacy": {
+    "title": "Privacidad reko",
+    "lastUpdated": "Ipahúma: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Marandu japo",
+        "content": "Ndarojapo activo rupive tapicha marandu ojehechakuaáva. Eme'ẽva formulario térã e-mail rupive ha'e confidencial."
+      },
+      {
+        "heading": "2. Eipuru marandu",
+        "content": "Marandu japóva oipuru servicio oñeme'ẽ, oñangareko ha ombohovy, ha ñaneñe'ẽ. Ndajakogua térã ñaime tercero-pe marketing."
+      },
+      {
+        "heading": "3. Cookie ha seguimiento",
+        "content": "Jajapo cookie ha tecnología ojojogua seguimiento. Nde navegador ikatu oiko'ã cookie opaite térã oñemombe'u cookie oĩrõ."
+      },
+      {
+        "heading": "4. Datos seguridad",
+        "content": "Nde datos seguridad ja'ekatu. Jajapo comercial medida dato oñangareko, interactúa Internet rupive ndaha'éi 100% seguido."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Eipuru reko",
+    "lastUpdated": "Ipahúma: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Eipuru",
+        "content": "Eipuru rupive, eñe'ẽ ko reko. Eikovia'ỹramo, ndereko ogusteta."
+      },
+      {
+        "heading": "2. Servicio eipuru",
+        "content": "Ko web ha'e jeheka peteĩha, ndaha'éi mba'e oficiable. Marandu oĩ información general. Eipuru iviru'ỹ ha ley."
+      },
+      {
+        "heading": "3. Propiedad intelectual",
+        "content": "Opaite contenido, texto, ta'anga ha logo, ha'e dueño web, ambue oĩrõ. Ndaha'éi autorizado uso, reproducción térã distribución."
+      },
+      {
+        "heading": "4. Responsabilidad límite",
+        "content": "Ndajahayhu daño directo, indirecto, incidental térã consecuente uso rupive web térã información."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie",
+    "description": "Eñangareko cookie.",
+    "essential": {
+      "title": "Cookie necesario",
+      "description": "Web funcionamiento necesario.",
+      "badge": "Siempre activo"
+    },
+    "analytics": {
+      "title": "Cookie analítica",
+      "description": "Oipytyvõ visitante ojojogua."
+    },
+    "marketing": {
+      "title": "Cookie marketing",
+      "description": "Oipuru visitante seguimiento."
+    },
+    "save": "Eñongatu",
+    "saved": "¡Eñongatu!"
+  },
+  "faq": {
+    "title": "Porandu oĩporãva",
+    "subtitle": "Marandu porã infraestructura, jeréia ha jeguata rehegua Colonia del Sacramento Faro-pe g̃uarã.",
+    "amenities": {
+      "title": "Tenda oĩva",
+      "items": [
+        { "icon": "🅿️", "label": "Estacionamiento", "value": "Zona azul ha estacionamiento" },
+        { "icon": "🚻", "label": "Baño", "value": "Museo ha café-pe" },
+        { "icon": "🔌", "label": "Nafta / Carga", "value": "Centro estación" },
+        { "icon": "♿", "label": "Accesibilidad", "value": "Tenda tape, rampa yvága" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transporte ha infraestructura",
+        "items": [
+          {
+            "q": "¿Oĩ estacionamiento tenda-pe? ¿Mba'épa precio?",
+            "a": "Faro oĩva Barrio Histórico peatonal-pe, auto ndoroikuaa. Oĩ zona azul pago ha estacionamiento mbyky muralla ypykue, pé rasa. Precio michĩ (pesos cientos aravo-pe); temporada tuichakue (Diciembre guive Febrero peve) oĩheta tapicha, upéicha pé térã bicicleta iporãve."
+          },
+          {
+            "q": "¿Ikatu silla de ruedas térã coche de bebé?",
+            "a": "Hup, ikatu. Tenda tape oĩva flat hána oĩva irregular. Faro yvága ogusteta ha oĩva escalón'ỹ exterior ha ryakuã. Hupá escalera de caracol kupére ndaha'éi silla de ruedas."
+          },
+          {
+            "q": "¿Oĩ baño térã comida tenda-pe?",
+            "a": "Ndaroikuaa baño faro ypýpe, hána Barrio Histórico oĩva café, restaurante ha museo (varias baño ndive) 1 aravo rasa. Rambla ha plaza oĩva kiosco."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "Jeréia ha ciencia",
+        "items": [
+          {
+            "q": "¿Mba'ére faro convento ári?",
+            "a": "San Francisco Javier convento ha'e siglo XVII franciscano monasterio, oñembyai 1704-pe pólvora rupive. 1857-pe ciudad oikotevẽ faro, ingeniero oipuru convento yvága oĩva cimiento ramo: upéicha faro oúva convento ryakuã gui."
+          },
+          {
+            "q": "¿Mba'épa yvate ha ikatu oike?",
+            "a": "Kuatiá 34 metro rupi, escalera de caracol lanterna peve. Oñembojerure visitante viru michĩme, ha ikatu hupá Río de la Plata ha táva ypykue ohecha."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planificación ha entrada",
+        "items": [
+          {
+            "q": "¿Oĩ entrada pago?",
+            "a": "Hup, hupá faro oĩva viru michĩ (100 pesos uruguayos rasa; ehecha tenda-pe). Exterior, San Francisco ryakuã ha Barrio Histórico oĩva libre."
+          },
+          {
+            "q": "¿Mba'éichapa aravo jeheka?",
+            "a": "Jeheka 20 ha 40 aravo rasa: eipurra entrada, eguyhy escalera, ehecha ha eñeñe'ẽ museo. Barrio Histórico ndive ikatu mañana térã tarde tuichakue."
+          },
+          {
+            "q": "¿Ikaturõ ára vai?",
+            "a": "Barrio Histórico ha ryakuã oĩva yvytúre, hána hupá oĩva viento ha oñemboí tormenta térã lluvia. Verano ára vai-pe eguahẽ temprano térã kuarahy oity, escalera metal sol rupive."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "Mba'épa ehecha cerca",
+        "items": [
+          {
+            "q": "Jeheka rire, ¿mba'épa tenda oĩva jerurhe?",
+            "a": "Aravo rasa oĩ Calle de los Suspiros, Portón de Campo, Basílica del Santísimo Sacramento ha Museo Portugués, opaite Barrio Histórico UNESCO-pe. Puerto terminal oikuave'ẽ Buenos Aires jeheka, ha Rambla ha'e kuarahy oity porãva."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Eikuaave Colonia del Sacramento",
+    "attractionsTitle": "Tenda oĩva",
+    "toursTitle": "Jeguata ha actividad",
+    "attractions": [
+      { "name": "Calle de los Suspiros", "url": "https://uruguaynatural.com/" },
+      { "name": "Museo Portugués", "url": "https://www.colonia.gub.uy/" },
+      { "name": "Basílica del Santísimo Sacramento", "url": "https://www.gub.uy/ministerio-turismo/" }
+    ],
+    "tours": [
+      { "name": "Barrio Histórico jeguata", "url": "https://uruguaynatural.com/" },
+      { "name": "Colonia bicicleta jeguata", "url": "https://uruguaynatural.com/" },
+      { "name": "Buenos Aires ferry jeheka", "url": "https://www.gub.uy/ministerio-turismo/" }
+    ]
+  }
+}
