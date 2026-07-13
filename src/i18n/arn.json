@@ -1,0 +1,391 @@
+{
+  "meta": {
+    "title": "Faro Monumental de La Serena | La Serena, Chile",
+    "description": "Faro Monumental de La Serena kimün: jeréia, Plan Serena ka neocolonial estilo, ta'anga, wentru nütram ka mba'éichapa La Serena, Chile-pe ogusteta."
+  },
+  "header": {
+    "siteName": "Faro Monumental de La Serena",
+    "home": "Ñepyrũ",
+    "visit": "Jeguata",
+    "transport": "Mba'éichapa og̃uahẽ",
+    "history": "Jeréia",
+    "gallery": "Ta'anga aty",
+    "reviews": "Nütram",
+    "faq": "Porandu",
+    "map": "Mapa",
+    "backToHome": "Eju ñepyrũ"
+  },
+  "common": {
+    "changeLanguage": "Emoambue ñe'ẽ",
+    "toggleTheme": "Emoambue téma"
+  },
+  "hero": {
+    "title": "Faro Monumental de La Serena",
+    "subtitle": "Faro monumento neocolonial, Armada de Chile 1950 ka 1951 ngeley meu pülechi; La Serena pewma ka Pacífico rupa.",
+    "rating": "4.2(25.923)",
+    "reviewCount": "Nütram 25.923",
+    "hours": "Martes–Domingo 10:00–14:00 ka 14:30–17:00 · Lunes cerrado",
+    "openMaps": "Ehecha tenda",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
+  },
+  "intro": {
+    "title": "Eikuaa Faro Monumental de La Serena",
+    "description": "Faro Monumental de La Serena ha'ye neocolonial kütra, Armada de Chile 1950 ka 1951 ngeley meu pülechi, enginiero Jorge Cisternas Larenas raypy mega, Plan Serena rupape Gabriel González Videla presidente uyúmew. 28 m rupi kakelu ka 4 m diámetro ñi püle, faro ka fortaleza colonial rüpü oñeli. 9 junio 2010 ngeley meu Chile Monumento Histórico ramo arche/weza, ñi arquitectura küpa. Küma ha'ye La Serena ta'anga ipyahuvéva ka Pacífico pewma.",
+    "visitGuide": {
+      "title": "Jeguata reko",
+      "items": [
+        "Martes–Domingo angechi, 10:00–14:00 ka 14:30–17:00; Lunes kellua.",
+        "Avenida del Mar Avenida Francisco de Aguirre rüpü, La Serena co rupa.",
+        "Pewmame ogusteta Pacífico ka Elqui llef püle.",
+        "Ruca, chillka ruka ka ñizol trafke püle mailen free ka miti pëllu."
+      ]
+    },
+    "alsoKnownAs": {
+      "title": "Mba'evai",
+      "items": [
+        "Faro Armada de Chile 1950–1951 ngeley meu pülechi",
+        "Neocolonial estilo fortaleza española ramo",
+        "28 m rupi ka 2010 ngeley meu Monumento Histórico",
+        "La Serena pewma ka Pacífico rupa"
+      ]
+    }
+  },
+  "transportSection": {
+    "title": "Mba'éichapa reg̃uahẽ farópe",
+    "subtitle": "Aeropuerto, bus ka auto rupi La Serena-pe ogusteta, Avenida del Mar ipahápe, ko sección ombyaty tape ojepuruvéva Faro Monumental-pe hag̃uáicha.",
+    "overviewTitle": "Ehecha moõ guipa reju",
+    "overviewText": "La Serena Chile norte rupi oĩ, Santiago 470 km Ruta 5 Norte rupi. Mage ramo, jepive reg̃uahẽ La Florida Aeropuerto-pe térã bus tuichápe; upéi faro oĩva mokõi aravo rasa auto, taxi térã transporte público rupi costanera avenida rupi. Heta visitante-pe g̃uarã, faro ha'e peteĩ tenda og̃uahẽva ojeguatáva.",
+    "arrivalTitle": "Neresẽ mboyve",
+    "arrivalItems": [
+      "Faro oĩva Avenida del Mar rupi, La Serena costanera, co rupa.",
+      "Aeropuerto, bus terminal ka centro oĩva hi'aguĩ ha joajúva.",
+      "Verano (enero–febrero) ka fin de semana jave oĩhetave tapicha; pyhareve térã ka'aru jave ipy'aguapýve."
+    ],
+    "modes": [
+      {
+        "label": "Tape 01",
+        "title": "Avión",
+        "description": "Aeropuerto tuichavéva ha'e La Serena Aeropuerto (La Florida, LSC), vuelo oĩva Santiago térã Chile táva ambuévagui.",
+        "details": [
+          "Santiago guive vuelo 1 aravo rasa LATAM, Sky Airline térã JetSmart rupi.",
+          "Aeropuerto guive faro peve 15–20 minuto taxi térã transfer rupi; bus urbano avei ohasa.",
+          "Faro ndaha'éi avión guive reg̃uahẽ hag̃uáicha; vuelo ha'e ñepyrũnte."
+        ]
+      },
+      {
+        "label": "Tape 02",
+        "title": "Tren",
+        "description": "Ko'ág̃a tren ndaha'éi peteĩ opción práctica La Serena-pe hag̃ua; Chile ndoroikuaa tren pasajero tuicháva ko ruta rupi.",
+        "details": [
+          "Nde viaje tren rehe oñemopyenda ramo, reguerekóta bus térã auto ipahápe g̃uarã.",
+          "Heta viajero-pe g̃uarã iporãve bus, auto térã avión.",
+          "Tren oiko porãve experiencia regional ramo, ndaha'éi faro acceso principal ramo."
+        ]
+      },
+      {
+        "label": "Tape 03",
+        "title": "Transporte público",
+        "description": "Opción ekonómicovéva ha heta ojepurúva, ko'ýte Santiago térã Chile mbytére norte táva guive reju ramo.",
+        "details": [
+          "Bus tuicháva La Serena terminal-pe og̃uahẽ; upéi bus urbano térã taxi Avenida del Mar peve.",
+          "La Serena oguereko bus local ka colectivo costanera rupi.",
+          "Ipahápe tape ndahasýi, péro equipaje guasu reheve ndoiko porãiite."
+        ]
+      },
+      {
+        "label": "Tape 04",
+        "title": "Bus tuicháva",
+        "description": "Opción ojepuruvéva Santiago térã Chile ambuévagui: 6–7 aravo rasa Ruta 5 Norte rupi.",
+        "details": [
+          "Pullman Bus, Condor Bus ha Tur Bus ojoaju Santiago ha La Serena.",
+          "Bus terminal oĩva mokõi aravo rasa taxi rupi faro peve, costanera avenida rupi.",
+          "Iporãve auto'ỹre reho ha centro valle paisaje ehecha ramo."
+        ]
+      },
+      {
+        "label": "Tape 05",
+        "title": "Taxi / traslado",
+        "description": "Aeropuerto, bus terminal térã hotel guive, taxi térã app ha'e opción ndive'ỹ hag̃uáicha ipahápe hag̃ua.",
+        "details": [
+          "Iporãite mitã, tuja térã equipaje pohýi ndive reho ramo.",
+          "Avenida del Mar ipokã ka faro ha'e tenda ejeruréva conductor-pe.",
+          "Táva ryepýpe precio ipyahúve ha traslado mbyky."
+        ]
+      },
+      {
+        "label": "Tape 06",
+        "title": "Auto",
+        "description": "Auto iporã Chile norte ruta tuichavévape, péro costa-pe reg̃uahẽvo remoĩ ta'anga reko.",
+        "details": [
+          "Santiago guive Ruta 5 Norte (Panamericana) rupi, 5–6 aravo rasa.",
+          "Oĩva estacionamiento Avenida del Mar ka calle jerére.",
+          "Faro oĩva co rupi, upévare auto emoĩ ha reguata."
+        ]
+      },
+      {
+        "label": "Tape 07",
+        "title": "Bicicleta / guata",
+        "description": "La Serena-pe reg̃uahẽ rire, bicicleta térã guata Avenida del Mar rupi ha'e tape iporãvéva farópe hag̃uáicha.",
+        "details": [
+          "Costanera oĩva flat, ciclovía ka sendero pegua co rupi.",
+          "Bicicleta ombyky aravo ha estacionamiento temporada-pe.",
+          "Kuarahy oity, Plaza de Armas guite faro peve guata ha'e paisaje porãvéva."
+        ]
+      }
+    ],
+    "localTipsTitle": "Consejo ipahápe g̃uarã",
+    "localTips": [
+      "Enero ka febrero Avenida del Mar oĩhetave tapicha; temprano térã kuarahy oity eguahẽ estacionamiento ha foto kañy.",
+      "Faro Lunes kellua, upévare Martes–Domingo eplanifica.",
+      "Ehupiséramo pewma, embojoaju nde transporte horario ndive ani hag̃ua cerrado reg̃uahẽ."
+    ],
+    "mapsCta": "Ehecha mapa ha tape",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
+  },
+  "officialManagement": {
+    "title": "Faro ñemombe'u",
+    "text": "Faro Monumental de La Serena Armada de Chile ojapo ha 7 noviembre 1985 ngeley meu La Serena Municipalidad-pe ome'ẽ turismo ka cultura rupi. Ha'ye Plan Serena ta'anga, 1950 rupi ciudad neocolonial oñemoĩva. Ko'ágã kütra ha'e faro ayuda ka ruka, pewma, chillka ruka ka Pacífico rupa."
+  },
+  "knowledge": {
+    "title": "Faro jeréia, hesa'ỹ ha ñe'ẽnga",
+    "sections": [
+      {
+        "id": "history",
+        "title": "Jeipuru (1950–1953)",
+        "content": "1950 ñepyrũme, Gabriel González Videla presidente Plan Serena oñepyrũ, La Serena neocolonial estilo ome'ẽ hag̃uáicha. Ko rupi, Armada de Chile ingeniero Jorge Cisternas Larenas-pe faro ojerure, faro ha'e hã ha ciudad monumento. 1950–1951 ngeley meu ojapo, 24 octubre 1953 ngeley meu oñembopu ha 7 noviembre 1985 ngeley meu ciudad-pe ome'ẽ turismo ka cultura rupi."
+      },
+      {
+        "id": "meaning",
+        "title": "Mba'ére fortaleza ramo?",
+        "content": "Faro co rupi oĩva, Avenida del Mar oñepyrũva La Serena co rupi ogusteta. Ñe estilo neocolonial, España fortificación gui, ciudad republicano Chile tuichavéva (1544 ngeley meu ojapo) identidad oheka. Upéicha faro siglo XX ingeniería, siglo XVI ta'anga ndive."
+      },
+      {
+        "id": "legend",
+        "title": "Ñe'ẽnga",
+        "content": "Tapicha he'i nubi arave faro küyen Coquimbo puerto-pe ogusteta ha Elqui llef püle ojegua. Ambue nütram he'i faro serenense naufragio rupive omanóva ánima oñangareko, ha pewma gui ciudad kuarahy oity ohecha. Aña térã nütram, faro ha'e La Serena co ndive ojoajúva."
+      },
+      {
+        "id": "significance",
+        "title": "La Serena ta'anga",
+        "content": "Ko'ágã Faro Monumental, neocolonial Catedral ka Plaza de Armas ndive, ha'e La Serena ta'anga tee. Fortaleza silueta Avenida del Mar oñe'ẽ, postcard, souvenir ka memoria rupi. 2010 ngeley meu Monumento Histórico ramo, Chile faro peteĩnte iporãva pewma ramo."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Ta'anga aty",
+    "subtitle": "Faro Monumental ka La Serena Avenida del Mar",
+    "photoAlt": "Faro Monumental de La Serena neocolonial estilo Pacífico rupa",
+    "viewAll": "Ehecha Google Maps-pe",
+    "showMore": "Ehecha ta'angave",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
+  },
+  "reviews": {
+    "title": "Wentru nütram",
+    "declaration": "Wentru nütram oĩ Google Maps-pe (enlace externo).",
+    "moreReviews": "Ehecha Google Maps-pe",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7",
+    "items": [
+      {
+        "name": "Camila R.",
+        "date": "Marzo 2026",
+        "rating": 5,
+        "text": "La Serena-pe reg̃uahẽ ramo faro eguyhy va'erã. Pacífico ka Elqui llef paisaje porã, neocolonial arquitectura ipyahúva."
+      },
+      {
+        "name": "Diego M.",
+        "date": "Febrero 2026",
+        "rating": 4,
+        "text": "Porã ka mba'evai. Kuarahy oity pewma-pe roguyhy; temprano eguahẽ temporada-pe. Base trafke porã."
+      },
+      {
+        "name": "Francisca L.",
+        "date": "Enero 2026",
+        "rating": 5,
+        "text": "Plan Serena jeréia chillka ruka-pe ndotrã. Familia tenda, co rupi pya'e."
+      },
+      {
+        "name": "Tomás G.",
+        "date": "Diciembre 2025",
+        "rating": 4,
+        "text": "Ciudad ta'anga. Hupá pya'e ka recompensa ha'e bay ka paisaje. Free térã miti, upévare iporã."
+      }
+    ]
+  },
+  "mapSection": {
+    "title": "Mba'éichapa ogusteta",
+    "subtitle": "Avenida del Mar Avenida Francisco de Aguirre rüpü, La Serena, Coquimbo Región, Chile",
+    "openMaps": "Eipe'a Google Maps-pe",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
+  },
+  "footer": {
+    "siteName": "Faro Monumental de La Serena",
+    "rights": "© 2026 Faro Monumental de La Serena — Jeheka peteĩha, ndaha'éi mba'e oficiable. Opaite derecho oñongatu.",
+    "privacy": "Privacidad reko",
+    "terms": "Eipuru reko",
+    "cookies": "Cookie",
+    "officialResourcesTitle": "Oficial ha referencia",
+    "mapsLabel": "Google Maps →",
+    "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7",
+    "officialLinksList": [
+      { "name": "Servicio Nacional de Turismo (SERNATUR)", "url": "https://www.sernatur.cl/" },
+      { "name": "Chile Travel — Turismo de Chile", "url": "https://www.chile.travel/" },
+      { "name": "Ilustre Municipalidad de La Serena", "url": "https://www.laserena.cl/" },
+      { "name": "Gobierno Regional de Coquimbo", "url": "https://www.gorecoquimbo.cl/" },
+      { "name": "Ministerio de las Culturas, las Artes y el Patrimonio", "url": "https://www.cultura.gob.cl/" }
+    ],
+    "disclaimer": "Ko ha'e peteĩ jeheka peteĩha, ndaha'éi mba'e oficiable. Ndaroikuaa gobierno térã institución oficial ndive."
+  },
+  "privacy": {
+    "title": "Privacidad reko",
+    "lastUpdated": "Ipahúma: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Marandu japo",
+        "content": "Ndarojapo activo rupive tapicha marandu ojehechakuaáva. Eme'ẽva formulario térã e-mail rupive ha'e confidencial."
+      },
+      {
+        "heading": "2. Eipuru marandu",
+        "content": "Marandu japóva oipuru servicio oñeme'ẽ, oñangareko ha ombohovy. Ndajakogua térã ñaime tercero-pe marketing."
+      },
+      {
+        "heading": "3. Cookie ha seguimiento",
+        "content": "Jajapo cookie ha tecnología ojojogua seguimiento. Nde navegador ikatu oiko'ã cookie opaite térã oñemombe'u cookie oĩrõ."
+      },
+      {
+        "heading": "4. Datos seguridad",
+        "content": "Nde datos seguridad ja'ekatu. Jajapo medida dato oñangareko, Internet rupive ndaha'éi 100% seguido."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Eipuru reko",
+    "lastUpdated": "Ipahúma: Marzo 2026",
+    "sections": [
+      {
+        "heading": "1. Eipuru",
+        "content": "Eipuru rupive, eñe'ẽ ko reko. Eikovia'ỹramo, ndereko ogusteta."
+      },
+      {
+        "heading": "2. Servicio eipuru",
+        "content": "Ko web ha'e jeheka peteĩha, ndaha'éi mba'e oficiable. Marandu oĩ información general. Eipuru iviru'ỹ ha ley."
+      },
+      {
+        "heading": "3. Propiedad intelectual",
+        "content": "Opaite contenido, texto, ta'anga ha logo, ha'e dueño web, ambue oĩrõ. Ndaha'éi autorizado uso, reproducción térã distribución."
+      },
+      {
+        "heading": "4. Responsabilidad límite",
+        "content": "Ndajahayhu daño directo, indirecto, incidental térã consecuente uso rupive web térã información."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie",
+    "description": "Eñangareko cookie.",
+    "essential": {
+      "title": "Cookie necesario",
+      "description": "Web funcionamiento necesario.",
+      "badge": "Siempre activo"
+    },
+    "analytics": {
+      "title": "Cookie analítica",
+      "description": "Oipytyvõ visitante ojojogua."
+    },
+    "marketing": {
+      "title": "Cookie marketing",
+      "description": "Oipuru visitante seguimiento."
+    },
+    "save": "Eñongatu",
+    "saved": "¡Eñongatu!"
+  },
+  "faq": {
+    "title": "Porandu oĩporãva",
+    "subtitle": "Marandu porã infraestructura, jeréia ha jeguata rehegua Faro Monumental de La Serena-pe g̃uarã.",
+    "amenities": {
+      "title": "Tenda oĩva",
+      "items": [
+        { "icon": "🅿️", "label": "Estacionamiento", "value": "Avenida del Mar ka calle jerére" },
+        { "icon": "🚻", "label": "Baño", "value": "Ruka, chillka ruka ka café" },
+        { "icon": "🔌", "label": "Nafta / Carga", "value": "La Serena carga ka bencinera" },
+        { "icon": "♿", "label": "Accesibilidad", "value": "Rampa ka sendero pewma-pe" }
+      ]
+    },
+    "categories": [
+      {
+        "id": "infra",
+        "title": "Transporte ha infraestructura",
+        "items": [
+          {
+            "q": "¿Oĩ estacionamiento tenda-pe? ¿Mba'épa precio?",
+            "a": "Hup. Avenida del Mar ka calle jerére oĩva estacionamiento superficie (pago) ha mokõi estacionamiento. Verano (enero–febrero) ka fin de semana jave hetave tapicha, upéicha temprano eguahẽ térã transporte público taxi. Precio ciudad estándar; ehecha parquímetro-pe."
+          },
+          {
+            "q": "¿Ikatu silla de ruedas térã coche de bebé?",
+            "a": "Hup. Ruka ka faro püle oĩva platoha, rampa ka sendero oĩva silla de ruedas térã coche de bebé. Hupá pewma escalera rupi, upévare pehẽngue ha'e ndaha'éi silla de ruedas."
+          },
+          {
+            "q": "¿Oĩ baño térã comida tenda-pe?",
+            "a": "Faro ruka oĩva baño ka chillka ruka michĩ; base-pe trafke oĩva, Ave del Mar rupi café ka restaurante oĩva. Co ka costanera oĩva kiosco temporada-pe."
+          }
+        ]
+      },
+      {
+        "id": "geo",
+        "title": "Jeréia ha ciencia",
+        "items": [
+          {
+            "q": "¿Mba'ére faro fortaleza ramo?",
+            "a": "Plan Serena rupi ojejapo, 1950 rupi La Serena neocolonial estilo ome'ẽ. Ingeniero Jorge Cisternas Larenas faro 'monumental' oñembo, España fortificación ramo: almena, piedra muro ka castillo silueta, faro ka ciudad monumento oñeli."
+          },
+          {
+            "q": "¿Mba'épa yvate ha ikatu oike?",
+            "a": "Kütra 28 m rupi ka 4 m diámetro püle. Pewma interior-pe eguyhy Pacífico, Elqui llef ka La Serena bahía ohecha; ehecha acceso ka precio tenda-pe."
+          }
+        ]
+      },
+      {
+        "id": "plan",
+        "title": "Planificación ha entrada",
+        "items": [
+          {
+            "q": "¿Oĩ entrada pago?",
+            "a": "Ruka, pewma ka chillka ruka michĩ ha'e libre térã miti pëllu; trafke ha'e libre. Verano jave oĩva acceso control. Ehecha valor actual tenda-pe."
+          },
+          {
+            "q": "¿Mba'éichapa aravo jeheka?",
+            "a": "Jeheka 30–45 minuto rasa: ruka, pewma, chillka panel ka trafke. Ave del Mar ka co ndive ikatu mañana térã tarde tuichakue."
+          },
+          {
+            "q": "¿Ikaturõ ára vai?",
+            "a": "Püle ka chillka ruka oĩva cubierto, ara opaite rupi iporã; péro pewma Pacífico viento rupi, lluvia térã viento tuicháva jave oñemboí. Verano ára vai-pe temprano térã kuarahy oity eguahẽ."
+          }
+        ]
+      },
+      {
+        "id": "nearby",
+        "title": "Mba'épa ehecha cerca",
+        "items": [
+          {
+            "q": "Jeheka rire, ¿mba'épa tenda oĩva jerurhe?",
+            "a": "Hi'aguĩ oĩva Plaza de Armas ka neocolonial Catedral, Casa Museo Gabriel González Videla ka Museo Arqueológico. Ave del Mar rupi Jardín del Corazón (japonés). Mbyteve, Valle del Elqui ka observatorio, Coquimbo Cruz del Tercer Milenio ndive, jeheka oñepyrũ."
+          }
+        ]
+      }
+    ]
+  },
+  "recommendations": {
+    "title": "Eikuaave La Serena ka Coquimbo",
+    "attractionsTitle": "Tenda oĩva",
+    "toursTitle": "Jeguata ha actividad",
+    "attractions": [
+      { "name": "Plaza de Armas ka Catedral de La Serena", "url": "https://www.laserena.cl/" },
+      { "name": "Casa Museo Gabriel González Videla", "url": "https://www.laserena.cl/" },
+      { "name": "Jardín del Corazón (Avenida del Mar)", "url": "https://www.chile.travel/" }
+    ],
+    "tours": [
+      { "name": "La Serena ka Coquimbo city tour", "url": "https://www.chile.travel/" },
+      { "name": "Valle del Elqui excursión", "url": "https://www.chile.travel/" },
+      { "name": "Observatorio astronómico tour", "url": "https://www.sernatur.cl/" }
+    ]
+  }
+}
