@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://farodelaserena.com/es</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://farodelaserena.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://farodelaserena.com/en" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://farodelaserena.com/zh" />
+    <xhtml:link rel="alternate" hreflang="arn" href="https://farodelaserena.com/arn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farodelaserena.com/es" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://farodelaserena.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://farodelaserena.com/en" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://farodelaserena.com/zh" />
+    <xhtml:link rel="alternate" hreflang="arn" href="https://farodelaserena.com/arn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farodelaserena.com/es" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/zh</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://farodelaserena.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://farodelaserena.com/en" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://farodelaserena.com/zh" />
+    <xhtml:link rel="alternate" hreflang="arn" href="https://farodelaserena.com/arn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farodelaserena.com/es" />
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/arn</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://farodelaserena.com/es" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://farodelaserena.com/en" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://farodelaserena.com/zh" />
+    <xhtml:link rel="alternate" hreflang="arn" href="https://farodelaserena.com/arn" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://farodelaserena.com/es" />
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://farodelaserena.com/es/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/en/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/zh/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/arn/privacy-policy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://farodelaserena.com/es/terms-of-service</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/en/terms-of-service</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/zh/terms-of-service</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/arn/terms-of-service</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <url>
+    <loc>https://farodelaserena.com/es/cookie-settings</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/en/cookie-settings</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/zh/cookie-settings</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://farodelaserena.com/arn/cookie-settings</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+</urlset>

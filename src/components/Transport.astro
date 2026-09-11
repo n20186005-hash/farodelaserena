@@ -4,12 +4,19 @@ const { messages } = getI18n(Astro.url);
 const section = messages.transportSection;
 ---
 
-<section id="transport" class="section-padding" style="background: var(--bg-secondary);">
+<section id="transport" class="section-padding" style="background: var(--bg-primary);">
   <div class="max-w-6xl mx-auto px-4">
     <div class="max-w-3xl mx-auto text-center mb-12">
       <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{section.title}</h2>
       <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">{section.subtitle}</p>
     </div>
+
+    {section.shortAnswer && (
+      <div class="max-w-3xl mx-auto mb-10 rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+        <h3 class="font-semibold text-lg mb-3" style="color: var(--text-primary);">{section.shortAnswerTitle}</h3>
+        <p class="text-base leading-relaxed" style="color: var(--text-secondary);">{section.shortAnswer}</p>
+      </div>
+    )}
 
     <div class="rounded-2xl p-6 md:p-8 border mb-8" style="background: var(--bg-tertiary); border-color: var(--border-color);">
       <div class="grid lg:grid-cols-[1.25fr_0.75fr] gap-6 items-start">

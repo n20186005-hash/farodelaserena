@@ -3,19 +3,124 @@ import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { getLangFromUrl, buildAlternates, htmlLangAttr } from '../i18n/ui';
-import { ogLocale } from '../config';
+import { ogLocale, attraction } from '../config';
 
 interface Props {
   title: string;
   description: string;
   path?: string;
+  /** localized copy for the TouristAttraction JSON-LD node; falls back to English */
+  schemaDescription?: string;
+  /** extra JSON-LD nodes injected into <head> in addition to the site entity graph */
+  jsonLd?: Record<string, unknown>[];
+  /** preload the hero photograph — only worth it on the page that actually shows it */
+  preloadHero?: boolean;
 }
 
-const { title, description, path = '' } = Astro.props;
+const {
+  title,
+  description,
+  path = '',
+  schemaDescription = `Comprehensive visitor guide to ${attraction.officialName} in ${attraction.city}, ${attraction.region}, ${attraction.country}.`,
+  jsonLd = [],
+  preloadHero = false,
+} = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const htmlLang = htmlLangAttr(lang);
 const alts = buildAlternates(path);
 const canonical = alts[lang] ?? alts.es;
+
+const heroImageUrl = `${attraction.baseUrl}${attraction.heroImage}`;
+const heroBase = attraction.heroImage.replace(/\.jpg$/, '');
+const heroSrcset = `${heroBase}-960.webp 960w, ${heroBase}.webp 1920w`;
+
+// keep `<` escaped so the inline script can never be broken out of
+const safeJson = (value: unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
+
+/* 1. Structured data — TouristAttraction entity binding (@id + image + geo + NAP) */
+const attractionSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'TouristAttraction',
+  '@id': `${attraction.baseUrl}/#attraction`,
+  name: attraction.officialName,
+  alternateName: [
+    attraction.fullName,
+    attraction.shortName,
+    `${attraction.city} Lighthouse`,
+    `La Serena Lighthouse`,
+  ],
+  description: schemaDescription,
+  url: attraction.baseUrl,
+  image: attraction.galleryImages.map((src) => `${attraction.baseUrl}${src}`),
+  isAccessibleForFree: true,
+  publicAccess: true,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: attraction.streetAddress,
+    addressLocality: attraction.city,
+    addressRegion: attraction.region,
+    postalCode: attraction.postalCode,
+    addressCountry: attraction.countryCode,
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: attraction.latitude,
+    longitude: attraction.longitude,
+  },
+  hasMap: attraction.mapsShareUrl,
+  sameAs: [attraction.mapsShareUrl, attraction.govtTourismUrl],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'https://schema.org/Tuesday',
+        'https://schema.org/Wednesday',
+        'https://schema.org/Thursday',
+        'https://schema.org/Friday',
+        'https://schema.org/Saturday',
+        'https://schema.org/Sunday',
+      ],
+      opens: '10:00',
+      closes: '14:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'https://schema.org/Tuesday',
+        'https://schema.org/Wednesday',
+        'https://schema.org/Thursday',
+        'https://schema.org/Friday',
+        'https://schema.org/Saturday',
+        'https://schema.org/Sunday',
+      ],
+      opens: '14:30',
+      closes: '17:00',
+    },
+  ],
+  touristType: ['Culture', 'History', 'Family', 'Photography'],
+  amenityFeature: [
+    { '@type': 'LocationFeatureSpecification', name: 'Public restrooms', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Parking nearby', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Scenic viewpoint', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Small museum', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Craft market', value: true },
+    { '@type': 'LocationFeatureSpecification', name: 'Wheelchair accessible entrance', value: true },
+  ],
+};
+
+/* WebSite node — helps the Knowledge Graph anchor the domain to the entity */
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${attraction.baseUrl}/#website`,
+  url: attraction.baseUrl,
+  name: attraction.fullName,
+  inLanguage: ['es', 'en', 'zh', 'arn'],
+  about: { '@id': `${attraction.baseUrl}/#attraction` },
+  publisher: { '@id': `${attraction.baseUrl}/#attraction` },
+};
+
+const schemas = [attractionSchema, websiteSchema, ...jsonLd];
 ---
 
 <!doctype html>
@@ -25,22 +130,66 @@ const canonical = alts[lang] ?? alts.es;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <link rel="canonical" href={canonical} />
+
     <link rel="alternate" hreflang="es" href={alts.es} />
     <link rel="alternate" hreflang="en" href={alts.en} />
     <link rel="alternate" hreflang="zh" href={alts.zh} />
     <link rel="alternate" hreflang="arn" href={alts.arn} />
     <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
 
+    {preloadHero && (
+      <link
+        rel="preload"
+        as="image"
+        type="image/webp"
+        href={`${heroBase}-960.webp`}
+        imagesrcset={heroSrcset}
+        imagesizes="100vw"
+        fetchpriority="high"
+      />
+    )}
+
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content={attraction.fullName} />
     <meta property="og:locale" content={ogLocale[lang] ?? lang} />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:locale:alternate" content="es_CL" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:image" content={heroImageUrl} />
+    <meta property="og:image:alt" content={`${attraction.fullName} in ${attraction.city}, ${attraction.country}`} />
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={heroImageUrl} />
+
+    <!-- PWA -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#2d5a3d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content={attraction.fullName} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+
+    <!-- Google AdSense -->
     <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXX" />
     <script is:inline async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script>
+
+    <!-- Google Analytics 4 -->
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${attraction.ga4Id}`}></script>
+    <script
+      is:inline
+      set:html={`window.dataLayer = window.dataLayer || [];function gtag(){window.dataLayer.push(arguments);}gtag('js', new Date());gtag('config', '${attraction.ga4Id}');`}
+    ></script>
 
     <script is:inline>
       (function () {
@@ -51,7 +200,16 @@ const canonical = alts[lang] ?? alts.es;
           }
         } catch (e) {}
       })();
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/sw.js').catch(function () {});
+        });
+      }
     </script>
+
+    {schemas.map((schema) => (
+      <script type="application/ld+json" is:inline set:html={safeJson(schema)}></script>
+    ))}
 
     <slot name="head" />
   </head>

@@ -1,0 +1,55 @@
+---
+import { getI18n, getMessages } from '../i18n/ui';
+import { attraction } from '../config';
+
+/**
+ * A large share of the search demand for this landmark is international, so the
+ * quick-facts card is written once in English (en.json) and reused as-is on the
+ * other locales. Only the section heading and the map link are translated, which
+ * keeps the card from repeating the facts already told on each localized page.
+ */
+const { lang, messages } = getI18n(Astro.url);
+const en = getMessages('en').visitorSnapshot;
+const heading = messages.visitorSnapshot;
+
+const facts: { label: string; value: string }[] = en.facts ?? [];
+const cta = heading.mapsCta ?? en.mapsCta;
+---
+
+<section id="quick-facts" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">
+      {lang === 'en' ? en.title : heading.title}
+    </h2>
+    <p class="text-center text-base sm:text-lg mb-10" style="color: var(--text-secondary);">
+      {lang === 'en' ? en.subtitle : heading.subtitle}
+    </p>
+
+    <div class="rounded-2xl border p-6 sm:p-8" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+      <dl class="grid sm:grid-cols-2 gap-x-10 gap-y-5 mb-6">
+        {facts.map((fact) => (
+          <div>
+            <dt class="text-xs uppercase tracking-[0.15em] mb-1" style="color: var(--text-muted);">{fact.label}</dt>
+            <dd class="text-sm sm:text-base leading-relaxed" style="color: var(--text-primary);">{fact.value}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <p class="text-sm sm:text-base leading-relaxed pt-5 border-t" style="color: var(--text-secondary); border-color: var(--border-color);">
+        {en.summary}
+      </p>
+    </div>
+
+    <div class="text-center mt-6">
+      <a
+        href={attraction.mapsShareUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-sm sm:text-base font-semibold hover:opacity-70"
+        style="color: var(--accent);"
+      >
+        📍 {cta} ↗
+      </a>
+    </div>
+  </div>
+</section>

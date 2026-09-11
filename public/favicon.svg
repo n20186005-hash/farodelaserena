@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Faro Monumental de La Serena">
+  <rect width="64" height="64" rx="12" fill="#2d5a3d" />
+  <polygon points="32,9 25,26 39,26" fill="#c76b2a" />
+  <rect x="25" y="26" width="14" height="7" rx="1" fill="#ffd479" />
+  <polygon points="23,33 41,33 43,51 21,51" fill="#f6f1e7" />
+  <polygon points="23.6,39 40.4,39 41,43 23,43" fill="#d4843d" />
+  <rect x="15" y="51" width="34" height="6" rx="1" fill="#f6f1e7" />
+  <rect x="0" y="57" width="64" height="7" fill="#2d7a8d" />
+</svg>

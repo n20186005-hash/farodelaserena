@@ -1,0 +1,67 @@
+---
+import { getI18n } from '../i18n/ui';
+const { messages } = getI18n(Astro.url);
+const p = messages.planning;
+---
+
+<section id="planning" class="section-padding" style="background: var(--bg-primary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{p.title}</h2>
+    <p class="text-base sm:text-lg mb-10 max-w-3xl" style="color: var(--text-secondary);">{p.subtitle}</p>
+
+    <!-- seasons -->
+    <h3 class="font-display text-xl sm:text-2xl font-semibold mb-4" style="color: var(--text-primary);">{p.seasonsTitle}</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+      {p.seasons.map((season) => (
+        <article class="rounded-2xl border p-5" style="background: var(--card-bg); border-color: var(--border-color);">
+          <p class="font-semibold mb-0.5" style="color: var(--text-primary);">{season.name}</p>
+          <p class="text-xs mb-3" style="color: var(--accent);">{season.temp}</p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{season.text}</p>
+        </article>
+      ))}
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6 mb-12">
+      <!-- best hours -->
+      <article class="rounded-2xl border p-6" style="background: var(--card-bg); border-color: var(--border-color);">
+        <h3 class="font-display text-xl sm:text-2xl font-semibold mb-3" style="color: var(--text-primary);">{p.hoursTitle}</h3>
+        <p class="text-sm leading-relaxed mb-5" style="color: var(--text-secondary);">{p.hoursText}</p>
+        <ul class="space-y-2.5">
+          {p.hours.map((slot) => (
+            <li class="flex gap-3 text-sm">
+              <span class="shrink-0 font-semibold min-w-[7.5rem]" style="color: var(--accent);">{slot.label}</span>
+              <span class="leading-relaxed" style="color: var(--text-secondary);">{slot.text}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+
+      <!-- photography -->
+      <article class="rounded-2xl border p-6" style="background: var(--card-bg); border-color: var(--border-color);">
+        <h3 class="font-display text-xl sm:text-2xl font-semibold mb-3" style="color: var(--text-primary);">📷 {p.photoTitle}</h3>
+        <ul class="space-y-3">
+          {p.photo.map((tip) => (
+            <li class="flex gap-3 text-sm leading-relaxed" style="color: var(--text-secondary);">
+              <span aria-hidden="true" style="color: var(--accent);">›</span>
+              <span>{tip}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+    </div>
+
+    <!-- itineraries -->
+    <h3 class="font-display text-xl sm:text-2xl font-semibold mb-4" style="color: var(--text-primary);">{p.itineraryTitle}</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {p.itineraries.map((plan) => (
+        <article class="rounded-2xl border p-5 flex flex-col" style="background: var(--card-bg); border-color: var(--border-color);">
+          <div class="flex items-baseline justify-between gap-3 mb-2">
+            <h4 class="font-semibold" style="color: var(--text-primary);">{plan.name}</h4>
+            <span class="text-xs whitespace-nowrap px-2 py-0.5 rounded-full" style="background: var(--bg-tertiary); color: var(--text-muted);">{plan.duration}</span>
+          </div>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{plan.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

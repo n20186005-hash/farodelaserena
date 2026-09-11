@@ -1,0 +1,22 @@
+---
+import { getI18n } from '../i18n/ui';
+const { messages } = getI18n(Astro.url);
+const d = messages.didYouKnow;
+---
+
+<section id="facts" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{d.title}</h2>
+    <p class="text-base sm:text-lg mb-10 max-w-3xl" style="color: var(--text-secondary);">{d.subtitle}</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {d.items.map((fact) => (
+        <article class="rounded-2xl border p-5" style="background: var(--card-bg); border-color: var(--border-color);">
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full text-xl mb-3" style="background: var(--bg-secondary);" aria-hidden="true">{fact.icon}</span>
+          <h3 class="font-semibold mb-2 leading-snug" style="color: var(--text-primary);">{fact.title}</h3>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">{fact.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,11 +1,12 @@
 ---
 import { getI18n } from '../i18n/ui';
+import { attraction } from '../config';
 const { messages } = getI18n(Astro.url);
 const m = messages.mapSection;
-const embedUrl = 'https://www.google.com/maps?q=Faro+Monumental+de+La+Serena,+Chile&output=embed';
+const embedUrl = attraction.mapsEmbedSrc;
 ---
 
-<section id="map" class="section-padding" style="background: var(--bg-secondary);">
+<section id="map" class="section-padding" style="background: var(--bg-tertiary);">
   <div class="max-w-4xl mx-auto px-4">
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">{m.title}</h2>
     <p class="text-center text-base sm:text-lg mb-8" style="color: var(--text-secondary);">{m.subtitle}</p>
@@ -18,8 +19,9 @@ const embedUrl = 'https://www.google.com/maps?q=Faro+Monumental+de+La+Serena,+Ch
         height="420"
         style="border:0;"
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title={m.title}
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+        title={`${m.title} — ${attraction.fullName}, ${attraction.city}, ${attraction.country}`}
       ></iframe>
     </div>
 

@@ -21,6 +21,11 @@ export function getLangFromUrl(url: URL): string {
   return (languagesList as readonly string[]).includes(lang) ? lang : defaultLang;
 }
 
+/** Messages for an explicit locale — used when a page needs a second language inline. */
+export function getMessages(lang: string) {
+  return ui[lang] ?? ui[defaultLang];
+}
+
 export function getI18n(url: URL) {
   const lang = getLangFromUrl(url);
   const messages = ui[lang];

@@ -1,7 +1,13 @@
 {
   "meta": {
-    "title": "Faro Monumental de La Serena | La Serena, Chile",
-    "description": "Guía completa del Faro Monumental de La Serena: historia, el Plan Serena y su estilo neocolonial, fotos, opiniones de visitantes y cómo llegar en La Serena, Chile."
+    "title": "Faro Monumental de La Serena: Guía, Historia y Cómo Llegar",
+    "description": "El Faro Monumental de La Serena mide 28 m, es Monumento Histórico desde 2010 y está en la Avenida del Mar. Horarios, cómo llegar, mapa y qué ver cerca.",
+    "schemaDescription": "Guía de visitantes del Faro Monumental de La Serena (La Serena, Región de Coquimbo, Chile): altura de 28 m, historia y patrimonio cultural, horarios, cómo llegar y qué ver en la Avenida del Mar."
+  },
+  "visitorSnapshot": {
+    "title": "Resumen en inglés para visitantes internacionales",
+    "subtitle": "Datos esenciales en inglés —dirección, horario, entrada y cómo llegar— para quienes llegan desde el extranjero.",
+    "mapsCta": "Ver ubicación en Google Maps"
   },
   "header": {
     "siteName": "Faro Monumental de La Serena",
@@ -13,6 +19,8 @@
     "reviews": "Opiniones",
     "faq": "Preguntas",
     "map": "Mapa",
+    "weather": "Clima",
+    "services": "Servicios",
     "backToHome": "Volver al inicio"
   },
   "common": {
@@ -22,10 +30,12 @@
   "hero": {
     "title": "Faro Monumental de La Serena",
     "subtitle": "Un faro-monumento de estilo neocolonial construido por la Armada de Chile entre 1950 y 1951, mirador y símbolo de La Serena frente al Pacífico.",
-    "rating": "4.2(25.923)",
-    "reviewCount": "25.923 opiniones",
+    "rating": "4.2(26.009)",
+    "reviewCount": "26.009 opiniones",
     "hours": "Mar–Dom 10:00–14:00 y 14:30–17:00 · Lun cerrado",
+    "location": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
     "openMaps": "Ver ubicación",
+    "seeWeather": "Ver clima",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "intro": {
@@ -53,6 +63,8 @@
   "transportSection": {
     "title": "Cómo llegar al Faro Monumental",
     "subtitle": "Desde tu llegada a La Serena en avión, bus o auto hasta el último tramo por la Avenida del Mar, aquí tienes las formas más habituales de llegar al Faro Monumental.",
+    "shortAnswerTitle": "Respuesta rápida: cómo llegar al Faro",
+    "shortAnswer": "El Faro Monumental de La Serena está en Avda. Francisco de Aguirre con Avenida del Mar, frente a la playa. Desde la Plaza de Armas, en el centro de La Serena, son unos 10–15 minutos en auto, taxi o colectivo por la costanera; desde el aeropuerto de La Florida (LSC), unos 15–20 minutos en taxi o transfer; y desde el terminal de buses, cerca de 10 minutos. También se llega caminando o en bicicleta por la Avenida del Mar.",
     "overviewTitle": "Primero define tu punto de partida",
     "overviewText": "La Serena se encuentra en el norte de Chile, a unas 470 km de Santiago por la Ruta 5 Norte (Panamericana). Si vienes de lejos, lo habitual es volar al Aeropuerto de La Florida o tomar un bus de larga distancia; desde ahí, el Faro está a pocos minutos en auto, taxi o transporte público por la avenida costanera. Para la mayoría de los visitantes, el Faro es un destino urbano al que se llega con un corto traslado final.",
     "arrivalTitle": "Antes de salir",
@@ -147,7 +159,8 @@
     "text": "El Faro Monumental de La Serena fue construido por la Armada de Chile y entregado a la Municipalidad de La Serena el 7 de noviembre de 1985 para uso turístico y cultural. Forma parte de los hitos del Plan Serena, la renovación urbana de los años 50 que le dio a la ciudad su imagen neocolonial unificada. En la actualidad, la torre sigue como baliza de apoyo a la navegación y el recinto funciona como mirador, pequeño museo y punto de encuentro ciudadano frente al Pacífico."
   },
   "knowledge": {
-    "title": "Historia, significado y leyenda del Faro",
+    "title": "Historia y Patrimonio Cultural del Faro Monumental",
+    "intro": "El Faro Monumental de La Serena es más que un mirador: es el hito que resume la historia urbana de la ciudad, su arquitectura neocolonial y su condición de patrimonio cultural de Chile. Estas secciones recorren sus orígenes en el Plan Serena (1948–1952), el sentido de su diseño con forma de fortaleza, la leyenda que le atribuye la costa y el valor patrimonial que lo protege desde 2010.",
     "sections": [
       {
         "id": "history",
@@ -168,6 +181,31 @@
         "id": "significance",
         "title": "Un símbolo de La Serena",
         "content": "Hoy el Faro Monumental es, junto a la Catedral neocolonial y la Plaza de Armas, el rostro más reconocible de La Serena. Su silueta almenada preside la Avenida del Mar y aparece en postales, souvenirs y en la memoria de quienes crecieron viendo el Pacífico desde sus pies. Declarado Monumento Histórico en 2010, es además el único faro de Chile que ostenta esa distinción y que funciona a la vez como mirador público."
+      },
+      {
+        "id": "architecture",
+        "title": "Arquitectura y construcción",
+        "content": "La torre alcanza cerca de 28 metros de altura y unos 4 metros de diámetro en la base, y se levanta sobre una plataforma que funciona a la vez como recinto de acceso y como mirador. El cuerpo es de hormigón armado revestido con piedra de la zona, y su perfil imita una torre de homenaje de fortaleza colonial: muros ligeramente inclinados, almenas en la coronación y un volumen macizo que contrasta con la ligereza del océano. En su interior, una escalera en espiral conduce al nivel superior, donde se ubica la sala de luz acristalada. El resultado es un híbrido deliberado: ingeniería de faro moderno vestida con el lenguaje formal de la arquitectura colonial española."
+      },
+      {
+        "id": "navigation",
+        "title": "Función como ayuda a la navegación",
+        "content": "Un faro es, antes que nada, una señal. El de La Serena se pensó para marcar la aproximación a la bahía y al puerto vecino de Coquimbo, y para orientar a las embarcaciones pesqueras y deportivas que buscan la desembocadura del río Elqui. Su luz, montada en la sala acristalada de la coronación, se proyecta sobre el Pacífico como referencia nocturna, mientras que de día la silueta almenada cumple esa misma función. Con la llegada de los sistemas satelitales y las balizas automáticas su papel como ayuda primaria se redujo, pero el recinto se mantiene como baliza de apoyo y como pieza inseparable del paisaje costero."
+      },
+      {
+        "id": "planSerena",
+        "title": "El Plan Serena y la ciudad neocolonial",
+        "content": "Detrás del Faro hay un proyecto urbano completo. Entre 1948 y 1952, el Plan Serena buscó dotar a la ciudad de una imagen coherente y moderna tomando como referencia su propio pasado colonial. Impulsado por el presidente Gabriel González Videla, nacido en La Serena, el plan reordenó el centro, construyó equipamientos públicos y unificó una estética de arcos, tejas, patios y balcones que hoy define la Plaza de Armas, la Catedral y los edificios cívicos. El Faro es una pieza de ese conjunto: el hito que remata la Avenida del Mar y da la bienvenida a la ciudad desde el mar."
+      },
+      {
+        "id": "heritage",
+        "title": "Patrimonio y conservación",
+        "content": "El 9 de junio de 2010, el Faro Monumental de La Serena fue declarado Monumento Histórico de Chile, un reconocimiento que destacó tanto su valor arquitectónico como su papel en la identidad local. La declaratoria lo protege como bien patrimonial y obliga a que cualquier intervención resguarde sus características originales. En las últimas décadas el recinto se ha ido adaptando al uso turístico: recorridos señalizados, paneles patrimoniales y espacios para exposiciones y artesanía, siempre con la torre como protagonista. Al visitarlo, conviene tratarlo como lo que es: un monumento, no solo un mirador con vistas."
+      },
+      {
+        "id": "culture",
+        "title": "El Faro en la vida cotidiana",
+        "content": "Más allá de su función, el Faro es un punto de encuentro. Frente a sus muros se recibe el Año Nuevo sobre la Avenida del Mar, se corren carreras costeras, se hacen sesiones de fotos de graduación y se reúnen familias en las tardes de verano. Aparece en postales, murales, souvenirs y en la memoria de generaciones de escolares que subieron a su mirador en una salida de curso. Es, en el sentido más literal, el lugar donde La Serena mira al mar."
       }
     ]
   },
@@ -177,6 +215,7 @@
     "photoAlt": "Faro Monumental de La Serena de estilo neocolonial frente al océano Pacífico",
     "viewAll": "Ver ubicación en Google Maps",
     "showMore": "Mostrar más fotos",
+    "photoCountLabel": "fotos",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "reviews": {
@@ -212,13 +251,15 @@
     ]
   },
   "mapSection": {
-    "title": "Cómo llegar",
+    "title": "Mapa y ubicación del Faro Monumental",
     "subtitle": "Avenida del Mar con Avenida Francisco de Aguirre, La Serena, Región de Coquimbo, Chile",
     "openMaps": "Abrir en Google Maps",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "footer": {
     "siteName": "Faro Monumental de La Serena",
+    "address": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
+    "plusCode": "3PVG+Q7 La Serena, Chile",
     "rights": "© 2026 Faro Monumental de La Serena — Guía de viaje independiente y sin fines de lucro. Todos los derechos reservados.",
     "privacy": "Política de privacidad",
     "terms": "Términos del servicio",
@@ -234,7 +275,25 @@
       { "name": "Gobierno Regional de Coquimbo", "url": "https://www.gorecoquimbo.cl/" },
       { "name": "Ministerio de las Culturas, las Artes y el Patrimonio", "url": "https://www.cultura.gob.cl/" }
     ],
-    "disclaimer": "Este es un proyecto independiente y sin fines de lucro de información para visitantes. No estamos afiliados con ningún organismo gubernamental ni institución oficial."
+    "disclaimer": "Este es un proyecto independiente y sin fines de lucro de información para visitantes. No estamos afiliados con ningún organismo gubernamental ni institución oficial.",
+    "photoRights": "Derechos de imagen: la propiedad y los derechos de autor de todas las imágenes mostradas en este sitio pertenecen a sus fotógrafos originales."
+  },
+  "entity": {
+    "breadcrumbLabel": "Ruta de navegación",
+    "breadcrumbHome": "Inicio",
+    "aboutTitle": "Sobre el Faro Monumental de La Serena",
+    "welcome": "Bienvenido al Faro Monumental de La Serena, conocido popularmente como el Faro de La Serena. Ubicado en el corazón de La Serena, Región de Coquimbo, Chile, este destino es un punto de referencia esencial para los viajeros que visitan la región.",
+    "hierarchyTitle": "Ubicación y jerarquía geográfica",
+    "hierarchy": "Faro Monumental de La Serena → La Serena → Región de Coquimbo → Chile",
+    "nearbyTitle": "Monumentos y atractivos cerca del Faro",
+    "nearbyText": "Al visitar el Faro Monumental de La Serena, los visitantes pueden explorar fácilmente monumentos históricos y puntos de interés cercanos, como la Plaza de Armas de La Serena y el Jardín del Corazón (Avenida del Mar).",
+    "nearbyMore": "Ver atracciones cercanas"
+  },
+  "sources": {
+    "title": "Fuentes y referencias",
+    "intro": "Esta guía de visitantes se basa en información de organismos oficiales y de turismo. Para actualizaciones oficiales e información turística regional, consulta el portal de turismo oficial:",
+    "officialPortalLabel": "Portal oficial de turismo de Chile / Región de Coquimbo",
+    "photoRights": "Derechos de imagen: la propiedad y los derechos de autor de todas las imágenes mostradas en este sitio pertenecen a sus fotógrafos originales."
   },
   "privacy": {
     "title": "Política de privacidad",
@@ -341,6 +400,14 @@
           {
             "q": "¿Cuánto mide y se puede subir?",
             "a": "La torre mide cerca de 28 metros de altura y unos 4 metros de diámetro en su base. Se puede subir al mirador interior para contemplar la costa del Pacífico, la desembocadura del río Elqui y la bahía de La Serena; confirma el acceso y el costo en el lugar."
+          },
+          {
+            "q": "¿Cuánto mide el Faro de La Serena?",
+            "a": "El Faro Monumental de La Serena mide cerca de 28 metros de altura, con unos 4 metros de diámetro en su base. No es alto para los estándares marítimos: su valor está en la silueta monumental y en el mirador, desde donde se ve la bahía de La Serena, la desembocadura del río Elqui y la costa del Pacífico."
+          },
+          {
+            "q": "¿Con qué objetivo se construyó el Faro de La Serena?",
+            "a": "Se construyó con un doble objetivo. Por un lado, servir de baliza y referencia para la navegación en la aproximación a la bahía de La Serena y al puerto de Coquimbo. Por otro, funcionar como hito cívico y simbólico del Plan Serena (1948–1952), la renovación urbana que le dio a la ciudad su imagen neocolonial. La Armada de Chile encargó el diseño al ingeniero Jorge Cisternas Larenas como un faro 'monumental': una señal marítima vestida de fortaleza colonial que remata la Avenida del Mar y recibe a quien llega por la costa."
           }
         ]
       },
@@ -387,6 +454,341 @@
       { "name": "City tour La Serena y Coquimbo", "url": "https://www.chile.travel/" },
       { "name": "Excursión al Valle del Elqui", "url": "https://www.chile.travel/" },
       { "name": "Tour astronómico en observatorios", "url": "https://www.sernatur.cl/" }
+    ]
+  },
+  "weather": {
+    "title": "Clima en La Serena: condiciones actuales y pronóstico de 7 días",
+    "subtitle": "Antes de subir al mirador, revisa cómo está el día en el borde costero: temperatura, viento, probabilidad de lluvia y radiación ultravioleta para los próximos días.",
+    "currentTitle": "Ahora mismo",
+    "forecastTitle": "Próximos 7 días",
+    "today": "Hoy",
+    "feelsLike": "Sensación térmica",
+    "humidity": "Humedad",
+    "wind": "Viento",
+    "precipitation": "Lluvia",
+    "uvIndex": "Índice UV",
+    "sunrise": "Amanecer",
+    "sunset": "Atardecer",
+    "updated": "Actualizado",
+    "loading": "Consultando las condiciones actuales del borde costero…",
+    "unavailable": "No fue posible cargar el pronóstico en este momento.",
+    "sourceLabel": "Fuente meteorológica",
+    "rainChance": "Prob. de lluvia",
+    "rainAccum": "Lluvia acumulada",
+    "riskTitle": "Avisos para hoy",
+    "riskNote": "Calculado con el pronóstico de las próximas 24 horas; es una orientación, no un aviso oficial.",
+    "allClear": "Hoy no hay nada que obligue a cambiar el plan: disfruta la visita con normalidad.",
+    "travelTitle": "Qué ponerte",
+    "playTitle": "Qué hacer hoy",
+    "gearTitle": "Qué llevar",
+    "marineTitle": "Estado del mar",
+    "waveHeight": "Ola actual",
+    "waveMax": "Ola máxima de hoy",
+    "wavePeriod": "Período de ola",
+    "seaTemp": "Temperatura del mar",
+    "tideLabel": "Marea",
+    "tideRange": "Amplitud",
+    "tideHigh": "pleamar",
+    "tideLow": "bajamar",
+    "tideRising": "subiendo",
+    "tideFalling": "bajando",
+    "tideSteady": "estable",
+    "tideTitle": "Marea",
+    "tideTodayLabel": "Curva de hoy, hora a hora",
+    "tideNextLabel": "Próxima marea",
+    "tideAdviceTitle": "Cuándo bajar a la orilla",
+    "tideHintRising": "La marea está subiendo: el agua gana terreno, no te quedes en las rocas ni en las zonas bajas.",
+    "tideHintFalling": "La marea está bajando: aparecen arena y rocas, buen momento para explorar la orilla.",
+    "tideHintSteady": "La marea se mueve poco ahora mismo: cómodo para pasear por el borde costero.",
+    "tideHintNextLow": "La próxima bajamar es hacia las {time}: la hora anterior y posterior es la mejor ventana para ver pozas y rocas.",
+    "tideHintNextHigh": "La próxima pleamar es hacia las {time}: las rocas y los pasos de la orilla quedan cubiertos, extrema la precaución.",
+    "marineNote": "Las horas de marea son una estimación del modelo; en la zona de rocas guíate por la señalética y el personal de salvamento.",
+    "groups": {
+      "clear": "Despejado",
+      "mainlyClear": "Mayormente despejado",
+      "partlyCloudy": "Parcialmente nublado",
+      "overcast": "Nublado",
+      "fog": "Niebla / camanchaca",
+      "drizzle": "Llovizna",
+      "rain": "Lluvia",
+      "showers": "Chubascos",
+      "snow": "Nieve",
+      "thunderstorm": "Tormenta"
+    },
+    "days": ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+    "tips": {
+      "riskStorm": "Tormenta eléctrica: no te refugies bajo árboles ni permanezcas en la playa o sobre las rocas. Los deportes acuáticos se cierran.",
+      "riskHeavyRain": "Lluvia intensa: evita quebradas, zonas bajas y los senderos resbaladizos junto a las rocas.",
+      "riskStrongWind": "Viento muy fuerte: aléjate de carteles, sombrillas, rocas del borde costero y estructuras provisionales.",
+      "riskHighWave": "Oleaje alto: no camines por las rocas ni por el borde donde rompen las olas, y no te bañes.",
+      "riskSnow": "Puede nevar: calzado con agarre y precaución con el hielo en la calzada.",
+      "riskFog": "Niebla densa: la visibilidad es baja, los ferris y vuelos pueden retrasarse y conviene conducir con luces antiniebla.",
+      "riskHeat": "Calor extremo: riesgo de insolación, evita la exposición prolongada al mediodía.",
+      "riskUV": "Radiación ultravioleta extrema: te puedes quemar en pocos minutos, protégete siempre.",
+      "travelHeavyRain": "Lluvia y viento: mejor un cortavientos impermeable y calzado que no resbale.",
+      "travelDrizzle": "Llovizna: el suelo queda resbaladizo, camina con cuidado.",
+      "travelCold": "Temperatura baja: abrígate bien antes de salir.",
+      "travelHot": "Hace calor: evita el mediodía y usa ropa ligera y transpirable.",
+      "travelSwing": "Gran diferencia entre el día y la noche: lleva una capa de abrigo fácil de poner y quitar.",
+      "travelWindy": "Viento notable: en la costa se siente más frío, añade una capa cortavientos.",
+      "travelSunny": "Día despejado: ideal para estar al aire libre, pero no olvides la protección solar.",
+      "travelCloudy": "Cielo cubierto: la luz es suave, muy buena para fotografiar y sin sol directo.",
+      "playStorm": "No es día para actividades al aire libre; los deportes acuáticos estarán cerrados. Prioriza museos y espacios cubiertos.",
+      "playHeavyRain": "Desaconsejado para planes al aire libre; paseos en barco y teleféricos pueden suspenderse. Mejor espacios interiores.",
+      "playRain": "Probabilidad alta de lluvia: aplaza el senderismo y la playa, o llévalos con buen impermeable.",
+      "playDrizzle": "Los planes descubiertos pierden bastante; conviene alternar con recintos cubiertos.",
+      "playStrongWind": "Con este viento, las actividades marítimas suelen cancelarse; además conviene no acercarse a las rocas.",
+      "playWindy": "Paseos en barco y algunas atracciones al aire libre pueden suspender servicio; súbete con cuidado al mirador.",
+      "playFog": "Con esta niebla no se disfruta del paisaje marino ni de las vistas desde la torre.",
+      "playHot": "Reduce el tiempo al aire libre y evita la franja central del día; hidrátate a menudo.",
+      "playSeaWarm": "El agua está templada: aun así, báñate acompañado y respeta las banderas y el estado del oleaje.",
+      "playSeaCold": "El agua está fría: no prolongues el baño y sécalo y abrígate al salir.",
+      "playTideLow": "Bajando la marea es buen momento para explorar la orilla; no te alejes demasiado y controla la hora de la pleamar.",
+      "playSunny": "Cielo limpio: buen día para el amanecer y, sobre todo, para el atardecer sobre el Pacífico.",
+      "playCloudy": "Sin sol fuerte: perfecto para caminar y fotografiar durante horas.",
+      "playCoastal": "En la costa hay viento y las rocas resbalan: mira dónde pisas, vigila la marea y no te bañes solo.",
+      "gearRaincoat": "Impermeable (con viento, mejor que un paraguas largo)",
+      "gearUmbrella": "Paraguas o impermeable",
+      "gearFoldUmbrella": "Paraguas plegable",
+      "gearSunscreen": "Protector solar, gafas de sol y sombrero",
+      "gearHydration": "Agua suficiente y algo para el calor",
+      "gearWarm": "Abrigo grueso y bufanda",
+      "gearWindy": "El sombrero vuela: mejor evitar faldas amplias y prendas sueltas",
+      "gearMask": "Mascarilla (más cómoda cuando la visibilidad es baja)",
+      "gearLayer": "Una chaqueta fácil de poner y quitar",
+      "gearSunglasses": "Gafas de sol, el reflejo del mar es intenso",
+      "gearFootwear": "Calzado con agarre: arena y rocas quedan resbaladizas"
+    }
+  },
+  "practicalInfo": {
+    "title": "Información práctica para la visita",
+    "subtitle": "Los servicios que suelen importar al visitante, descritos por tipo de establecimiento y por su cercanía al Faro.",
+    "neutralNote": "Esta guía es un proyecto ciudadano independiente y sin fines de lucro: no recomendamos ni promocionamos establecimientos concretos. Solo indicamos qué tipo de servicio encontrarás y a qué distancia aproximada, para que puedas elegir con total libertad.",
+    "whereLabel": "Dónde:",
+    "items": [
+      {
+        "icon": "🚻",
+        "title": "Baños públicos (WC)",
+        "text": "Los aseos más cercanos suelen estar en el propio recinto del Faro, en el pequeño museo, en las cafeterías y restaurantes del sector y en los kioscos de playa cuando hay temporada. No todos son gratuitos: muchos son de uso exclusivo para clientes.",
+        "where": "Recinto del Faro, museo y locales de la Avenida del Mar (a pocos metros)."
+      },
+      {
+        "icon": "🅿️",
+        "title": "Estacionamiento",
+        "text": "Hay estacionamiento de superficie y zonas de parquímetro a lo largo de la Avenida del Mar y en las calles aledañas, además de recintos privados de pago. En enero, febrero y los fines de semana se llena: llega temprano o deja el auto a unas cuadras y termina caminando.",
+        "where": "Avenida del Mar y calles interiores cercanas (0–500 m)."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Restaurantes y cafeterías",
+        "text": "La zona costanera concentra restaurantes de cocina marina y chilena, cafeterías, pizzerías y locales de comida rápida. La oferta es mayor en el centro de La Serena y en el sector del mercado. En verano suelen aparecer kioscos y carros de comida junto a la playa.",
+        "where": "Avenida del Mar y centro de La Serena (5–15 min en auto o bus)."
+      },
+      {
+        "icon": "🏨",
+        "title": "Alojamiento",
+        "text": "La oferta incluye hoteles, apart-hoteles, cabañas, hostales y alojamiento turístico familiar. Los más próximos están en la propia Avenida del Mar; el centro ofrece más variedad y rangos de precio, y Coquimbo es una alternativa a pocos minutos.",
+        "where": "Avenida del Mar, centro de La Serena y Coquimbo (0–15 min)."
+      },
+      {
+        "icon": "🛒",
+        "title": "Supermercados y comercio",
+        "text": "Hay supermercados, minimarkets, farmacias y tiendas de conveniencia tanto en el centro como en los ejes principales hacia la costa. El mercado de artesanías y productos locales de la ciudad es el punto de referencia para compras típicas.",
+        "where": "Centro de La Serena, avenidas principales y mercado (5–15 min)."
+      },
+      {
+        "icon": "⛽",
+        "title": "Combustible y carga eléctrica",
+        "text": "Existen estaciones de servicio en los accesos a la ciudad, la Ruta 5 Norte y las avenidas principales, varias con tienda de conveniencia y aire. Los puntos de carga para vehículos eléctricos se ubican sobre todo en el sector urbano y en estacionamientos de hoteles y centros comerciales.",
+        "where": "Avenidas principales y accesos a la ciudad (5–20 min)."
+      },
+      {
+        "icon": "🏧",
+        "title": "Cajeros automáticos y banca",
+        "text": "Los cajeros se concentran en el centro, en los centros comerciales y en las avenidas principales; en la costanera la disponibilidad es menor. Conviene llevar algo de efectivo para ferias, kioscos y estacionamientos.",
+        "where": "Centro de La Serena y centros comerciales (10–15 min)."
+      },
+      {
+        "icon": "💊",
+        "title": "Farmacias y salud",
+        "text": "Hay farmacias en el centro y en los ejes comerciales, con turnos rotativos de urgencia. Para atención médica, La Serena y Coquimbo cuentan con hospitales, clínicas y servicios de urgencia.",
+        "where": "Centro de La Serena, Coquimbo y avenidas principales (10–20 min)."
+      },
+      {
+        "icon": "📶",
+        "title": "Conectividad y wifi",
+        "text": "La cobertura móvil en la ciudad y la costanera es buena. El wifi abierto aparece en algunos espacios públicos y en la mayoría de cafeterías y alojamientos, aunque en el borde costero no es un servicio continuo.",
+        "where": "Zona urbana y costanera; señal variable en la playa."
+      },
+      {
+        "icon": "♿",
+        "title": "Accesibilidad",
+        "text": "El acceso al recinto y a la base del Faro es en su mayor parte plano, con rampas y senderos aptos para silla de ruedas y coche de bebé. La subida al mirador superior se hace por escaleras y no es accesible en silla de ruedas.",
+        "where": "Acceso y base del Faro; mirador superior solo por escaleras."
+      },
+      {
+        "icon": "🧭",
+        "title": "Información turística",
+        "text": "Las oficinas municipales y el servicio nacional de turismo mantienen puntos de información en el centro de La Serena y en Coquimbo, donde entregan mapas, horarios y actividades de la zona. Los paneles del propio Faro explican su historia.",
+        "where": "Centro de La Serena y Coquimbo (10–15 min)."
+      },
+      {
+        "icon": "🐕",
+        "title": "Mascotas y normas de convivencia",
+        "text": "El paseo por la costanera admite mascotas con correa y limpieza responsable; dentro del recinto y del museo suelen aplicarse restricciones. Respeta la señalética, no trepes a las almenas y lleva tu basura contigo.",
+        "where": "Paseo costero y playa; con restricciones dentro del recinto."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Línea de tiempo del Faro",
+    "subtitle": "De la fundación de la ciudad al monumento actual: los hitos que explican por qué el Faro ocupa el centro del imaginario serenense.",
+    "items": [
+      {
+        "year": "1544",
+        "title": "Fundación de La Serena",
+        "text": "Juan Bohón funda la ciudad, que se convierte en una de las más antiguas de Chile y en un punto estratégico de la costa semiárida del norte. Esa antigüedad colonial es la referencia que, siglos después, inspirará su arquitectura neocolonial."
+      },
+      {
+        "year": "1948–1952",
+        "title": "El Plan Serena",
+        "text": "El presidente Gabriel González Videla impulsa una renovación urbana integral que reordena el centro y le da a La Serena una imagen neocolonial unificada, con arcos, tejas y patios que todavía definen la ciudad."
+      },
+      {
+        "year": "1950–1951",
+        "title": "Construcción del faro",
+        "text": "La Armada de Chile levanta la torre según el diseño del ingeniero Jorge Cisternas Larenas, concebida como faro monumental y no solo como señal marítima."
+      },
+      {
+        "year": "1953",
+        "title": "Inauguración oficial",
+        "text": "El 24 de octubre el Faro Monumental queda inaugurado y empieza a operar como baliza y como hito urbano sobre la Avenida del Mar."
+      },
+      {
+        "year": "1985",
+        "title": "Entrega a la Municipalidad",
+        "text": "El 7 de noviembre la Armada entrega el recinto a la Municipalidad de La Serena para uso turístico y cultural, abriendo el mirador a la ciudadanía."
+      },
+      {
+        "year": "2010",
+        "title": "Monumento Histórico Nacional",
+        "text": "El 9 de junio el Faro es declarado Monumento Histórico de Chile, una distinción excepcional entre los faros del país."
+      },
+      {
+        "year": "Hoy",
+        "title": "Mirador, museo y símbolo",
+        "text": "El recinto funciona como mirador, pequeño museo, feria de artesanías y escenario de la vida ciudadana frente al Pacífico."
+      }
+    ]
+  },
+  "planning": {
+    "title": "Cuándo y cómo visitarlo",
+    "subtitle": "La Serena tiene un clima semiárido costero: sol la mayor parte del año, amplitudes térmicas entre el día y la noche y niebla matinal en algunos meses. Estas pautas te ayudan a elegir el mejor momento.",
+    "seasonsTitle": "Clima y mejores temporadas",
+    "seasons": [
+      {
+        "name": "Verano",
+        "temp": "dic–feb · 16–26 °C",
+        "text": "Temporada alta. Días largos y luminosos, playa llena y más afluencia en la Avenida del Mar. Conviene visitar temprano o al atardecer."
+      },
+      {
+        "name": "Otoño",
+        "temp": "mar–may · 11–22 °C",
+        "text": "Meses muy agradables y tranquilos, con luz cálida y menos visitantes. Excelente para fotografía y para caminar la costanera."
+      },
+      {
+        "name": "Invierno",
+        "temp": "jun–ago · 8–18 °C",
+        "text": "Más fresco y con mayor humedad y camanchaca matinal. Las lluvias son escasas pero pueden aparecer, y el viento del Pacífico se siente con fuerza en el mirador."
+      },
+      {
+        "name": "Primavera",
+        "temp": "sep–nov · 11–22 °C",
+        "text": "Clima suave, cielos limpios y buena visibilidad hacia la bahía. Una de las mejores épocas para combinar el Faro con excursiones al Valle del Elqui."
+      }
+    ],
+    "hoursTitle": "Mejores horas del día",
+    "hoursText": "El recinto abre de martes a domingo en dos bloques, de 10:00 a 14:00 y de 14:30 a 17:00. Según la luz y el viento, cada franja ofrece una experiencia distinta.",
+    "hours": [
+      {
+        "label": "Amanecer",
+        "text": "La luz del este ilumina la torre de frente y la ciudad aparece despejada. Ideal para fotografiar sin gente, aunque el recinto todavía está cerrado."
+      },
+      {
+        "label": "10:00–12:00",
+        "text": "La franja más tranquila del horario de apertura: menos visitantes, temperaturas suaves y buena visibilidad."
+      },
+      {
+        "label": "12:00–15:00",
+        "text": "Mayor radiación y más afluencia. Útil si quieres ver el museo y la feria; llega con protección solar."
+      },
+      {
+        "label": "18:00–20:00",
+        "text": "La mejor luz del día, con el sol cayendo sobre el Pacífico. El mirador suele estar cerrado, pero la costanera y la playa están en su mejor momento."
+      }
+    ],
+    "photoTitle": "Consejos de fotografía",
+    "photo": [
+      "Busca la hora dorada: la luz baja de la tarde y del atardecer acentúa las almenas y el color de la piedra.",
+      "Dispara desde la playa, frente a la base, para incluir el Pacífico y la torre en una sola imagen.",
+      "En días de camanchaca, aprovecha la niebla: la silueta almenada gana dramatismo sobre el blanco.",
+      "Aléjate por la Avenida del Mar hacia el norte para conseguir fotos de contexto urbano con la ciudad al fondo.",
+      "Con cielos nocturnos despejados la zona es buena para astrofotografía, aunque el alumbrado de la avenida obliga a exposiciones largas.",
+      "Respeta las áreas señalizadas: la subida al mirador y las barandas tienen normas de seguridad."
+    ],
+    "itineraryTitle": "Ideas de itinerario",
+    "itineraries": [
+      {
+        "name": "Visita esencial",
+        "duration": "45 min",
+        "text": "Recinto, base del Faro, pequeño museo y feria de artesanías. Suficiente para entender la historia y subir al mirador si está abierto."
+      },
+      {
+        "name": "Faro y paseo costero",
+        "duration": "2–3 h",
+        "text": "Suma una caminata por la Avenida del Mar y la playa, con parada en el Jardín del Corazón y una pausa en alguna cafetería del sector."
+      },
+      {
+        "name": "Día completo La Serena–Coquimbo",
+        "duration": "5–6 h",
+        "text": "Combina el Faro con la Plaza de Armas, la Catedral y el mercado de artesanías por la mañana, y cruza por la tarde a Coquimbo para ver la bahía y la Cruz del Tercer Milenio."
+      }
+    ]
+  },
+  "didYouKnow": {
+    "title": "Datos y curiosidades",
+    "subtitle": "Seis claves rápidas para entender el Faro Monumental antes de llegar.",
+    "items": [
+      {
+        "icon": "📏",
+        "title": "28 metros de altura y 4 de base",
+        "text": "La torre alcanza cerca de 28 metros de altura y unos 4 metros de diámetro en su base: dimensiones de señal marítima y, al mismo tiempo, de mirador urbano."
+      },
+      {
+        "icon": "🏛️",
+        "title": "Un faro con protección patrimonial",
+        "text": "Desde 2010 es Monumento Histórico de Chile, una distinción excepcional entre los faros del país, la mayoría de los cuales son infraestructura de navegación sin protección patrimonial."
+      },
+      {
+        "icon": "🏰",
+        "title": "Un faro que también es fortaleza",
+        "text": "Su perfil de castillo con almenas imita las fortificaciones coloniales españolas, un guiño deliberado a la fundación de la ciudad en 1544."
+      },
+      {
+        "icon": "🌫️",
+        "title": "La camanchaca del desierto costero",
+        "text": "El norte semiárido de Chile recibe humedad del océano en forma de niebla matinal. Cuando la camanchaca cubre la costa, la luz del Faro gana importancia para la navegación."
+      },
+      {
+        "icon": "🏞️",
+        "title": "La desembocadura del Elqui",
+        "text": "Desde el mirador se distingue el punto donde el río Elqui entrega sus aguas al Pacífico, el rasgo que dio forma al borde costero de La Serena."
+      },
+      {
+        "icon": "🐦",
+        "title": "Fauna del borde costero",
+        "text": "Pelícanos, cormoranes y gaviotas son habituales sobre la playa y las rocas cercanas; con suerte se observan lobos marinos en la línea de la costa."
+      }
     ]
   }
 }

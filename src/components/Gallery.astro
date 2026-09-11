@@ -1,19 +1,54 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
 import { getI18n } from '../i18n/ui';
+import { attraction } from '../config';
+
 const { messages } = getI18n(Astro.url);
 const g = messages.gallery;
-const images = Array.from({ length: 20 }, (_, i) => `/gallery/faro-monumental-de-la-serena-${i + 1}.jpg`);
+
+// the gallery is discovered from disk, so adding a new photo only means dropping
+// a `faro-monumental-de-la-serena-N.jpg` (plus its .webp variants) into public/gallery
+const GALLERY_DIR = path.join(process.cwd(), 'public', 'gallery');
+const FILE_RE = /^faro-monumental-de-la-serena-(\d+)\.jpg$/;
+
+const images = (fs.existsSync(GALLERY_DIR) ? fs.readdirSync(GALLERY_DIR) : [])
+  .filter((file) => FILE_RE.test(file))
+  .sort((a, b) => Number(a.match(FILE_RE)![1]) - Number(b.match(FILE_RE)![1]))
+  .map((file) => {
+    const base = `/gallery/${file.replace(/\.jpg$/, '')}`;
+    return {
+      src: `${base}.jpg`,
+      small: `${base}-640.webp`,
+      large: `${base}.webp`,
+    };
+  });
 ---
 
 <section id="gallery" class="section-padding" style="background: var(--bg-secondary);">
   <div class="max-w-6xl mx-auto px-4">
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">{g.title}</h2>
-    <p class="text-center text-lg mb-10" style="color: var(--text-secondary);">{g.subtitle}</p>
+    <p class="text-center text-lg mb-10" style="color: var(--text-secondary);">
+      {g.subtitle} · {images.length} {g.photoCountLabel}
+    </p>
 
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" id="gallery-grid">
-      {images.map((src) => (
+      {images.map((image, index) => (
         <div class="gallery-item">
-          <img src={src} alt={g.photoAlt} loading="lazy" class="w-full h-56 object-cover" />
+          <picture>
+            <source
+              type="image/webp"
+              srcset={`${image.small} 640w, ${image.large} 1400w`}
+              sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+            />
+            <img
+              src={image.src}
+              alt={`${attraction.fullName} — ${g.photoAlt} · ${attraction.city}, ${attraction.country} (${index + 1}/${images.length})`}
+              loading="lazy"
+              decoding="async"
+              class="w-full h-56 object-cover"
+            />
+          </picture>
         </div>
       ))}
     </div>

@@ -1,0 +1,905 @@
+---
+import { getI18n } from '../i18n/ui';
+import {
+  getWeather,
+  getMarine,
+  metricsFor,
+  evaluateAdvice,
+  groupForCode,
+  iconForCode,
+  ADVICE_RULES,
+  ADVICE_CAPS,
+  forecastUrl,
+  marineUrl,
+  type AdviceCat,
+  type TideMark,
+} from '../lib/weather';
+
+const { messages } = getI18n(Astro.url);
+const w = messages.weather;
+const tips: Record<string, string> = w.tips ?? {};
+
+// resolved on the server while the page is rendered, then cached by the service
+const weather = await getWeather();
+const marine = weather ? await getMarine() : null;
+
+const safeJson = (value: unknown) => JSON.stringify(value).replace(/</g, '\\u003c');
+
+const days = weather?.daily ?? [];
+const today = days[0];
+const metrics = weather ? metricsFor(weather, marine) : null;
+const advice = metrics
+  ? evaluateAdvice(metrics)
+  : ({ risk: [], travel: [], play: [], gear: [] } as ReturnType<typeof evaluateAdvice>);
+
+// shared scale so every bar in the week is comparable
+const weekMin = days.length ? Math.min(...days.map((d) => d.min)) : 0;
+const weekMax = days.length ? Math.max(...days.map((d) => d.max)) : 0;
+const span = Math.max(1, weekMax - weekMin);
+const bar = (min: number, max: number) => {
+  const left = ((min - weekMin) / span) * 100;
+  const width = Math.max(6, ((max - min) / span) * 100);
+  return `left:${left.toFixed(1)}%;width:${width.toFixed(1)}%;`;
+};
+
+const panels: { key: AdviceCat; icon: string; title: string }[] = [
+  { key: 'travel', icon: '🧳', title: w.travelTitle },
+  { key: 'play', icon: '🗺️', title: w.playTitle },
+  { key: 'gear', icon: '🎒', title: w.gearTitle },
+];
+
+const marineLabels = {
+  tideHigh: w.tideHigh,
+  tideLow: w.tideLow,
+  tideRising: w.tideRising,
+  tideFalling: w.tideFalling,
+  tideSteady: w.tideSteady,
+};
+
+/* --- tide panel: today's sea level curve, drawn from the hourly series --- */
+const tide = marine?.tide ?? null;
+const tideCurve = tide && tide.curve.length > 1 ? tide.curve : [];
+
+const TIDE_X0 = 12;
+const TIDE_X1 = 308;
+const TIDE_Y0 = 14;
+const TIDE_Y1 = 84;
+/** vertical exaggeration floor, so a flat day does not look like a wall */
+const TIDE_MIN_SPAN = 0.2;
+
+const tideGeom = (() => {
+  if (tideCurve.length < 2) return null;
+  const min = Math.min(...tideCurve);
+  const span = Math.max(TIDE_MIN_SPAN, Math.max(...tideCurve) - min);
+  const n = tideCurve.length;
+  return {
+    n,
+    min,
+    span,
+    x: (index: number) => TIDE_X0 + (index / (n - 1)) * (TIDE_X1 - TIDE_X0),
+    y: (level: number) => TIDE_Y1 - ((level - min) / span) * (TIDE_Y1 - TIDE_Y0),
+  };
+})();
+
+const tideLine = tideGeom
+  ? tideCurve.map((level, i) => `${tideGeom.x(i).toFixed(1)},${tideGeom.y(level).toFixed(1)}`).join(' ')
+  : '';
+const tideArea = tideLine ? `${TIDE_X0},${TIDE_Y1} ${tideLine} ${TIDE_X1},${TIDE_Y1}` : '';
+
+const tideDot = (mark: TideMark) => {
+  if (!tideGeom) return null;
+  const hour = Number(mark.time.slice(0, 2));
+  const index = Math.min(tideGeom.n - 1, Math.max(0, Number.isFinite(hour) ? hour : 0));
+  const cy = tideGeom.y(mark.level);
+  // rounded so the server markup and the browser redraw are byte-identical
+  return {
+    mark,
+    cx: Number(tideGeom.x(index).toFixed(1)),
+    cy: Number(cy.toFixed(1)),
+    labelY: Number((cy + (mark.type === 'high' ? -7 : 13)).toFixed(1)),
+    color: mark.type === 'high' ? 'var(--accent)' : '#4b9fd4',
+  };
+};
+
+const tideDots = (tide?.today ?? [])
+  .map(tideDot)
+  .filter((dot): dot is NonNullable<ReturnType<typeof tideDot>> => dot !== null);
+
+const tideState = tide
+  ? tide.trend === 'rising'
+    ? w.tideRising
+    : tide.trend === 'falling'
+      ? w.tideFalling
+      : w.tideSteady
+  : '';
+
+const tideNextText = tide?.next
+  ? `${tide.next.type === 'high' ? w.tideHigh : w.tideLow} ${tide.next.time}`
+  : '—';
+
+/** two short lines: what the water is doing now, then what happens next */
+const tideAdvice = tide
+  ? [
+      tide.trend === 'rising' ? w.tideHintRising : tide.trend === 'falling' ? w.tideHintFalling : w.tideHintSteady,
+      tide.next
+        ? (tide.next.type === 'high' ? w.tideHintNextHigh : w.tideHintNextLow).replace('{time}', tide.next.time)
+        : '',
+    ]
+      .filter(Boolean)
+      .join(' ')
+  : '';
+
+const weekdayLabel = (iso: string, index: number) => {
+  if (index === 0) return w.today;
+  const date = new Date(`${iso}T12:00:00Z`);
+  return (w.days ?? [])[date.getUTCDay()] ?? '';
+};
+
+const clientConfig = {
+  rules: ADVICE_RULES,
+  caps: ADVICE_CAPS,
+  tips,
+  marine: marineLabels,
+  tideHints: {
+    rising: w.tideHintRising,
+    falling: w.tideHintFalling,
+    steady: w.tideHintSteady,
+    nextHigh: w.tideHintNextHigh,
+    nextLow: w.tideHintNextLow,
+  },
+  groups: w.groups,
+  days: w.days,
+  today: w.today,
+  updated: w.updated,
+  labels: {
+    feelsLike: w.feelsLike,
+    humidity: w.humidity,
+    wind: w.wind,
+    precipitation: w.precipitation,
+    uvIndex: w.uvIndex,
+  },
+  forecastUrl: forecastUrl(),
+  marineUrl: marineUrl(),
+  unavailable: w.unavailable,
+  initial: weather ? { data: weather, marine } : null,
+};
+---
+
+<section id="weather" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{w.title}</h2>
+    <p class="text-base sm:text-lg mb-10 max-w-3xl" style="color: var(--text-secondary);">{w.subtitle}</p>
+
+    <div data-weather-root data-state={weather ? 'ready' : 'pending'} class="space-y-5">
+      <!-- 1 · risk alerts, only rendered when something actually needs attention -->
+      <aside
+        data-w="risk"
+        hidden={!weather || advice.risk.length === 0}
+        class="rounded-2xl border border-l-4 p-5"
+        style="border-color: color-mix(in srgb, #d9534f 40%, var(--border-color)); border-left-color: #d9534f; background: color-mix(in srgb, #d9534f 8%, var(--card-bg));"
+      >
+        <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-3">
+          <h3 class="font-semibold inline-flex items-center gap-2" style="color: var(--text-primary);">
+            <span aria-hidden="true">⚠️</span>{w.riskTitle}
+          </h3>
+          <p class="text-xs" style="color: var(--text-muted);">{w.riskNote}</p>
+        </div>
+        <ul data-w="list-risk" class="space-y-2 text-sm" style="color: var(--text-primary);">
+          {advice.risk.map((rule) => (
+            <li class="flex gap-2">
+              <span aria-hidden="true">{rule.icon}</span>
+              <span>{tips[rule.id] ?? ''}</span>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <div class="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.35fr)]">
+        <!-- current conditions -->
+        <article class="rounded-2xl border p-6 flex flex-col" style="background: var(--card-bg); border-color: var(--border-color);">
+          <p class="text-xs uppercase tracking-[0.18em] mb-4" style="color: var(--text-muted);">{w.currentTitle}</p>
+
+          <div class="flex items-center gap-4 mb-6">
+            <span class="text-5xl leading-none" data-w="icon" aria-hidden="true">{weather ? iconForCode(weather.current.code, weather.current.isDay) : '…'}</span>
+            <div>
+              <p class="font-display text-4xl font-semibold" style="color: var(--text-primary);">
+                <span data-w="temp">{weather ? Math.round(weather.current.temperature) : '--'}</span><span class="text-2xl">°C</span>
+              </p>
+              <p class="text-sm" data-w="desc" style="color: var(--text-secondary);">
+                {weather ? w.groups[groupForCode(weather.current.code)] : w.loading}
+              </p>
+            </div>
+          </div>
+
+          <dl class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-sm mb-6">
+            <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+              <dt style="color: var(--text-muted);">{w.feelsLike}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="feels">{weather ? Math.round(weather.current.apparent) : '--'}</span>°C</dd>
+            </div>
+            <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+              <dt style="color: var(--text-muted);">{w.wind}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="wind">{weather ? weather.current.wind : '--'}</span> km/h</dd>
+            </div>
+            <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+              <dt style="color: var(--text-muted);">{w.humidity}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="humidity">{weather ? weather.current.humidity : '--'}</span>%</dd>
+            </div>
+            <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+              <dt style="color: var(--text-muted);">{w.uvIndex}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="uv">{today ? today.uvMax : '--'}</span></dd>
+            </div>
+            <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+              <dt style="color: var(--text-muted);">{w.rainChance}</dt>
+              <dd class="font-semibold" style="color: #4b9fd4;"><span data-w="rainchance">{today ? today.rainChance : '--'}</span>%</dd>
+            </div>
+            <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+              <dt style="color: var(--text-muted);">{w.rainAccum}</dt>
+              <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="rainaccum">{today ? today.rainSum : '--'}</span> mm</dd>
+            </div>
+          </dl>
+
+          <div class="flex flex-wrap gap-x-6 gap-y-1 text-sm mt-auto pt-4 border-t" style="color: var(--text-secondary); border-color: var(--border-color);">
+            <span>🌅 {w.sunrise} <strong style="color: var(--text-primary);" data-w="sunrise">{today?.sunrise ?? '--'}</strong></span>
+            <span>🌇 {w.sunset} <strong style="color: var(--text-primary);" data-w="sunset">{today?.sunset ?? '--'}</strong></span>
+          </div>
+        </article>
+
+        <!-- 7 day outlook -->
+        <article class="rounded-2xl border p-6" style="background: var(--card-bg); border-color: var(--border-color);">
+          <p class="text-xs uppercase tracking-[0.18em] mb-5" style="color: var(--text-muted);">{w.forecastTitle}</p>
+
+          <ul class="space-y-1.5">
+            {days.map((day, i) => (
+              <li data-w-day={i} class="grid grid-cols-[3.2rem_1.6rem_minmax(0,1fr)] sm:grid-cols-[4.5rem_1.6rem_minmax(0,1fr)_5.5rem] items-center gap-3 rounded-xl px-2 py-2" style={i === 0 ? 'background: var(--bg-tertiary);' : ''}>
+                <span class="text-sm font-medium truncate" style="color: var(--text-primary);">{weekdayLabel(day.date, i)}</span>
+                <span class="text-lg leading-none" data-w={`d${i}-icon`} aria-hidden="true">{iconForCode(day.code, true)}</span>
+                <span class="min-w-0">
+                  <span class="block text-xs mb-1 truncate" style="color: var(--text-muted);" data-w={`d${i}-desc`}>{w.groups[groupForCode(day.code)]}</span>
+                  <span class="relative block h-1.5 rounded-full" style="background: var(--border-color);">
+                    <span class="absolute top-0 h-full rounded-full" style={`background: linear-gradient(90deg, ${day.min < weekMin + span * 0.45 ? '#4b9fd4' : 'var(--accent)'}, ${day.max > weekMin + span * 0.55 ? '#e0a24b' : 'var(--accent)'}); ${bar(day.min, day.max)}`}></span>
+                  </span>
+                </span>
+                <span class="hidden sm:flex items-center justify-end gap-2 text-sm whitespace-nowrap">
+                  <span style="color: var(--text-muted);" data-w={`d${i}-min`}>{Math.round(day.min)}°</span>
+                  <span class="font-semibold" style="color: var(--text-primary);" data-w={`d${i}-max`}>{Math.round(day.max)}°</span>
+                  <span class="text-xs w-9 text-right" style="color: #4b9fd4;" data-w={`d${i}-pop`}>{day.rainChance}%</span>
+                </span>
+                <span class="col-start-3 sm:hidden text-xs" style="color: var(--text-secondary);">
+                  <span data-w={`d${i}-minm`}>{Math.round(day.min)}°</span> / <span class="font-semibold" data-w={`d${i}-maxm`}>{Math.round(day.max)}°</span>
+                  <span style="color: #4b9fd4;"> · <span data-w={`d${i}-popm`}>{day.rainChance}%</span></span>
+                </span>
+              </li>
+            ))}
+
+            {!weather && (
+              <li class="text-sm py-6 text-center" style="color: var(--text-muted);">{w.loading}</li>
+            )}
+          </ul>
+        </article>
+      </div>
+
+      <!-- 2 · actionable advice, one panel per decision a visitor has to make -->
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {panels.map((panel) => (
+          <article class="rounded-2xl border p-5" style="background: var(--card-bg); border-color: var(--border-color);">
+            <h3 class="text-xs uppercase tracking-[0.18em] mb-3 inline-flex items-center gap-2" style="color: var(--text-muted);">
+              <span aria-hidden="true">{panel.icon}</span>{panel.title}
+            </h3>
+            <ul
+              data-w={`list-${panel.key}`}
+              hidden={!weather || advice[panel.key].length === 0}
+              class="space-y-2 text-sm"
+              style="color: var(--text-secondary);"
+            >
+              {advice[panel.key].map((rule) => (
+                <li class="flex gap-2">
+                  <span aria-hidden="true">{rule.icon}</span>
+                  <span>{tips[rule.id] ?? ''}</span>
+                </li>
+              ))}
+            </ul>
+            <p
+              data-w={`empty-${panel.key}`}
+              hidden={!weather || advice[panel.key].length > 0}
+              class="text-sm"
+              style="color: var(--text-muted);"
+            >
+              {w.allClear}
+            </p>
+          </article>
+        ))}
+      </div>
+
+      <!-- 3 · coastal conditions: this landmark sits on the beach, so sea state and tide matter -->
+      <article
+        data-w="marine"
+        hidden={!marine}
+        class="rounded-2xl border p-5"
+        style="background: var(--card-bg); border-color: var(--border-color);"
+      >
+        <h3 class="text-xs uppercase tracking-[0.18em] mb-4 inline-flex items-center gap-2" style="color: var(--text-muted);">
+          <span aria-hidden="true">🌊</span>{w.marineTitle}
+        </h3>
+        <dl class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
+          <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+            <dt style="color: var(--text-muted);">{w.waveHeight}</dt>
+            <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="m-wave">{marine ? marine.wave : '--'}</span> m</dd>
+          </div>
+          <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+            <dt style="color: var(--text-muted);">{w.waveMax}</dt>
+            <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="m-wavemax">{marine ? marine.waveMax : '--'}</span> m</dd>
+          </div>
+          <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+            <dt style="color: var(--text-muted);">{w.seaTemp}</dt>
+            <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="m-sea">{marine ? marine.seaTemp : '--'}</span> °C</dd>
+          </div>
+          <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+            <dt style="color: var(--text-muted);">{w.wavePeriod}</dt>
+            <dd class="font-semibold" style="color: var(--text-primary);"><span data-w="m-period">{marine ? marine.wavePeriod : '--'}</span> s</dd>
+          </div>
+        </dl>
+      </article>
+
+      <!-- 4 · tide: when the water comes in and out decides whether the shore is walkable -->
+      <article
+        data-w="tide"
+        hidden={!tideGeom}
+        class="rounded-2xl border p-5"
+        style="background: var(--card-bg); border-color: var(--border-color);"
+      >
+        <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-5">
+          <h3 class="text-xs uppercase tracking-[0.18em] inline-flex items-center gap-2" style="color: var(--text-muted);">
+            <span aria-hidden="true">🌗</span>{w.tideTitle}
+          </h3>
+          <p class="text-xs" style="color: var(--text-muted);">{w.tideTodayLabel}</p>
+        </div>
+
+        <div class="grid gap-6 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:items-start">
+          <figure class="min-w-0">
+            <svg viewBox="0 0 320 100" class="w-full h-auto" role="img" aria-label={w.tideLabel} style="max-height:11rem;">
+              <defs>
+                <linearGradient id="tide-fill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" style="stop-color: var(--accent); stop-opacity: 0.3;"></stop>
+                  <stop offset="100%" style="stop-color: var(--accent); stop-opacity: 0;"></stop>
+                </linearGradient>
+              </defs>
+              <line x1={TIDE_X0} y1={TIDE_Y1} x2={TIDE_X1} y2={TIDE_Y1} style="stroke: var(--border-color);" stroke-width="1"></line>
+              <polygon data-w="tide-area" points={tideArea} fill="url(#tide-fill)"></polygon>
+              <polyline
+                data-w="tide-line"
+                points={tideLine}
+                fill="none"
+                stroke-width="2"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+                style="stroke: var(--accent);"
+              ></polyline>
+              <g data-w="tide-dots">
+                {tideDots.map((dot) => (
+                  <>
+                    <circle cx={dot.cx.toFixed(1)} cy={dot.cy.toFixed(1)} r="3.2" stroke-width="1.5" style={`fill: ${dot.color}; stroke: var(--card-bg);`}></circle>
+                    <text
+                      x={dot.cx.toFixed(1)}
+                      y={dot.labelY.toFixed(1)}
+                      text-anchor="middle"
+                      font-size="9"
+                      style="fill: var(--text-muted);"
+                    >{dot.mark.time}</text>
+                  </>
+                ))}
+              </g>
+            </svg>
+            <figcaption class="text-xs mt-2" style="color: var(--text-muted);">
+              {w.tideRange} <strong style="color: var(--text-primary);" data-w="tide-range">{tide ? tide.range.toFixed(2) : '--'}</strong> m
+            </figcaption>
+          </figure>
+
+          <div class="min-w-0">
+            <dl class="grid grid-cols-2 gap-3 text-sm mb-4">
+              <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+                <dt style="color: var(--text-muted);">{w.tideLabel}</dt>
+                <dd class="font-semibold" style="color: var(--text-primary);" data-w="tide-state">{tideState}</dd>
+              </div>
+              <div class="rounded-xl px-3 py-2.5" style="background: var(--bg-tertiary);">
+                <dt style="color: var(--text-muted);">{w.tideNextLabel}</dt>
+                <dd class="font-semibold" style="color: var(--text-primary);" data-w="tide-next">{tideNextText}</dd>
+              </div>
+            </dl>
+
+            <ul data-w="tide-marks" class="space-y-1.5 text-sm" style="color: var(--text-secondary);">
+              {(tide?.today ?? []).map((mark) => (
+                <li class="flex items-center gap-2">
+                  <span aria-hidden="true">{mark.type === 'high' ? '⬆️' : '⬇️'}</span>
+                  <span>{mark.type === 'high' ? w.tideHigh : w.tideLow} <strong style="color: var(--text-primary);">{mark.time}</strong></span>
+                  <span class="ml-auto" style="color: var(--text-muted);">{mark.level.toFixed(2)} m</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-5 pt-4 border-t" style="border-color: var(--border-color);">
+          <p class="text-xs uppercase tracking-[0.18em] mb-2" style="color: var(--text-muted);">{w.tideAdviceTitle}</p>
+          <p class="text-sm" style="color: var(--text-secondary);" data-w="tide-advice">{tideAdvice}</p>
+          <p class="text-xs mt-3" style="color: var(--text-muted);">{w.marineNote}</p>
+        </div>
+      </article>
+
+      <p class="text-xs" style="color: var(--text-muted);">
+        <span class="inline-flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full" style="background: var(--accent);"></span>{w.updated} <time data-w="updated">{weather?.current.time ?? '--:--'}</time></span>
+        <span class="mx-1">·</span>
+        <span>{w.sourceLabel} <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer" class="underline hover:opacity-70">Open-Meteo</a></span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" id="weather-config" is:inline set:html={safeJson(clientConfig)}></script>
+
+<script is:inline>
+  (function () {
+    var el = document.getElementById('weather-config');
+    var root = document.querySelector('[data-weather-root]');
+    if (!el || !root) return;
+
+    var cfg = JSON.parse(el.textContent || '{}');
+    var CACHE_KEY = 'faro-weather-v4';
+    var TTL = 10 * 60 * 1000;
+
+    function set(key, value) {
+      var node = root.querySelector('[data-w="' + key + '"]');
+      if (node) node.textContent = value;
+    }
+
+    function group(code) {
+      if (code === 0) return 'clear';
+      if (code === 1) return 'mainlyClear';
+      if (code === 2) return 'partlyCloudy';
+      if (code === 3) return 'overcast';
+      if (code === 45 || code === 48) return 'fog';
+      if (code >= 51 && code <= 57) return 'drizzle';
+      if (code >= 61 && code <= 67) return 'rain';
+      if (code >= 80 && code <= 82) return 'showers';
+      if ((code >= 71 && code <= 77) || code === 85 || code === 86) return 'snow';
+      if (code >= 95) return 'thunderstorm';
+      return 'partlyCloudy';
+    }
+
+    function icon(code, isDay) {
+      var g = group(code);
+      if (g === 'clear') return isDay ? '☀️' : '🌙';
+      if (g === 'mainlyClear') return isDay ? '🌤️' : '🌙';
+      if (g === 'partlyCloudy') return '⛅';
+      if (g === 'overcast') return '☁️';
+      if (g === 'fog') return '🌫️';
+      if (g === 'drizzle' || g === 'showers') return '🌦️';
+      if (g === 'rain') return '🌧️';
+      if (g === 'snow') return '🌨️';
+      if (g === 'thunderstorm') return '⛈️';
+      return '🌤️';
+    }
+
+    function clock(iso) {
+      return typeof iso === 'string' && iso.length >= 16 ? iso.slice(11, 16) : '--:--';
+    }
+
+    function label(groups, code) {
+      return (groups && groups[group(code)]) || '';
+    }
+
+    /* mirror of beaufort() in src/lib/weather.ts */
+    function beaufort(kmh) {
+      var upper = [1, 5, 11, 19, 28, 38, 49, 61, 74, 88, 102, 117];
+      for (var i = 0; i < upper.length; i++) {
+        if (kmh < upper[i]) return i;
+      }
+      return 12;
+    }
+
+    /* mirror of tideFrom() in src/lib/weather.ts — turning points of the sea level curve */
+    function tideFrom(hourly, now) {
+      var times = (hourly && hourly.time) || [];
+      var levels = (hourly && hourly.sea_level_height_msl) || [];
+      var marks = [];
+      for (var i = 1; i < levels.length - 1; i++) {
+        var prev = levels[i - 1];
+        var cur = levels[i];
+        var upcomingLevel = levels[i + 1];
+        if (typeof prev !== 'number' || typeof cur !== 'number' || typeof upcomingLevel !== 'number') continue;
+        if (cur > prev && cur >= upcomingLevel) marks.push({ type: 'high', time: clock(times[i]), level: cur, iso: times[i] });
+        else if (cur < prev && cur <= upcomingLevel) marks.push({ type: 'low', time: clock(times[i]), level: cur, iso: times[i] });
+      }
+
+      function hourKey(iso) { return String(iso).slice(0, 13); }
+      var nowKey = hourKey(now || times[0] || '');
+      var todayKey = String(now || times[0] || '').slice(0, 10);
+
+      var upcoming = marks.filter(function (m) { return hourKey(m.iso) > nowKey; });
+      var today = marks.filter(function (m) { return String(m.iso).slice(0, 10) === todayKey; });
+
+      var curve = [];
+      for (var c = 0; c < times.length; c++) {
+        if (String(times[c]).slice(0, 10) === todayKey && typeof levels[c] === 'number') {
+          curve.push(Math.round(levels[c] * 100) / 100);
+        }
+      }
+
+      var trend = 'steady';
+      var index = -1;
+      for (var k = 0; k < times.length; k++) {
+        if (hourKey(times[k]) === nowKey) { index = k; break; }
+      }
+      if (index >= 0 && index + 1 < levels.length) {
+        var delta = levels[index + 1] - levels[index];
+        if (delta > 0.02) trend = 'rising';
+        else if (delta < -0.02) trend = 'falling';
+      }
+
+      var pool = curve.length ? curve : today.map(function (m) { return m.level; });
+      var high = pool.length ? Math.max.apply(null, pool) : null;
+      var low = pool.length ? Math.min.apply(null, pool) : null;
+      var range = high != null && low != null ? high - low : 0;
+
+      function asMark(m) {
+        return { type: m.type, time: m.time, level: Math.round(m.level * 100) / 100 };
+      }
+
+      return {
+        trend: trend,
+        next: upcoming.length ? asMark(upcoming[0]) : null,
+        today: today.map(asMark),
+        upcoming: upcoming.slice(0, 6).map(asMark),
+        curve: curve,
+        high: high,
+        low: low,
+        range: Math.round(range * 100) / 100,
+      };
+    }
+
+    function marineFrom(json) {
+      if (!json || !json.current) return null;
+      var current = json.current;
+      if (typeof current.wave_height !== 'number') return null;
+      var daily = json.daily || {};
+      var maxWave = (daily.wave_height_max || [])[0];
+      var period = (daily.wave_period_max || [])[0];
+      return {
+        wave: current.wave_height,
+        waveMax: typeof maxWave === 'number' ? maxWave : current.wave_height,
+        wavePeriod: typeof period === 'number' ? period : 0,
+        seaTemp: typeof current.sea_surface_temperature === 'number' ? current.sea_surface_temperature : 0,
+        tide: tideFrom(json.hourly, (json.current || {}).time),
+      };
+    }
+
+    /* mirror of metricsFor() in src/lib/weather.ts */
+    function metrics(data, marine) {
+      var c = data.current || {};
+      var d = (data.daily || [])[0] || {};
+      var max = typeof d.max === 'number' ? d.max : c.temperature;
+      var min = typeof d.min === 'number' ? d.min : c.temperature;
+      var wind = Math.max(d.windMax || 0, c.wind || 0);
+      return {
+        group: group(typeof d.code === 'number' ? d.code : c.code),
+        pop: d.rainChance || 0,
+        rainSum: typeof d.rainSum === 'number' ? d.rainSum : c.precipitation || 0,
+        uv: d.uvMax || 0,
+        max: max,
+        min: min,
+        range: Math.round((max - min) * 10) / 10,
+        wind: wind,
+        level: beaufort(wind),
+        humidity: c.humidity,
+        temp: c.temperature,
+        wave: marine && typeof marine.wave === 'number' ? marine.wave : null,
+        sea: marine && typeof marine.seaTemp === 'number' ? marine.seaTemp : null,
+        tide: marine && marine.tide && marine.tide.next ? marine.tide.next.type : ''
+      };
+    }
+
+    /* mirror of matchesAdvice() in src/lib/weather.ts */
+    function matches(cond, m) {
+      if (!cond) return true;
+      if (cond.popGte != null && !(m.pop >= cond.popGte)) return false;
+      if (cond.popLt != null && !(m.pop < cond.popLt)) return false;
+      if (cond.rainSumGte != null && !(m.rainSum >= cond.rainSumGte)) return false;
+      if (cond.uvGte != null && !(m.uv >= cond.uvGte)) return false;
+      if (cond.uvLt != null && !(m.uv < cond.uvLt)) return false;
+      if (cond.maxGte != null && !(m.max >= cond.maxGte)) return false;
+      if (cond.maxLte != null && !(m.max <= cond.maxLte)) return false;
+      if (cond.minLte != null && !(m.min <= cond.minLte)) return false;
+      if (cond.rangeGt != null && !(m.range > cond.rangeGt)) return false;
+      if (cond.windLvGte != null && !(m.level >= cond.windLvGte)) return false;
+      if (cond.windLvLt != null && !(m.level < cond.windLvLt)) return false;
+      if (cond.groups && cond.groups.indexOf(m.group) === -1) return false;
+      if (cond.waveGte != null && !(m.wave != null && m.wave >= cond.waveGte)) return false;
+      if (cond.seaGte != null && !(m.sea != null && m.sea >= cond.seaGte)) return false;
+      if (cond.seaLte != null && !(m.sea != null && m.sea <= cond.seaLte)) return false;
+      if (cond.tide && cond.tide.indexOf(m.tide) === -1) return false;
+      return true;
+    }
+
+    /* mirror of evaluateAdvice() in src/lib/weather.ts */
+    function evaluate(m) {
+      var out = { risk: [], travel: [], play: [], gear: [] };
+      var used = {};
+      var rules = (cfg.rules || []).slice().sort(function (a, b) { return b.p - a.p; });
+
+      rules.forEach(function (rule) {
+        if (!out[rule.cat] || !matches(rule.when, m)) return;
+        if (rule.g) {
+          var slot = rule.cat + ':' + rule.g;
+          if (used[slot]) return;
+          used[slot] = true;
+        }
+        out[rule.cat].push(rule);
+      });
+
+      ['risk', 'travel', 'play', 'gear'].forEach(function (cat) {
+        out[cat] = out[cat].slice(0, (cfg.caps && cfg.caps[cat]) || 3);
+      });
+      return out;
+    }
+
+    function listHtml(items) {
+      var tips = cfg.tips || {};
+      return items.map(function (rule) {
+        return '<li class="flex gap-2"><span aria-hidden="true">' + rule.icon + '</span><span>' +
+          (tips[rule.id] || '') + '</span></li>';
+      }).join('');
+    }
+
+    function renderAdvice(m) {
+      var out = evaluate(m);
+
+      ['travel', 'play', 'gear'].forEach(function (cat) {
+        var list = root.querySelector('[data-w="list-' + cat + '"]');
+        var empty = root.querySelector('[data-w="empty-' + cat + '"]');
+        if (list) {
+          list.innerHTML = listHtml(out[cat]);
+          list.hidden = out[cat].length === 0;
+        }
+        if (empty) empty.hidden = out[cat].length > 0;
+      });
+
+      var banner = root.querySelector('[data-w="risk"]');
+      if (banner) {
+        banner.hidden = out.risk.length === 0;
+        var riskList = root.querySelector('[data-w="list-risk"]');
+        if (riskList) riskList.innerHTML = listHtml(out.risk);
+      }
+    }
+
+    function renderMarine(marine) {
+      var box = root.querySelector('[data-w="marine"]');
+      if (!box) return;
+      if (!marine || typeof marine.wave !== 'number') {
+        box.hidden = true;
+        return;
+      }
+      box.hidden = false;
+
+      set('m-wave', marine.wave.toFixed(1));
+      set('m-wavemax', (marine.waveMax || 0).toFixed(1));
+      set('m-sea', (marine.seaTemp || 0).toFixed(1));
+      set('m-period', marine.wavePeriod);
+    }
+
+    /* mirror of the tide geometry in the frontmatter of this component */
+    function tideGeom(curve) {
+      var x0 = 12, x1 = 308, y0 = 14, y1 = 84;
+      var min = Math.min.apply(null, curve);
+      var span = Math.max(0.2, Math.max.apply(null, curve) - min);
+      var n = curve.length;
+      return {
+        n: n,
+        x: function (i) { return i / (n - 1) * (x1 - x0) + x0; },
+        y: function (v) { return y1 - (v - min) / span * (y1 - y0); }
+      };
+    }
+
+    function renderTide(marine) {
+      var box = root.querySelector('[data-w="tide"]');
+      if (!box) return;
+
+      var tide = marine && marine.tide;
+      var curve = tide && tide.curve;
+      if (!tide || !curve || curve.length < 2) {
+        box.hidden = true;
+        return;
+      }
+      box.hidden = false;
+
+      var labels = cfg.marine || {};
+      var hints = cfg.tideHints || {};
+      var g = tideGeom(curve);
+
+      var points = [];
+      for (var i = 0; i < curve.length; i++) {
+        points.push(g.x(i).toFixed(1) + ',' + g.y(curve[i]).toFixed(1));
+      }
+      var line = points.join(' ');
+      var lineEl = root.querySelector('[data-w="tide-line"]');
+      if (lineEl) lineEl.setAttribute('points', line);
+      var areaEl = root.querySelector('[data-w="tide-area"]');
+      if (areaEl) areaEl.setAttribute('points', '12,84 ' + line + ' 308,84');
+
+      var dots = '';
+      var rows = '';
+      var marks = tide.today || [];
+      marks.forEach(function (m) {
+        var hour = parseInt(String(m.time || '0').slice(0, 2), 10);
+        if (isNaN(hour)) hour = 0;
+        var index = Math.min(g.n - 1, Math.max(0, hour));
+        var cx = g.x(index);
+        var cy = g.y(m.level);
+        var isHigh = m.type === 'high';
+        var color = isHigh ? 'var(--accent)' : '#4b9fd4';
+        dots += '<circle cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="3.2" stroke-width="1.5" style="fill: ' + color + '; stroke: var(--card-bg);"></circle>';
+        dots += '<text x="' + cx.toFixed(1) + '" y="' + (cy + (isHigh ? -7 : 13)).toFixed(1) + '" text-anchor="middle" font-size="9" style="fill:var(--text-muted)">' + m.time + '</text>';
+        rows += '<li class="flex items-center gap-2"><span aria-hidden="true">' + (isHigh ? '⬆️' : '⬇️') + '</span><span>' +
+          (isHigh ? labels.tideHigh : labels.tideLow) + ' <strong style="color: var(--text-primary);">' + m.time + '</strong></span>' +
+          '<span class="ml-auto" style="color: var(--text-muted);">' + m.level.toFixed(2) + ' m</span></li>';
+      });
+      var dotGroup = root.querySelector('[data-w="tide-dots"]');
+      if (dotGroup) dotGroup.innerHTML = dots;
+      var markList = root.querySelector('[data-w="tide-marks"]');
+      if (markList) markList.innerHTML = rows;
+
+      set('tide-state', tide.trend === 'rising' ? labels.tideRising
+        : tide.trend === 'falling' ? labels.tideFalling : labels.tideSteady);
+      set('tide-next', tide.next
+        ? (tide.next.type === 'high' ? labels.tideHigh : labels.tideLow) + ' ' + tide.next.time
+        : '—');
+      set('tide-range', (tide.range || 0).toFixed(2));
+
+      var advice = tide.trend === 'rising' ? hints.rising : tide.trend === 'falling' ? hints.falling : hints.steady;
+      if (tide.next) {
+        var tail = tide.next.type === 'high' ? hints.nextHigh : hints.nextLow;
+        if (tail) advice += ' ' + tail.replace('{time}', tide.next.time);
+      }
+      set('tide-advice', advice || '');
+    }
+
+    function render(data, marine) {
+      var cur = data.current || {};
+      var daily = data.daily || [];
+      var groups = cfg.groups || {};
+
+      set('icon', icon(cur.code, !!cur.isDay));
+      set('temp', Math.round(cur.temperature));
+      set('desc', label(groups, cur.code));
+      set('feels', Math.round(cur.apparent));
+      set('humidity', cur.humidity);
+      set('wind', cur.wind);
+      set('updated', clock(cur.time));
+
+      var today = daily[0] || {};
+      set('uv', today.uvMax);
+      set('rainchance', today.rainChance);
+      set('rainaccum', today.rainSum);
+      set('sunrise', today.sunrise || '--:--');
+      set('sunset', today.sunset || '--:--');
+
+      var mins = daily.map(function (d) { return d.min; });
+      var maxs = daily.map(function (d) { return d.max; });
+      var lo = mins.length ? Math.min.apply(null, mins) : 0;
+      var hi = maxs.length ? Math.max.apply(null, maxs) : 1;
+      var span = Math.max(1, hi - lo);
+
+      daily.forEach(function (d, i) {
+        var row = root.querySelector('[data-w-day="' + i + '"]');
+        if (!row) return;
+        var name = row.querySelector('span');
+        if (name) {
+          if (i === 0) {
+            name.textContent = cfg.today;
+          } else {
+            var date = new Date(d.date + 'T12:00:00Z');
+            name.textContent = (cfg.days && cfg.days[date.getUTCDay()]) || '';
+          }
+        }
+        var ic = row.querySelector('[data-w="d' + i + '-icon"]');
+        if (ic) ic.textContent = icon(d.code, true);
+        var de = row.querySelector('[data-w="d' + i + '-desc"]');
+        if (de) de.textContent = label(groups, d.code);
+
+        var barEl = row.querySelector('span[style*="linear-gradient"]') || row.querySelector('.absolute');
+        if (barEl) {
+          barEl.style.left = ((d.min - lo) / span) * 100 + '%';
+          barEl.style.width = Math.max(6, ((d.max - d.min) / span) * 100) + '%';
+        }
+        set('d' + i + '-min', Math.round(d.min) + '°');
+        set('d' + i + '-max', Math.round(d.max) + '°');
+        set('d' + i + '-minm', Math.round(d.min) + '°');
+        set('d' + i + '-maxm', Math.round(d.max) + '°');
+        set('d' + i + '-pop', d.rainChance + '%');
+        set('d' + i + '-popm', d.rainChance + '%');
+      });
+
+      renderAdvice(metrics(data, marine));
+      renderMarine(marine);
+      renderTide(marine);
+
+      root.setAttribute('data-state', 'ready');
+      root.removeAttribute('data-error');
+    }
+
+    function fail() {
+      if (root.getAttribute('data-state') === 'ready') return;
+      root.setAttribute('data-error', 'true');
+      set('desc', cfg.unavailable);
+    }
+
+    function parseForecast(json) {
+      var c = json.current || {};
+      var d = json.daily || {};
+      var data = {
+        current: {
+          temperature: c.temperature_2m,
+          apparent: c.apparent_temperature,
+          humidity: c.relative_humidity_2m,
+          precipitation: c.precipitation,
+          wind: c.wind_speed_10m,
+          code: c.weather_code,
+          isDay: c.is_day === 1,
+          time: c.time
+        },
+        daily: (d.time || []).map(function (date, i) {
+          return {
+            date: date,
+            code: d.weather_code[i],
+            max: d.temperature_2m_max[i],
+            min: d.temperature_2m_min[i],
+            rainChance: d.precipitation_probability_max[i] || 0,
+            rainSum: d.precipitation_sum[i] || 0,
+            windMax: d.wind_speed_10m_max[i] || 0,
+            uvMax: d.uv_index_max[i] || 0,
+            sunrise: d.sunrise[i],
+            sunset: d.sunset[i]
+          };
+        })
+      };
+      if (!data.daily.length) throw new Error('empty');
+      return data;
+    }
+
+    function json(url) {
+      return fetch(url).then(function (r) {
+        return r.ok ? r.json() : Promise.reject(new Error('bad response'));
+      });
+    }
+
+    function load() {
+      try {
+        var raw = sessionStorage.getItem(CACHE_KEY);
+        if (raw) {
+          var hit = JSON.parse(raw);
+          if (hit && Date.now() - hit.t < TTL) {
+            render(hit.d, hit.m);
+            return;
+          }
+        }
+      } catch (e) {}
+
+      Promise.all([
+        json(cfg.forecastUrl),
+        json(cfg.marineUrl).catch(function () { return null; })
+      ])
+        .then(function (res) {
+          var data = parseForecast(res[0]);
+          var marine = marineFrom(res[1]);
+          try {
+            sessionStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), d: data, m: marine }));
+          } catch (e) {}
+          render(data, marine);
+        })
+        .catch(fail);
+    }
+
+    // paint the cached/embedded snapshot immediately, then refresh in the background
+    if (cfg.initial && cfg.initial.data) render(cfg.initial.data, cfg.initial.marine);
+    load();
+    window.setInterval(load, TTL);
+  })();
+</script>

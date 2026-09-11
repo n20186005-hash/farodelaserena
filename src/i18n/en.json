@@ -1,7 +1,24 @@
 {
   "meta": {
-    "title": "Faro Monumental de La Serena | La Serena, Chile",
-    "description": "The complete guide to the Faro Monumental de La Serena: history, the Plan Serena and its neocolonial style, photos, visitor reviews, and how to get there in La Serena, Chile."
+    "title": "La Serena Lighthouse: Faro Monumental Guide & Directions",
+    "description": "La Serena Lighthouse (Faro Monumental de La Serena) is 28 m tall and a National Historic Monument since 2010. Map, opening hours and how to get there.",
+    "schemaDescription": "Visitor guide to the Faro Monumental de La Serena (La Serena Lighthouse, La Serena, Coquimbo Region, Chile): its 28-metre height, history and cultural heritage, opening hours, how to get there and what to see along Avenida del Mar."
+  },
+  "visitorSnapshot": {
+    "title": "La Serena Lighthouse: Quick Facts",
+    "subtitle": "The essentials before you go: address, opening hours, tickets and how to get there.",
+    "facts": [
+      { "label": "Listing name", "value": "Faro de La Serena (Faro Monumental de La Serena)" },
+      { "label": "Address", "value": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile" },
+      { "label": "Plus Code", "value": "3PVG+Q7 La Serena, Chile" },
+      { "label": "Opening hours", "value": "Tuesday to Sunday, 10:00–14:00 and 14:30–17:00 · Monday closed" },
+      { "label": "Tickets", "value": "Free or of symbolic cost, depending on the area" },
+      { "label": "Time needed", "value": "30–45 minutes for the essential visit" },
+      { "label": "Height", "value": "About 28 m tall, with a base roughly 4 m in diameter" },
+      { "label": "Getting there", "value": "On Avenida del Mar, facing the beach; 10–15 min from Plaza de Armas" }
+    ],
+    "summary": "The Faro Monumental de La Serena (La Serena Lighthouse) is a 28-metre neocolonial lighthouse-monument on Avenida del Mar, declared a National Historic Monument of Chile in 2010. It stands at the meeting point of Avenida Francisco de Aguirre and Avenida del Mar, facing the beach, about 10–15 minutes by car from Plaza de Armas and 15–20 minutes by taxi from La Florida Airport (LSC). Access to the grounds and the base is free or of symbolic cost.",
+    "mapsCta": "View location on Google Maps"
   },
   "header": {
     "siteName": "Faro Monumental de La Serena",
@@ -13,6 +30,8 @@
     "reviews": "Reviews",
     "faq": "FAQ",
     "map": "Map",
+    "weather": "Weather",
+    "services": "Services",
     "backToHome": "Back to Home"
   },
   "common": {
@@ -22,10 +41,12 @@
   "hero": {
     "title": "Faro Monumental de La Serena",
     "subtitle": "A neocolonial lighthouse-monument built by the Chilean Navy between 1950 and 1951 — a viewpoint and symbol of La Serena facing the Pacific.",
-    "rating": "4.2(25,923)",
-    "reviewCount": "25,923 reviews",
+    "rating": "4.2(26,009)",
+    "reviewCount": "26,009 reviews",
     "hours": "Tue–Sun 10:00–14:00 and 14:30–17:00 · Mon closed",
+    "location": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
     "openMaps": "View Location",
+    "seeWeather": "See the weather",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "intro": {
@@ -53,6 +74,8 @@
   "transportSection": {
     "title": "How to Reach the Faro Monumental",
     "subtitle": "From arriving in La Serena by plane, bus or car to the final stretch along Avenida del Mar, here are the most common ways to reach the Faro Monumental.",
+    "shortAnswerTitle": "Quick answer: how to get to the lighthouse",
+    "shortAnswer": "The Faro Monumental de La Serena stands at Avda. Francisco de Aguirre at Avenida del Mar, facing the beach. From Plaza de Armas in La Serena city centre it is about 10–15 minutes by car, taxi or colectivo along the seafront; from La Florida Airport (LSC) about 15–20 minutes by taxi or transfer; and about 10 minutes by taxi from the bus terminal. You can also walk or cycle along Avenida del Mar.",
     "overviewTitle": "Start with where you are coming from",
     "overviewText": "La Serena lies in northern Chile, about 470 km from Santiago along Route 5 Norte (the Pan-American Highway). If you are coming from afar, the usual pattern is to fly into La Florida Airport or take a long-distance bus; from there, the lighthouse is just a few minutes away by car, taxi or public transport along the seafront avenue. For most visitors, the Faro is an urban destination reached by a short final transfer.",
     "arrivalTitle": "Know this before you set out",
@@ -147,7 +170,8 @@
     "text": "The Faro Monumental de La Serena was built by the Chilean Navy and handed over to the Municipality of La Serena on 7 November 1985 for tourist and cultural use. It is one of the landmarks of the Plan Serena, the 1950s urban renewal that gave the city its unified neocolonial image. Today the tower still serves as a navigation aid, while the grounds function as a viewpoint, a small museum and a civic meeting point facing the Pacific."
   },
   "knowledge": {
-    "title": "History, Meaning & Legend of the Lighthouse",
+    "title": "History & Cultural Heritage of the Lighthouse",
+    "intro": "The Faro Monumental de La Serena is more than a viewpoint: it is the landmark that sums up the city's urban history, its neocolonial architecture and its status as cultural heritage of Chile. These sections cover its origins in the Plan Serena (1948–1952), the reasoning behind its fortress-shaped design, the legend the coast tells about it, and the heritage protection it has held since 2010.",
     "sections": [
       {
         "id": "history",
@@ -168,6 +192,31 @@
         "id": "significance",
         "title": "A Symbol of La Serena",
         "content": "Today the Faro Monumental, alongside the neocolonial Cathedral and the Plaza de Armas, is the most recognisable face of La Serena. Its battlemented silhouette presides over Avenida del Mar and appears on postcards, souvenirs and in the memory of those who grew up watching the Pacific from its feet. Declared a National Monument in 2010, it is also the only lighthouse in Chile to hold that distinction while functioning at the same time as a public viewpoint."
+      },
+      {
+        "id": "architecture",
+        "title": "Architecture and construction",
+        "content": "The tower rises about 28 metres and measures roughly 4 metres across at its base, standing on a platform that doubles as the entrance area and a public viewpoint. The shaft is reinforced concrete clad in local stone, and its profile echoes the keep of a colonial fortress: slightly battered walls, battlements along the crown and a solid mass that contrasts with the weightlessness of the ocean. Inside, a spiral staircase climbs to the upper level, where the glazed lantern room holds the light. The result is a deliberate hybrid: modern lighthouse engineering dressed in the formal language of Spanish colonial architecture."
+      },
+      {
+        "id": "navigation",
+        "title": "Its role as a navigation aid",
+        "content": "A lighthouse is first of all a signal. La Serena's was intended to mark the approach to the bay and the neighbouring port of Coquimbo, and to guide the fishing and recreational craft heading for the mouth of the Elqui River. Its light, mounted in the glazed lantern at the top, sweeps over the Pacific as a night reference, while by day the battlemented silhouette performs the same job. Satellite navigation and automated beacons have reduced its role as a primary aid, but the site is kept as a supporting beacon and as an inseparable part of the coastal landscape."
+      },
+      {
+        "id": "planSerena",
+        "title": "The Plan Serena and the neocolonial city",
+        "content": "Behind the lighthouse there is a whole urban project. Between 1948 and 1952, the Plan Serena set out to give the city a coherent modern image while drawing on its own colonial past. Promoted by President Gabriel González Videla, who was born in La Serena, the plan reorganised the centre, built public facilities and unified an aesthetic of arches, tiles, courtyards and balconies that still defines the Plaza de Armas, the Cathedral and the civic buildings. The lighthouse is one piece of that ensemble: the landmark that closes Avenida del Mar and welcomes the city from the sea."
+      },
+      {
+        "id": "heritage",
+        "title": "Heritage and conservation",
+        "content": "On 9 June 2010 the Faro Monumental de La Serena was declared a National Historic Monument of Chile, an acknowledgement of both its architectural value and its role in local identity. The designation protects it as heritage and requires any intervention to preserve its original features. In recent decades the site has been adapted for visitors: waymarked routes, heritage panels and space for exhibitions and crafts, always with the tower as the centrepiece. When you visit, treat it as what it is: a monument, not merely a viewpoint with a view."
+      },
+      {
+        "id": "culture",
+        "title": "The lighthouse in everyday life",
+        "content": "Beyond its function, the lighthouse is a meeting point. New Year is welcomed in front of its walls along Avenida del Mar, coastal races pass by, graduation photos are taken here and families gather on summer evenings. It appears on postcards, in murals, on souvenirs and in the memory of generations of schoolchildren who climbed to the viewpoint on a school trip. It is, in the most literal sense, the place where La Serena looks out to sea."
       }
     ]
   },
@@ -177,6 +226,7 @@
     "photoAlt": "Faro Monumental de La Serena in neocolonial style facing the Pacific Ocean",
     "viewAll": "View Location on Google Maps",
     "showMore": "Show More Photos",
+    "photoCountLabel": "photos",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "reviews": {
@@ -212,13 +262,15 @@
     ]
   },
   "mapSection": {
-    "title": "How to Get Here",
+    "title": "Map & Location of the Lighthouse",
     "subtitle": "Avenida del Mar at Avenida Francisco de Aguirre, La Serena, Coquimbo Region, Chile",
     "openMaps": "Open in Google Maps",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "footer": {
     "siteName": "Faro Monumental de La Serena",
+    "address": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
+    "plusCode": "3PVG+Q7 La Serena, Chile",
     "rights": "© 2026 Faro Monumental de La Serena — Independent, non-profit travel guide. All rights reserved.",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -234,7 +286,25 @@
       { "name": "Regional Government of Coquimbo", "url": "https://www.gorecoquimbo.cl/" },
       { "name": "Ministry of Cultures, Arts and Heritage", "url": "https://www.cultura.gob.cl/" }
     ],
-    "disclaimer": "This is an independent, non-profit visitor information project. We are not affiliated with any government body or official institution."
+    "disclaimer": "This is an independent, non-profit visitor information project. We are not affiliated with any government body or official institution.",
+    "photoRights": "Image rights: the ownership and copyright of all images displayed on this website belong to their original photographers."
+  },
+  "entity": {
+    "breadcrumbLabel": "Breadcrumb",
+    "breadcrumbHome": "Home",
+    "aboutTitle": "About the Faro Monumental de La Serena",
+    "welcome": "Welcome to the Faro Monumental de La Serena, widely recognized as the central Faro de La Serena. Located in the heart of La Serena, Coquimbo Region, Chile, this destination serves as a primary hub for travelers visiting the region.",
+    "hierarchyTitle": "Location & geographic hierarchy",
+    "hierarchy": "Faro Monumental de La Serena → La Serena → Coquimbo Region → Chile",
+    "nearbyTitle": "Landmarks & attractions around the lighthouse",
+    "nearbyText": "When visiting the Faro Monumental de La Serena, visitors can easily explore surrounding historical landmarks and points of interest, including Plaza de Armas de La Serena and Jardín del Corazón (Avenida del Mar).",
+    "nearbyMore": "See nearby attractions"
+  },
+  "sources": {
+    "title": "Sources & References",
+    "intro": "This visitor guide draws on information from official bodies and tourism organisations. For official updates and regional tourism information, visit the official tourism portal:",
+    "officialPortalLabel": "Chile / Coquimbo Region Official Tourism Portal",
+    "photoRights": "Image rights: the ownership and copyright of all images displayed on this website belong to their original photographers."
   },
   "privacy": {
     "title": "Privacy Policy",
@@ -341,6 +411,14 @@
           {
             "q": "How tall is it and can you go inside?",
             "a": "The tower is about 28 metres tall and roughly 4 metres in diameter at its base. You can climb to the interior viewpoint to contemplate the Pacific coast, the mouth of the Elqui River and the bay of La Serena; confirm access and cost on site."
+          },
+          {
+            "q": "How tall is the Faro de La Serena?",
+            "a": "The Faro Monumental de La Serena stands about 28 metres tall, with a base roughly 4 metres in diameter. It is not a tall lighthouse by maritime standards: its value lies in its monumental silhouette and in its viewpoint, overlooking the bay of La Serena, the mouth of the Elqui River and the Pacific coast."
+          },
+          {
+            "q": "Why was the Faro de La Serena built?",
+            "a": "It was built with two purposes. First, to act as a beacon and reference for vessels approaching the bay of La Serena and the port of Coquimbo. Second, to serve as a civic and symbolic landmark of the Plan Serena (1948–1952), the urban renewal that gave the city its neocolonial identity. The Chilean Navy commissioned engineer Jorge Cisternas Larenas to design a 'monumental' lighthouse: a maritime signal dressed as a colonial fortress, crowning Avenida del Mar and welcoming visitors arriving along the coast."
           }
         ]
       },
@@ -387,6 +465,341 @@
       { "name": "La Serena & Coquimbo city tour", "url": "https://www.chile.travel/" },
       { "name": "Elqui Valley day trip", "url": "https://www.chile.travel/" },
       { "name": "Astronomy observatory tour", "url": "https://www.sernatur.cl/" }
+    ]
+  },
+  "weather": {
+    "title": "La Serena weather: current conditions and 7-day forecast",
+    "subtitle": "Before heading up to the viewpoint, check how the day is shaping up on the coast: temperature, wind, chance of rain and UV for the days ahead.",
+    "currentTitle": "Right now",
+    "forecastTitle": "Next 7 days",
+    "today": "Today",
+    "feelsLike": "Feels like",
+    "humidity": "Humidity",
+    "wind": "Wind",
+    "precipitation": "Rain",
+    "rainChance": "Rain chance",
+    "rainAccum": "Rain today",
+    "uvIndex": "UV index",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "updated": "Updated",
+    "loading": "Checking current conditions along the coast…",
+    "unavailable": "The forecast could not be loaded right now.",
+    "sourceLabel": "Weather source",
+    "riskTitle": "Today's alerts",
+    "riskNote": "Derived from the next 24-hour forecast; guidance only, not an official warning.",
+    "allClear": "Nothing today that forces a change of plan — enjoy the visit as usual.",
+    "travelTitle": "What to wear",
+    "playTitle": "What to do today",
+    "gearTitle": "What to bring",
+    "marineTitle": "Sea conditions",
+    "waveHeight": "Wave now",
+    "waveMax": "Max wave today",
+    "wavePeriod": "Wave period",
+    "seaTemp": "Sea temperature",
+    "tideLabel": "Tide",
+    "tideRange": "Tidal range",
+    "tideHigh": "high water",
+    "tideLow": "low water",
+    "tideRising": "rising",
+    "tideFalling": "falling",
+    "tideSteady": "steady",
+    "tideTitle": "Tide",
+    "tideTodayLabel": "Today's curve, hour by hour",
+    "tideNextLabel": "Next tide",
+    "tideAdviceTitle": "When to head down to the shore",
+    "tideHintRising": "The tide is rising: the water is gaining ground, so stay off the rocks and out of low-lying spots.",
+    "tideHintFalling": "The tide is falling: sand and rocks are emerging, a good moment to explore the shoreline.",
+    "tideHintSteady": "The tide is barely moving right now: comfortable for a walk along the water's edge.",
+    "tideHintNextLow": "The next low water is around {time}: the hour either side is the best window for rock pools and rocks.",
+    "tideHintNextHigh": "The next high water is around {time}: rocks and shoreline paths get covered, so take extra care.",
+    "marineNote": "Tide times are a model estimate; around the rocks follow the signs and the lifeguards.",
+    "groups": {
+      "clear": "Clear",
+      "mainlyClear": "Mainly clear",
+      "partlyCloudy": "Partly cloudy",
+      "overcast": "Overcast",
+      "fog": "Fog / coastal mist",
+      "drizzle": "Drizzle",
+      "rain": "Rain",
+      "showers": "Showers",
+      "snow": "Snow",
+      "thunderstorm": "Thunderstorm"
+    },
+    "days": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+    "tips": {
+      "riskStorm": "Thunderstorm: do not shelter under trees or stay on the beach or the rocks. Water activities close.",
+      "riskHeavyRain": "Heavy rain: avoid gullies, low-lying ground and the slippery paths beside the rocks.",
+      "riskStrongWind": "Very strong wind: keep away from signs, parasols, the coastal rocks and temporary structures.",
+      "riskHighWave": "High swell: do not walk on the rocks or where the waves break, and do not swim.",
+      "riskSnow": "Snow possible: wear grippy footwear and take care on icy roads.",
+      "riskFog": "Dense fog: visibility is poor, ferries and flights may be delayed, and you should drive with fog lights.",
+      "riskHeat": "Extreme heat: risk of heatstroke, avoid long exposure around midday.",
+      "riskUV": "Extreme UV: you can burn within minutes, always protect your skin.",
+      "travelHeavyRain": "Rain and wind: a waterproof shell and non-slip shoes work best.",
+      "travelDrizzle": "Light rain: surfaces turn slippery, so walk carefully.",
+      "travelCold": "Low temperatures: wrap up well before you head out.",
+      "travelHot": "Hot weather: avoid midday and wear light, breathable clothing.",
+      "travelSwing": "Big difference between day and night: bring a layer you can add or remove easily.",
+      "travelWindy": "Noticeable wind: it feels colder on the coast, so add a windproof layer.",
+      "travelSunny": "Clear day: ideal for being outdoors, but do not skip sun protection.",
+      "travelCloudy": "Overcast: soft light, great for photography and no direct sun.",
+      "playStorm": "Not a day for outdoor plans; water activities will be closed. Prioritise museums and indoor spaces.",
+      "playHeavyRain": "Outdoor plans are inadvisable; boat trips and cable cars may be suspended. Indoor venues are the better bet.",
+      "playRain": "High chance of rain: postpone hiking and the beach, or take proper rain gear.",
+      "playDrizzle": "Open-air plans lose much of their appeal; mix in some covered stops.",
+      "playStrongWind": "In this wind, sea activities are usually cancelled, and you should stay away from the rocks.",
+      "playWindy": "Boat trips and some outdoor attractions may suspend service; take care climbing the viewpoint.",
+      "playFog": "In this fog you will not enjoy the sea views or the panorama from the tower.",
+      "playHot": "Cut down time outdoors and avoid the middle of the day; drink water often.",
+      "playSeaWarm": "The water is mild: still swim with company and follow the flags and the swell.",
+      "playSeaCold": "The water is cold: keep the dip short, then dry off and warm up.",
+      "playTideLow": "A falling tide is a good moment to explore the shoreline; do not wander too far and watch the high-tide time.",
+      "playSunny": "Clear skies: a good day for sunrise and, above all, for sunset over the Pacific.",
+      "playCloudy": "No harsh sun: perfect for walking and photographing for hours.",
+      "playCoastal": "The coast is windy and the rocks are slippery: watch your step, mind the tide and never swim alone.",
+      "gearRaincoat": "Waterproof jacket (better than a long umbrella in wind)",
+      "gearUmbrella": "Umbrella or rain jacket",
+      "gearFoldUmbrella": "Folding umbrella",
+      "gearSunscreen": "Sunscreen, sunglasses and a hat",
+      "gearHydration": "Plenty of water and something for the heat",
+      "gearWarm": "Thick coat and scarf",
+      "gearWindy": "Hats blow away: avoid wide skirts and loose clothing",
+      "gearMask": "Face mask (more comfortable when visibility is low)",
+      "gearLayer": "A jacket you can easily take on and off",
+      "gearSunglasses": "Sunglasses, the glare off the sea is strong",
+      "gearFootwear": "Grippy footwear: sand and rocks get slippery"
+    }
+  },
+  "practicalInfo": {
+    "title": "Practical information for your visit",
+    "subtitle": "The services visitors usually care about, described by type of establishment and by how close they are to the lighthouse.",
+    "neutralNote": "This guide is an independent, non-profit civic project: we do not recommend or promote any specific business. We only tell you what type of service you will find and roughly how far away, so you can choose freely.",
+    "whereLabel": "Where:",
+    "items": [
+      {
+        "icon": "🚻",
+        "title": "Public restrooms",
+        "text": "The nearest toilets are usually inside the lighthouse grounds, in the small museum, in the cafés and restaurants of the area, and at the beach kiosks in season. Not all are free: many are for customers only.",
+        "where": "Lighthouse grounds, museum and Avenida del Mar businesses (a few metres away)."
+      },
+      {
+        "icon": "🅿️",
+        "title": "Parking",
+        "text": "There is surface parking and metered zones along Avenida del Mar and the surrounding streets, plus private paid car parks. In January, February and at weekends it fills up: arrive early or leave the car a few blocks away and finish on foot.",
+        "where": "Avenida del Mar and nearby side streets (0–500 m)."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Restaurants and cafés",
+        "text": "The seafront concentrates seafood and Chilean restaurants, cafés, pizzerias and fast-food outlets. The choice is wider in the centre of La Serena and around the market. In summer kiosks and food carts appear beside the beach.",
+        "where": "Avenida del Mar and La Serena centre (5–15 min by car or bus)."
+      },
+      {
+        "icon": "🏨",
+        "title": "Accommodation",
+        "text": "Options range from hotels and apart-hotels to cabins, hostels and family-run tourist lodgings. The closest are on Avenida del Mar itself; the centre offers more variety and price ranges, and Coquimbo is an alternative a few minutes away.",
+        "where": "Avenida del Mar, La Serena centre and Coquimbo (0–15 min)."
+      },
+      {
+        "icon": "🛒",
+        "title": "Supermarkets and shops",
+        "text": "You will find supermarkets, convenience stores, pharmacies and small shops both in the centre and along the main routes towards the coast. The city's craft and local produce market is the reference point for typical purchases.",
+        "where": "La Serena centre, main avenues and the market (5–15 min)."
+      },
+      {
+        "icon": "⛽",
+        "title": "Fuel and EV charging",
+        "text": "Petrol stations sit at the city approaches, on Route 5 Norte and along the main avenues, several with convenience stores and air. Electric vehicle charging points are mostly in the urban area and in hotel or shopping-centre car parks.",
+        "where": "Main avenues and city approaches (5–20 min)."
+      },
+      {
+        "icon": "🏧",
+        "title": "ATMs and banking",
+        "text": "Cash machines cluster in the centre, in shopping centres and along the main avenues; availability is thinner on the seafront. It is worth carrying some cash for fairs, kiosks and parking meters.",
+        "where": "La Serena centre and shopping centres (10–15 min)."
+      },
+      {
+        "icon": "💊",
+        "title": "Pharmacies and health care",
+        "text": "Pharmacies operate in the centre and along the commercial routes, with rotating emergency duty. For medical care, La Serena and Coquimbo have hospitals, clinics and emergency services.",
+        "where": "La Serena centre, Coquimbo and main avenues (10–20 min)."
+      },
+      {
+        "icon": "📶",
+        "title": "Connectivity and wifi",
+        "text": "Mobile coverage in the city and on the seafront is good. Free open wifi appears in some public spaces and in most cafés and hotels, though it is not a continuous service along the coast.",
+        "where": "Urban area and seafront; signal varies on the beach."
+      },
+      {
+        "icon": "♿",
+        "title": "Accessibility",
+        "text": "Access to the grounds and the base of the lighthouse is mostly flat, with ramps and paths suitable for wheelchairs and strollers. The climb to the upper viewpoint is by stairs and is not wheelchair accessible.",
+        "where": "Entrance and base of the lighthouse; upper viewpoint is stairs only."
+      },
+      {
+        "icon": "🧭",
+        "title": "Tourist information",
+        "text": "The municipality and the national tourism service keep information points in the centre of La Serena and in Coquimbo, where you can get maps, opening hours and local activities. The lighthouse's own panels explain its history.",
+        "where": "La Serena centre and Coquimbo (10–15 min)."
+      },
+      {
+        "icon": "🐕",
+        "title": "Pets and house rules",
+        "text": "The seafront promenade allows pets on a lead with responsible clean-up; restrictions usually apply inside the grounds and the museum. Follow the signs, do not climb the battlements and take your litter with you.",
+        "where": "Coastal promenade and beach; restrictions inside the grounds."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Lighthouse timeline",
+    "subtitle": "From the founding of the city to today's monument: the milestones that explain why the lighthouse sits at the centre of how La Serena sees itself.",
+    "items": [
+      {
+        "year": "1544",
+        "title": "La Serena is founded",
+        "text": "Juan Bohón founds the city, which becomes one of the oldest in Chile and a strategic point on the semi-arid northern coast. That colonial age is the reference that, centuries later, would inspire its neocolonial architecture."
+      },
+      {
+        "year": "1948–1952",
+        "title": "The Plan Serena",
+        "text": "President Gabriel González Videla drives a comprehensive urban renewal that reorganises the centre and gives La Serena a unified neocolonial image of arches, tiles and courtyards that still defines the city."
+      },
+      {
+        "year": "1950–1951",
+        "title": "The lighthouse is built",
+        "text": "The Chilean Navy raises the tower to the design of engineer Jorge Cisternas Larenas, conceived as a monumental lighthouse rather than merely a maritime signal."
+      },
+      {
+        "year": "1953",
+        "title": "Official inauguration",
+        "text": "On 24 October the Faro Monumental is inaugurated and begins operating both as a beacon and as an urban landmark on Avenida del Mar."
+      },
+      {
+        "year": "1985",
+        "title": "Handed to the municipality",
+        "text": "On 7 November the Navy transfers the site to the Municipality of La Serena for tourist and cultural use, opening the viewpoint to the public."
+      },
+      {
+        "year": "2010",
+        "title": "National Historic Monument",
+        "text": "On 9 June the lighthouse is declared a National Historic Monument of Chile, an exceptional distinction among the country's lighthouses."
+      },
+      {
+        "year": "Today",
+        "title": "Viewpoint, museum and symbol",
+        "text": "The site works as a viewpoint, a small museum, a craft fair and a stage for civic life facing the Pacific."
+      }
+    ]
+  },
+  "planning": {
+    "title": "When and how to visit",
+    "subtitle": "La Serena has a semi-arid coastal climate: sunshine most of the year, a wide gap between day and night temperatures, and morning fog in some months. These guidelines help you pick the best moment.",
+    "seasonsTitle": "Climate and best seasons",
+    "seasons": [
+      {
+        "name": "Summer",
+        "temp": "Dec–Feb · 16–26 °C",
+        "text": "High season. Long, bright days, a busy beach and more traffic on Avenida del Mar. Visit early or at sunset."
+      },
+      {
+        "name": "Autumn",
+        "temp": "Mar–May · 11–22 °C",
+        "text": "Very pleasant, quiet months with warm light and fewer visitors. Excellent for photography and for walking the seafront."
+      },
+      {
+        "name": "Winter",
+        "temp": "Jun–Aug · 8–18 °C",
+        "text": "Cooler and more humid, with morning coastal mist. Rain is scarce but can appear, and the Pacific wind is felt strongly on the viewpoint."
+      },
+      {
+        "name": "Spring",
+        "temp": "Sep–Nov · 11–22 °C",
+        "text": "Mild weather, clean skies and good visibility across the bay. One of the best times to combine the lighthouse with trips to the Elqui Valley."
+      }
+    ],
+    "hoursTitle": "Best times of day",
+    "hoursText": "The site opens Tuesday to Sunday in two blocks, 10:00–14:00 and 14:30–17:00. Depending on the light and the wind, each slot offers a different experience.",
+    "hours": [
+      {
+        "label": "Sunrise",
+        "text": "Eastern light strikes the tower head-on and the city looks crisp. Ideal for photos without crowds, though the site is still closed."
+      },
+      {
+        "label": "10:00–12:00",
+        "text": "The quietest part of opening hours: fewer visitors, mild temperatures and good visibility."
+      },
+      {
+        "label": "12:00–15:00",
+        "text": "Strongest sun and the busiest stretch. Useful if you want the museum and the craft fair; come with sun protection."
+      },
+      {
+        "label": "18:00–20:00",
+        "text": "The best light of the day, with the sun dropping over the Pacific. The viewpoint is usually shut, but the seafront and beach are at their best."
+      }
+    ],
+    "photoTitle": "Photography tips",
+    "photo": [
+      "Shoot in the golden hour: the low light of late afternoon and sunset brings out the battlements and the colour of the stone.",
+      "Frame from the beach in front of the base to get the Pacific and the tower in a single image.",
+      "On coastal-mist days, use the fog: the battlemented silhouette gains drama against the white.",
+      "Move north along Avenida del Mar for urban context shots with the city behind the tower.",
+      "On clear nights the area is good for astrophotography, though avenue lighting forces long exposures.",
+      "Respect the marked areas: the climb to the viewpoint and the railings have safety rules."
+    ],
+    "itineraryTitle": "Itinerary ideas",
+    "itineraries": [
+      {
+        "name": "Essential visit",
+        "duration": "45 min",
+        "text": "Grounds, base of the lighthouse, small museum and craft fair. Enough to understand the history and climb the viewpoint if it is open."
+      },
+      {
+        "name": "Lighthouse and seafront walk",
+        "duration": "2–3 h",
+        "text": "Add a walk along Avenida del Mar and the beach, with a stop at the Jardín del Corazón and a break in one of the local cafés."
+      },
+      {
+        "name": "Full day La Serena–Coquimbo",
+        "duration": "5–6 h",
+        "text": "Pair the lighthouse with the Plaza de Armas, the Cathedral and the craft market in the morning, then cross to Coquimbo in the afternoon for the bay and the Cruz del Tercer Milenio."
+      }
+    ]
+  },
+  "didYouKnow": {
+    "title": "Facts and curiosities",
+    "subtitle": "Six quick keys to understanding the Faro Monumental before you arrive.",
+    "items": [
+      {
+        "icon": "📏",
+        "title": "28 metres tall, 4 metres wide",
+        "text": "The tower reaches about 28 metres high with a base roughly 4 metres across: dimensions of a maritime signal and, at the same time, of an urban viewpoint."
+      },
+      {
+        "icon": "🏛️",
+        "title": "A lighthouse with heritage protection",
+        "text": "Since 2010 it has been a National Historic Monument of Chile, an exceptional distinction among the country's lighthouses, most of which are navigation infrastructure with no heritage protection."
+      },
+      {
+        "icon": "🏰",
+        "title": "A lighthouse that is also a fortress",
+        "text": "Its castle profile with battlements imitates Spanish colonial fortifications, a deliberate nod to the founding of the city in 1544."
+      },
+      {
+        "icon": "🌫️",
+        "title": "Coastal desert fog",
+        "text": "Chile's semi-arid north receives ocean moisture as morning fog. When the coastal mist blankets the shore, the lighthouse's light becomes all the more important for navigation."
+      },
+      {
+        "icon": "🏞️",
+        "title": "The mouth of the Elqui",
+        "text": "From the viewpoint you can make out where the Elqui River hands its water to the Pacific, the feature that shaped La Serena's coastline."
+      },
+      {
+        "icon": "🐦",
+        "title": "Wildlife along the shore",
+        "text": "Pelicans, cormorants and gulls are common over the beach and the nearby rocks; with luck you may spot sea lions along the waterline."
+      }
     ]
   }
 }

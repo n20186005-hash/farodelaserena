@@ -1,29 +1,100 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Hero from '../../components/Hero.astro';
+import EntityOverview from '../../components/EntityOverview.astro';
+import VisitorSnapshot from '../../components/VisitorSnapshot.astro';
 import Intro from '../../components/Intro.astro';
+import Weather from '../../components/Weather.astro';
 import Transport from '../../components/Transport.astro';
+import PracticalInfo from '../../components/PracticalInfo.astro';
 import InfoSection from '../../components/InfoSection.astro';
+import Timeline from '../../components/Timeline.astro';
+import Planning from '../../components/Planning.astro';
+import DidYouKnow from '../../components/DidYouKnow.astro';
 import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
+import Recommendations from '../../components/Recommendations.astro';
 import MapEmbed from '../../components/MapEmbed.astro';
 import FAQ from '../../components/FAQ.astro';
+import Sources from '../../components/Sources.astro';
 import { getI18n, languagesList } from '../../i18n/ui';
+import { attraction } from '../../config';
 
 export function getStaticPaths() {
   return languagesList.map((lang) => ({ params: { lang } }));
 }
 
-const { messages } = getI18n(Astro.url);
+const { lang, messages } = getI18n(Astro.url);
+const homeUrl = `${attraction.baseUrl}/${lang}`;
+
+/* FAQPage — reuses the on-page FAQ content so the schema always matches the visible copy */
+const faqQuestions = (messages.faq.categories ?? [])
+  .flatMap((category: any) => category.items ?? [])
+  .map((item: any) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  }));
+
+const schemas: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    '@id': `${homeUrl}#faq`,
+    inLanguage: lang,
+    mainEntity: faqQuestions,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${homeUrl}#breadcrumb`,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: messages.entity.breadcrumbHome,
+        item: homeUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: `${attraction.fullName} (${attraction.city})`,
+        item: homeUrl,
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `${attraction.city}, ${attraction.region}, ${attraction.country}`,
+        item: `${homeUrl}#map`,
+      },
+    ],
+  },
+];
 ---
 
-<BaseLayout title={messages.meta.title} description={messages.meta.description} path="">
+<BaseLayout
+  title={messages.meta.title}
+  description={messages.meta.description}
+  schemaDescription={messages.meta.schemaDescription}
+  path=""
+  jsonLd={schemas}
+  preloadHero
+>
   <Hero />
+  <EntityOverview />
+  <VisitorSnapshot />
   <Intro />
+  <Weather />
   <Transport />
+  <MapEmbed />
+  <PracticalInfo />
   <InfoSection />
+  <Timeline />
+  <Planning />
+  <DidYouKnow />
   <Gallery />
   <Reviews />
-  <MapEmbed />
+  <Recommendations />
   <FAQ />
+  <Sources />
 </BaseLayout>

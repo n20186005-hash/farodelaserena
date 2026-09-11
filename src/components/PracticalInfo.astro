@@ -1,0 +1,31 @@
+---
+import { getI18n } from '../i18n/ui';
+const { messages } = getI18n(Astro.url);
+const p = messages.practicalInfo;
+---
+
+<section id="amenities" class="section-padding" style="background: var(--bg-secondary);">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{p.title}</h2>
+    <p class="text-base sm:text-lg mb-6 max-w-3xl" style="color: var(--text-secondary);">{p.subtitle}</p>
+
+    <p class="text-sm leading-relaxed rounded-xl border px-4 py-3 mb-9 max-w-3xl" style="border-color: var(--border-color); background: var(--card-bg); color: var(--text-secondary);">
+      <span class="mr-1" aria-hidden="true">ℹ️</span>{p.neutralNote}
+    </p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      {p.items.map((item) => (
+        <article class="rounded-2xl border p-5 flex flex-col" style="background: var(--card-bg); border-color: var(--border-color);">
+          <div class="flex items-start gap-3 mb-3">
+            <span class="text-2xl leading-none shrink-0" aria-hidden="true">{item.icon}</span>
+            <h3 class="font-semibold text-base leading-snug" style="color: var(--text-primary);">{item.title}</h3>
+          </div>
+          <p class="text-sm leading-relaxed mb-4" style="color: var(--text-secondary);">{item.text}</p>
+          <p class="mt-auto text-xs pt-3 border-t" style="border-color: var(--border-color); color: var(--text-muted);">
+            <span class="font-medium" style="color: var(--text-secondary);">{p.whereLabel}</span> {item.where}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

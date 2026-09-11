@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Fully crawlable, HTTPS-only visitor guide for the Faro Monumental de La Serena
+Sitemap: https://farodelaserena.com/sitemap.xml

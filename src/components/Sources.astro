@@ -1,0 +1,41 @@
+---
+import { getI18n } from '../i18n/ui';
+import { attraction } from '../config';
+
+const { messages } = getI18n(Astro.url);
+const s = messages.sources;
+const links = messages.footer.officialLinksList;
+---
+
+<section id="sources" class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3" style="color: var(--text-primary);">{s.title}</h2>
+    <p class="text-base sm:text-lg leading-relaxed mb-8" style="color: var(--text-secondary);">{s.intro}</p>
+
+    <ul class="grid sm:grid-cols-2 gap-3 mb-8">
+      {links.map((link) => (
+        <li>
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block rounded-xl px-4 py-3 text-sm border hover:opacity-80 break-words"
+            style="background: var(--card-bg); border-color: var(--border-color); color: var(--text-primary);"
+          >
+            {link.name} <span style="color: var(--accent);">↗</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="text-sm sm:text-base leading-relaxed mb-8" style="color: var(--text-secondary);">
+      <a href={attraction.govtTourismUrl} target="_blank" rel="noopener noreferrer" class="font-semibold underline" style="color: var(--accent);">
+        {s.officialPortalLabel}
+      </a>
+    </p>
+
+    <p class="text-xs sm:text-sm leading-relaxed border-t pt-6" style="border-color: var(--border-color); color: var(--text-muted);">
+      {s.photoRights}
+    </p>
+  </div>
+</section>

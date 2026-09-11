@@ -1,7 +1,13 @@
 {
   "meta": {
-    "title": "Faro Monumental de La Serena | La Serena, Chile",
-    "description": "Faro Monumental de La Serena kimün: jeréia, Plan Serena ka neocolonial estilo, ta'anga, wentru nütram ka mba'éichapa La Serena, Chile-pe ogusteta."
+    "title": "Faro Monumental de La Serena: Jeguata, Jeréia ka Og̃uahẽ",
+    "description": "Faro Monumental de La Serena 28 m yvate, 2010 guive Chile Monumento Histórico. Ehecha horario, mba'éichapa reg̃uahẽ, mapa ka mba'e oĩva hi'aguĩ.",
+    "schemaDescription": "Faro Monumental de La Serena jeguata kuatia (La Serena, Coquimbo, Chile): 28 m yvate, jeréia ka patrimonio cultural, horario, mba'éichapa reg̃uahẽ ka mba'e ehecha hag̃ua Avenida del Mar-pe."
+  },
+  "visitorSnapshot": {
+    "title": "Inglés-pe marandu pytagua visitante-kuérape g̃uarã",
+    "subtitle": "Inglés-pe: tenda, horario, entrada ka mba'éichapa reg̃uahẽ.",
+    "mapsCta": "Ehecha tenda Google Maps-pe"
   },
   "header": {
     "siteName": "Faro Monumental de La Serena",
@@ -13,6 +19,8 @@
     "reviews": "Nütram",
     "faq": "Porandu",
     "map": "Mapa",
+    "weather": "Ára reko",
+    "services": "Tenda mba'e",
     "backToHome": "Eju ñepyrũ"
   },
   "common": {
@@ -22,10 +30,12 @@
   "hero": {
     "title": "Faro Monumental de La Serena",
     "subtitle": "Faro monumento neocolonial, Armada de Chile 1950 ka 1951 ngeley meu pülechi; La Serena pewma ka Pacífico rupa.",
-    "rating": "4.2(25.923)",
-    "reviewCount": "Nütram 25.923",
+    "rating": "4.2(26.009)",
+    "reviewCount": "Nütram 26.009",
     "hours": "Martes–Domingo 10:00–14:00 ka 14:30–17:00 · Lunes cerrado",
+    "location": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
     "openMaps": "Ehecha tenda",
+    "seeWeather": "Ehecha ára reko",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "intro": {
@@ -53,6 +63,8 @@
   "transportSection": {
     "title": "Mba'éichapa reg̃uahẽ farópe",
     "subtitle": "Aeropuerto, bus ka auto rupi La Serena-pe ogusteta, Avenida del Mar ipahápe, ko sección ombyaty tape ojepuruvéva Faro Monumental-pe hag̃uáicha.",
+    "shortAnswerTitle": "Ñepyrũ: mba'éichapa reg̃uahẽ",
+    "shortAnswer": "Faro Monumental de La Serena oĩ Avda. Francisco de Aguirre ka Avenida del Mar, playa renondépe. Plaza de Armas guive 10–15 minuto auto, taxi térã colectivo rupi costanera rupi; La Florida Aeropuerto (LSC) guive 15–20 minuto taxi rupi; terminal de buses guive 10 minuto rupi. Ikatu avei reguata térã bicicleta rupi Avenida del Mar-pe.",
     "overviewTitle": "Ehecha moõ guipa reju",
     "overviewText": "La Serena Chile norte rupi oĩ, Santiago 470 km Ruta 5 Norte rupi. Mage ramo, jepive reg̃uahẽ La Florida Aeropuerto-pe térã bus tuichápe; upéi faro oĩva mokõi aravo rasa auto, taxi térã transporte público rupi costanera avenida rupi. Heta visitante-pe g̃uarã, faro ha'e peteĩ tenda og̃uahẽva ojeguatáva.",
     "arrivalTitle": "Neresẽ mboyve",
@@ -147,7 +159,8 @@
     "text": "Faro Monumental de La Serena Armada de Chile ojapo ha 7 noviembre 1985 ngeley meu La Serena Municipalidad-pe ome'ẽ turismo ka cultura rupi. Ha'ye Plan Serena ta'anga, 1950 rupi ciudad neocolonial oñemoĩva. Ko'ágã kütra ha'e faro ayuda ka ruka, pewma, chillka ruka ka Pacífico rupa."
   },
   "knowledge": {
-    "title": "Faro jeréia, hesa'ỹ ha ñe'ẽnga",
+    "title": "Faro jeréia ka patrimonio cultural",
+    "intro": "Faro Monumental de La Serena ndaha'éi pewma añónte: ha'e ciudad jeréia, arquitectura neocolonial ka Chile patrimonio cultural ohechaukáva tenda. Ko'ã kuatia omombe'u Plan Serena (1948–1952) ñepyrũ, fortaleza diseño mba'ére, costa ñe'ẽnga ka 2010 guive patrimonio protección.",
     "sections": [
       {
         "id": "history",
@@ -168,6 +181,31 @@
         "id": "significance",
         "title": "La Serena ta'anga",
         "content": "Ko'ágã Faro Monumental, neocolonial Catedral ka Plaza de Armas ndive, ha'e La Serena ta'anga tee. Fortaleza silueta Avenida del Mar oñe'ẽ, postcard, souvenir ka memoria rupi. 2010 ngeley meu Monumento Histórico ramo, Chile faro peteĩnte iporãva pewma ramo."
+      },
+      {
+        "id": "architecture",
+        "title": "Ruka jeporu ka construcción",
+        "content": "Kütra 28 m rupi yvate ka 4 m diámetro püle, peteĩ plataforma rupi oĩva, okẽ ka pewma ramo avei oipuru. Kütra hormigón armado, piedra local rupive oñemboúva; ñi forma ha'e fortaleza colonial: muro oñembo'ýva, almena yvate ka volumen pohýi, mar ndive ojojoguáva. Ryepýpe escalera espiral yvatépe ohupi, upépe sala de luz cristal rupi oĩ. Resultado ha'e peteĩ mezcla ojejapóva: siglo XX ingeniería, siglo XVI colonial arquitectura ta'anga ndive."
+      },
+      {
+        "id": "navigation",
+        "title": "Faro ha'e señal navegación rupi",
+        "content": "Faro ha'e señal. La Serena faro ojejapo bahía ka Coquimbo puerto ogusteta hag̃ua, ka Elqui llef püle ojegua va'ekue pescador ka deportivo oipytyvõ hag̃ua. Luz sala cristal yvate rupi oĩva, pyhare Pacífico-pe omimbipa; kuarahy jave castillo silueta ojapo pe tembiapo. Satélite ka baliza automático ndive, señal principal ramo oñeminguéi, péro oñongatu baliza apoyo ramo ha paisaje costero rehegua ndive."
+      },
+      {
+        "id": "planSerena",
+        "title": "Plan Serena ka ciudad neocolonial",
+        "content": "Faro rapykuéri oĩ peteĩ plan urbano tuicháva. 1948 ka 1952 mbytépe, Plan Serena ciudad-pe peteĩ ta'anga moderno ka colonial oheka. Gabriel González Videla presidente, La Serena-pe heñóiva, plan omohenda centro, ojapo edificio público ka ombojoaju arco, teja, patio ka balcón estilo; ko'ágã Plaza de Armas, Catedral ka edificio cívico-pe oĩ. Faro ha'e pe conjunto pehẽngue: Avenida del Mar ipaha ka mar guive ciudad ogueraháva."
+      },
+      {
+        "id": "heritage",
+        "title": "Patrimonio ka conservación",
+        "content": "9 junio 2010, Faro Monumental de La Serena Chile Monumento Histórico ramo ojekuaa, arquitectura ka identidad local rehe. Ko declaratoria patrimonio ramo oñangareko ka oimeraẽ intervención ñi característica original ongatu va'erã. Ko'ãg̃a rupi ruka turismo rupi ojeporu: sendero señalizado, panel patrimonial ka exposición ka artesanía tenda, kütra ha'e hã opa jave. Revisitáramo, ehecha mba'e ha'éva: monumento, ndaha'éi pewma ndive añónte."
+      },
+      {
+        "id": "culture",
+        "title": "Faro ka tekove ára jave",
+        "content": "Faro ha'e tenda ojoajuháva. Año Nuevo oñembopu Avenida del Mar rupi, carrera costero, graduación ta'anga ka familia ka'aru jave oju. Postcard, mural, souvenir ka mitãnguera memoria-pe oĩ, escuela jeguata jave pewma-pe ojekárõva. Literalmente, ha'e tenda La Serena mar ohecháva."
       }
     ]
   },
@@ -177,6 +215,7 @@
     "photoAlt": "Faro Monumental de La Serena neocolonial estilo Pacífico rupa",
     "viewAll": "Ehecha Google Maps-pe",
     "showMore": "Ehecha ta'angave",
+    "photoCountLabel": "ta'anga",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "reviews": {
@@ -212,13 +251,15 @@
     ]
   },
   "mapSection": {
-    "title": "Mba'éichapa ogusteta",
+    "title": "Mapa ka tenda",
     "subtitle": "Avenida del Mar Avenida Francisco de Aguirre rüpü, La Serena, Coquimbo Región, Chile",
     "openMaps": "Eipe'a Google Maps-pe",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7"
   },
   "footer": {
     "siteName": "Faro Monumental de La Serena",
+    "address": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
+    "plusCode": "3PVG+Q7 La Serena, Chile",
     "rights": "© 2026 Faro Monumental de La Serena — Jeheka peteĩha, ndaha'éi mba'e oficiable. Opaite derecho oñongatu.",
     "privacy": "Privacidad reko",
     "terms": "Eipuru reko",
@@ -234,7 +275,25 @@
       { "name": "Gobierno Regional de Coquimbo", "url": "https://www.gorecoquimbo.cl/" },
       { "name": "Ministerio de las Culturas, las Artes y el Patrimonio", "url": "https://www.cultura.gob.cl/" }
     ],
-    "disclaimer": "Ko ha'e peteĩ jeheka peteĩha, ndaha'éi mba'e oficiable. Ndaroikuaa gobierno térã institución oficial ndive."
+    "disclaimer": "Ko ha'e peteĩ jeheka peteĩha, ndaha'éi mba'e oficiable. Ndaroikuaa gobierno térã institución oficial ndive.",
+    "photoRights": "Ta'anga derecho: ko web ta'anga opaite ha'e ta'anga ojapo va'ekue mba'e ka derecho."
+  },
+  "entity": {
+    "breadcrumbLabel": "Tape",
+    "breadcrumbHome": "Ñepyrũ",
+    "aboutTitle": "Faro Monumental de La Serena rehegua",
+    "welcome": "Terere oju Faro Monumental de La Serena-pe, ojekuaa Faro de La Serena ramo. Oĩva La Serena ryepýpe, Coquimbo Región, Chile, ko tenda ha'e viajero ojuva región-pe g̃uarã tape tuichavéva.",
+    "hierarchyTitle": "Tenda ka jerarquía geográfica",
+    "hierarchy": "Faro Monumental de La Serena → La Serena → Coquimbo Región → Chile",
+    "nearbyTitle": "Tenda ka atractivo oĩva faro jerére",
+    "nearbyText": "Faro Monumental de La Serena rehecha jave, visitante ikatu ohecha tenda jeréia ka punto oĩva hi'aguĩ, Plaza de Armas de La Serena ka Jardín del Corazón (Avenida del Mar) ndive.",
+    "nearbyMore": "Ehecha tenda oĩva hi'aguĩ"
+  },
+  "sources": {
+    "title": "Marandu renda ka referencia",
+    "intro": "Ko jeguata marandu oĩ oficial ka turismo renda guive. Marandu pyahu ka región turismo rehe, ehecha portal oficial:",
+    "officialPortalLabel": "Chile / Coquimbo Región turismo portal oficial",
+    "photoRights": "Ta'anga derecho: ko web ta'anga opaite ha'e ta'anga ojapo va'ekue mba'e ka derecho."
   },
   "privacy": {
     "title": "Privacidad reko",
@@ -341,6 +400,14 @@
           {
             "q": "¿Mba'épa yvate ha ikatu oike?",
             "a": "Kütra 28 m rupi ka 4 m diámetro püle. Pewma interior-pe eguyhy Pacífico, Elqui llef ka La Serena bahía ohecha; ehecha acceso ka precio tenda-pe."
+          },
+          {
+            "q": "¿Mba'épa yvate Faro de La Serena?",
+            "a": "Faro Monumental de La Serena 28 m rupi yvate, 4 m diámetro ñi püle. Ndaha'éi yvate marítimo ramo: hesa'ỹ ha'e silueta monumental ka pewma, La Serena bahía, Elqui llef ka Pacífico ohechaukáva."
+          },
+          {
+            "q": "¿Mba'ére ojejapo Faro de La Serena?",
+            "a": "Mokõi mba'ére. Peteĩha, baliza ramo y oguata hag̃ua La Serena bahía ka Coquimbo puerto. Mokõiha, hito cívico ka símbolo ramo Plan Serena (1948–1952) pegua, ciudad neocolonial ome'ẽva. Armada de Chile ingeniero Jorge Cisternas Larenas-pe ojerure faro 'monumental' ojejapo hag̃ua: señal marítima fortaleza colonial ramo, Avenida del Mar paha ka costa rupi og̃uahẽva oñepyrũ."
           }
         ]
       },
@@ -387,6 +454,341 @@
       { "name": "La Serena ka Coquimbo city tour", "url": "https://www.chile.travel/" },
       { "name": "Valle del Elqui excursión", "url": "https://www.chile.travel/" },
       { "name": "Observatorio astronómico tour", "url": "https://www.sernatur.cl/" }
+    ]
+  },
+  "weather": {
+    "title": "La Serena ára reko: ko'ág̃a ka 7 ára pronóstico",
+    "subtitle": "Pewma-pe eguyhy mboyve, ehecha costero ára reko: temperatura, viento, lluvia ka UV próximos días rupi.",
+    "currentTitle": "Ko'ág̃a",
+    "forecastTitle": "7 ára oju",
+    "today": "Ára",
+    "feelsLike": "Sensación",
+    "humidity": "Humedad",
+    "wind": "Viento",
+    "precipitation": "Lluvia",
+    "rainChance": "Lluvia probabilidad",
+    "rainAccum": "Lluvia acumulada",
+    "uvIndex": "UV",
+    "sunrise": "Kuarahy sëmi",
+    "sunset": "Kuarahy oity",
+    "updated": "Actualizado",
+    "loading": "Costero ára reko eheka…",
+    "unavailable": "Ára marandu ndaikatúi ojegueru ko'ág̃a.",
+    "sourceLabel": "Ára marandu renda",
+    "riskTitle": "Aviso riesgo",
+    "riskNote": "24 aravo pronóstico rupi ojejapo automático; guía añóntente, ndaha'éi oficial aviso.",
+    "allClear": "Ára ndaĩri mba'e vai plan ojemoambue va'erã; jeguata porã eiko.",
+    "travelTitle": "Mba'épa eñemyendu",
+    "playTitle": "Mba'épa ejapo ko'ág̃a",
+    "gearTitle": "Mba'épa teraha",
+    "marineTitle": "Mar reko",
+    "waveHeight": "Ola ko'ág̃a",
+    "waveMax": "Ola tuichavéva ára",
+    "wavePeriod": "Ola período",
+    "seaTemp": "Y temperatura",
+    "tideLabel": "Marea",
+    "tideRange": "Marea amplitud",
+    "tideHigh": "pleamar",
+    "tideLow": "bajamar",
+    "tideRising": "ojupíva",
+    "tideFalling": "oguéva",
+    "tideSteady": "estable",
+    "tideTitle": "Marea",
+    "tideTodayLabel": "Ára kurva, aravo aravo",
+    "tideNextLabel": "Marea oju",
+    "tideAdviceTitle": "Araka'e rembe'y peve eho",
+    "tideHintRising": "Marea ojupi: y oho tenonde, ndepytai piedra-pe térã yvy guýpe.",
+    "tideHintFalling": "Marea ogue: yvy ka piedra osẽ, rembe'y ehecha hag̃ua iporã.",
+    "tideHintSteady": "Marea ndoambuei ko'ág̃a: rembe'y rupi guata rupi iporã.",
+    "tideHintNextLow": "Bajamar oju {time} rupi: peteĩ aravo mboyve ka rire pozo ka piedra ehecha hag̃ua iporãve.",
+    "tideHintNextHigh": "Pleamar oju {time} rupi: piedra ka rembe'y tape oñembo'ýta, eñangareko.",
+    "marineNote": "Marea aravo ha'e modelo estimación; piedra rupi señalética ka salvamento tapicha ehecha.",
+    "groups": {
+      "clear": "Kuarahy",
+      "mainlyClear": "Kuarahy ka tropa",
+      "partlyCloudy": "Tropa mbyky",
+      "overcast": "Tropa",
+      "fog": "Niebla",
+      "drizzle": "Lluvia mirĩ",
+      "rain": "Lluvia",
+      "showers": "Aguacero",
+      "snow": "Nieve",
+      "thunderstorm": "Trueno"
+    },
+    "days": ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+    "tips": {
+      "riskStorm": "Trueno ára: ndejerovi yvyra guýpe, playa térã piedra-pe; y rupi actividad oñemboí.",
+      "riskHeavyRain": "Lluvia tuicháva: ehasákei valle, yvy guýpe ka sendero resbaladizo piedra jerére.",
+      "riskStrongWind": "Viento tuichaitéva: emomombyry cartel, sombrilla, piedra costero ka estructura provisional.",
+      "riskHighWave": "Ola yvatéva: ndeguatai piedra-pe térã ola ohundíva rupi, ndejerovi y-pe.",
+      "riskSnow": "Nieve ikatu: calzado resbalón'ỹ ka yvy helado eñangareko.",
+      "riskFog": "Niebla katu: ndoohechai porã, ferri ka vuelo ikatu oñembotarde, auto-pe antifog luz eipuru.",
+      "riskHeat": "Kuarahy vaietéva: insolación kyhyje, medio ára jave ndojepytai ára puku.",
+      "riskUV": "UV vaietéva: pya'e ikatu ojahy nde py, eñangareko opa jave.",
+      "travelHeavyRain": "Lluvia ka viento: impermeable ka calzado resbalón'ỹ iporãve.",
+      "travelDrizzle": "Lluvia mirĩ: yvy resbaladizo, guata eñangareko.",
+      "travelCold": "Temperatura guýva: osẽ mboyve eñemyendu porã.",
+      "travelHot": "Oaku: medio ára eipe'a, ropa ligero ka ventilado eipuru.",
+      "travelSwing": "Ára ka pyhare ndojojoguái: peteĩ chaqueta nde ndive eraha, eipe'a ka emoĩ pya'e hag̃ua.",
+      "travelWindy": "Viento oĩva: costa-pe ho'ysãve, peteĩ chaqueta viento'ỹ iporã.",
+      "travelSunny": "Ára porã: okápe jeguata rupi iporã, péro protección solar nderejedái.",
+      "travelCloudy": "Cielo cubierto: luz suave, ta'anga rupi iporãite ka kuarahy ndahasyi.",
+      "playStorm": "Okápe actividad ndaha'éi ko ára; y rupi tembiapo oñemboí. Museo ka cubierto tenda eiporavo.",
+      "playHeavyRain": "Okápe plan ndaiporãi; barco ka teleférico oñemboíta. Cubierto tenda iporãve.",
+      "playRain": "Lluvia heta: montaña ka playa eipytu'u, térã impermeable porã eraha.",
+      "playDrizzle": "Okápe plan ndoiko porãi; cubierto tenda ndive embojoaju.",
+      "playStrongWind": "Ko viento ndive marítimo actividad oñemboí jepi; avei piedra costero gui emomombyry.",
+      "playWindy": "Barco ka okápe atracción oñemboíta; pewma-pe eike eñangareko.",
+      "playFog": "Ko niebla ndive mar ka serranía ehecha porã ndaikatúi, kütra gui avei.",
+      "playHot": "Okápe aravo emombyky, medio ára jave eipe'a, y heta e'u.",
+      "playSeaWarm": "Y hakuvéva: upéicha rupi, ñoirũ ndive ejerovi ha bandera ka ola ehecha.",
+      "playSeaCold": "Y ho'ysã: nderejerojevy pukuíri, osẽ rire emokã ha eñemyendu.",
+      "playTideLow": "Bajamar jave rembe'y ehecha hag̃ua iporã; ndepa'i mombyry ha pleamar aravo ehecha.",
+      "playSunny": "Cielo limpio: kuarahy sëmi ka, tuichavéva, Pacífico kuarahy oity rupi iporã.",
+      "playCloudy": "Kuarahy vaieté'ỹ: guata ka ta'anga rupi iporãite aravo puku.",
+      "playCoastal": "Costa-pe viento oĩ ha piedra resbaladizo: nde py ehecha, marea eñangareko, ndeñoite ndejerovi.",
+      "gearRaincoat": "Impermeable (viento jave paraguas puku iporãve'ỹ)",
+      "gearUmbrella": "Paraguas térã impermeable",
+      "gearFoldUmbrella": "Paraguas plegable",
+      "gearSunscreen": "Protector solar, gafas de sol ka sombrero",
+      "gearHydration": "Y heta ka mba'e kuarahy vai rupi",
+      "gearWarm": "Abrigo pohýi ka bufanda",
+      "gearWindy": "Sombrero oveve: falda ancha ka ropa suelto ndekatu'ỹi",
+      "gearMask": "Mascarilla (visibilidad guýpe iporãve)",
+      "gearLayer": "Peteĩ chaqueta eipe'a ha emoĩ pya'e hag̃ua",
+      "gearSunglasses": "Gafas de sol, mar reflejo hasy",
+      "gearFootwear": "Calzado resbalón'ỹ: yvy ka piedra resbaladizo"
+    }
+  },
+  "practicalInfo": {
+    "title": "Marandu porã jeguata rupi",
+    "subtitle": "Visitante ojeruruvéva tenda, mba'éichagua servicio ka mba'éichapa faro gui hi'aguĩ oĩ.",
+    "neutralNote": "Ko web ha'e peteĩ proyecto ciudadano independiente, ndaha'éi mba'e lucro. Ndororecomendái ha ndoromopu'ãi tenda específico; añónte ro'e mba'éichagua servicio rejuhúta ka mba'éichapa hi'aguĩ, nde eiporavo hag̃ua.",
+    "whereLabel": "Moõ:",
+    "items": [
+      {
+        "icon": "🚻",
+        "title": "Baño público",
+        "text": "Baño oĩvéva jepi faro ruka ryepýpe, chillka ruka michĩme, café ka restaurante jerére, ka playa kiosco temporada jave. Ndaopaitei libre: heta ha'e cliente añónte g̃uarã.",
+        "where": "Faro ruka, chillka ruka ka Avenida del Mar tenda (metro mbyky)."
+      },
+      {
+        "icon": "🅿️",
+        "title": "Estacionamiento",
+        "text": "Avenida del Mar ka calle jerére oĩ estacionamiento superficie ka parquímetro, avei estacionamiento privado pago. Enero, febrero ka fin de semana jave oñembyai: temprano eguahẽ térã auto emoĩ mombyry ha reguata.",
+        "where": "Avenida del Mar ka calle jerére (0–500 m)."
+      },
+      {
+        "icon": "🍽️",
+        "title": "Restaurante ka café",
+        "text": "Costanera rupi oĩ restaurante mar ka Chile comida rehegua, café, pizzería ka comida rápida. Centro ka mercado jerére heta oĩve. Verano jave playa ypýpe kiosco ka carro comida oĩ.",
+        "where": "Avenida del Mar ka La Serena centro (5–15 minuto auto térã bus rupi)."
+      },
+      {
+        "icon": "🏨",
+        "title": "Alojamiento",
+        "text": "Oĩ hotel, apart-hotel, cabaña, hostal ka alojamiento familiar. Hi'aguĩvéva Avenida del Mar rupi; centro-pe heta oĩve ka precio ojoguáva, Coquimbo avei mokõi minuto rupi alternativa.",
+        "where": "Avenida del Mar, La Serena centro ka Coquimbo (0–15 minuto)."
+      },
+      {
+        "icon": "🛒",
+        "title": "Supermercado ka comercio",
+        "text": "Centro ka costanera tape tuichavéva rupi oĩ supermercado, minimarket, farmacia ka tienda michĩ. Artesanía ka local producto rejogua hag̃ua, mercado artesanal renda ehecha.",
+        "where": "La Serena centro, tape tuichavéva ka mercado (5–15 minuto)."
+      },
+      {
+        "icon": "⛽",
+        "title": "Nafta ka carga eléctrica",
+        "text": "Bencinera oĩ ciudad okẽme, Ruta 5 Norte ka tape tuichavéva rupi; heta oĩ tienda ka aire ndive. Auto eléctrico carga renda oĩve ciudad-pe, hotel ka shopping estacionamiento-pe.",
+        "where": "Tape tuichavéva ka ciudad okẽme (5–20 minuto)."
+      },
+      {
+        "icon": "🏧",
+        "title": "Cajero ka banco",
+        "text": "Cajero oĩ centro, shopping ka tape tuichavéva rupi; costanera-pe sa'ive. Feria, kiosco ka estacionamiento rupi efectivo eraha iporã.",
+        "where": "La Serena centro ka shopping (10–15 minuto)."
+      },
+      {
+        "icon": "💊",
+        "title": "Farmacia ka salud",
+        "text": "Farmacia oĩ centro ka tape comercial rupi, turno emergencia ndive. Atención médica rupi, La Serena ka Coquimbo oguereko hospital, clínica ka urgencia servicio.",
+        "where": "La Serena centro, Coquimbo ka tape tuichavéva (10–20 minuto)."
+      },
+      {
+        "icon": "📶",
+        "title": "Conexión ka wifi",
+        "text": "Ciudad ka costanera rupi señal móvil porã. Wifi abierto oĩ espacio público ka café ka alojamiento heta-pe, péro costanera pukukue ndoikoi opa rupi.",
+        "where": "Ciudad ka costanera; playa-pe señal ojoguáva."
+      },
+      {
+        "icon": "♿",
+        "title": "Accesibilidad",
+        "text": "Ruka okẽ ka faro püle oĩva platoha, rampa ka sendero oĩ silla de ruedas ka coche de bebé g̃uarã. Pewma yvatéve escalera rupi, upévare silla de ruedas ndaikatúi oho.",
+        "where": "Ruka okẽ ka faro püle; pewma escalera añónte."
+      },
+      {
+        "icon": "🧭",
+        "title": "Turismo marandu",
+        "text": "Municipalidad ka turismo servicio nacional oguereko marandu renda La Serena centro ka Coquimbo-pe, upépe mapa, horario ka actividad rejuhúta. Faro panel avei jeréia omombe'u.",
+        "where": "La Serena centro ka Coquimbo (10–15 minuto)."
+      },
+      {
+        "icon": "🐕",
+        "title": "Mascota ka norma",
+        "text": "Costanera guata rupi mascota cadena ndive ikatu oho, ha nde emopotĩ va'erã; ruka ka chillka ruka ryepýpe restricción oĩ jepi. Señalética eñangareko, almena ndepu'ãi, ka nde yty eraha.",
+        "where": "Costanera guata ka playa; ruka ryepýpe restricción."
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Faro aravo rysýi",
+    "subtitle": "Ciudad ojejapo guive ko'ág̃a monumento peve: mba'ére faro oĩ La Serena identidad mbytépe.",
+    "items": [
+      {
+        "year": "1544",
+        "title": "La Serena ojejapo",
+        "text": "Juan Bohón ciudad ojapo; ha'e Chile táva tujavéva peteĩ ka norte costa semiárida renda estratégico. Pe colonial jeréia ha'e referencia siglo rire neocolonial arquitectura oipytyvõva."
+      },
+      {
+        "year": "1948–1952",
+        "title": "Plan Serena",
+        "text": "Gabriel González Videla presidente omoĩ peteĩ renovación urbano tuicháva: centro omohenda ka La Serena-pe peteĩ ta'anga neocolonial ombojoaju arco, teja ka patio ndive, ko'ág̃a peve ciudad ohechakuaáva."
+      },
+      {
+        "year": "1950–1951",
+        "title": "Faro ojejapo",
+        "text": "Armada de Chile kütra ojapo, ingeniero Jorge Cisternas Larenas diseño rupi; faro monumental ramo ojejapo, ndaha'éi señal marítimo añóntente."
+      },
+      {
+        "year": "1953",
+        "title": "Oñembopu",
+        "text": "24 octubre Faro Monumental oñembopu ha señal ka ciudad hito ramo Avenida del Mar rupi ojepyrũ."
+      },
+      {
+        "year": "1985",
+        "title": "Municipalidad-pe ome'ẽ",
+        "text": "7 noviembre Armada ruka La Serena Municipalidad-pe ome'ẽ, turismo ka cultura rupi ojeporu hag̃ua; pewma tapicha opaite-pe ojepe'a."
+      },
+      {
+        "year": "2010",
+        "title": "Monumento Histórico Nacional",
+        "text": "9 junio Faro Chile Monumento Histórico ramo ojekuaa, Chile faro apytépe peteĩ distinción ojekuaaporãvéva."
+      },
+      {
+        "year": "Ko'ág̃a",
+        "title": "Pewma, chillka ruka ka ta'anga",
+        "text": "Ruka ha'e pewma, chillka ruka michĩ, artesanía feria ka Pacífico rupa ciudad tenda."
+      }
+    ]
+  },
+  "planning": {
+    "title": "Araka'e ha mba'éichapa reho",
+    "subtitle": "La Serena clima semiárido costero: kuarahy ary pukukue, ára ka pyhare temperatura ndojojoguái, ka mes algunos-pe pyhareve niebla. Ko'ã marandu eipytyvõta araka'e iporãvéva eiporavo hag̃ua.",
+    "seasonsTitle": "Clima ka temporada porãve",
+    "seasons": [
+      {
+        "name": "Verano",
+        "temp": "dic–feb · 16–26 °C",
+        "text": "Temporada alta. Ára puku ka kuarahy, playa henyhẽ ka Avenida del Mar rupi heta tapicha. Temprano térã kuarahy oity jave eho."
+      },
+      {
+        "name": "Otoño",
+        "temp": "mar–may · 11–22 °C",
+        "text": "Mes iporãitéva ka py'aguapýva, luz hakuvéva ka visitante sa'ive. Ta'anga ka costanera guata rupi iporãite."
+      },
+      {
+        "name": "Invierno",
+        "temp": "jun–ago · 8–18 °C",
+        "text": "Ho'ysãve ka humedad heta, pyhareve camanchaca ndive. Lluvia sa'i péro ikatu, ka Pacífico viento pewma-pe hasy oñeñandu."
+      },
+      {
+        "name": "Primavera",
+        "temp": "sep–nov · 11–22 °C",
+        "text": "Clima suave, cielo potĩ ka bahía ehecha porã. Peteĩ temporada iporãvéva faro ka Valle del Elqui jeguata ndive embojoaju hag̃ua."
+      }
+    ],
+    "hoursTitle": "Ára jave iporãvéva",
+    "hoursText": "Ruka Martes guive Domingo peve ojepe'a, mokõi pukukue: 10:00–14:00 ka 14:30–17:00. Luz ka viento rupi, opa pukukue experiencia ojoguáva ome'ẽ.",
+    "hours": [
+      {
+        "label": "Kuarahy sëmi",
+        "text": "Este gui luz kütra oñembohovái ka ciudad potĩ ojehecha. Ta'anga tapicha'ỹre rupi iporã, péro ruka ojepe'ái gueteri."
+      },
+      {
+        "label": "10:00–12:00",
+        "text": "Pukukue py'aguapyvéva ojepe'áva: visitante sa'ive, temperatura suave ka ehecha porã."
+      },
+      {
+        "label": "12:00–15:00",
+        "text": "Kuarahy hasyvéva ka tapicha heta. Chillka ruka ka feria rehecha ramo iporã; protección solar ndive eju."
+      },
+      {
+        "label": "18:00–20:00",
+        "text": "Luz iporãvéva, kuarahy Pacífico-pe oity. Pewma oñembotýma jepi, péro costanera ka playa iporãvéva jave."
+      }
+    ],
+    "photoTitle": "Ta'anga consejo",
+    "photo": [
+      "Hora dorada eheka: tarde ka kuarahy oity luz guýva almena ka piedra sa'y omohechakuaa.",
+      "Playa gui kütra renondépe eñapytĩ, Pacífico ka kütra peteĩ ta'anga-pe reike hag̃ua.",
+      "Camanchaca ára jave, niebla eipuru: silueta almena morotĩ ári iporãve ojehecha.",
+      "Avenida del Mar rupi norte eho mombyryve, ciudad ka kütra ta'anga joaju rejapo hag̃ua.",
+      "Pyhare cielo potĩ jave astrofotografía iporã, péro avenida luz puku exposición ojerure.",
+      "Señalética rupi eñangareko: pewma ka baranda seguridad norma oguereko."
+    ],
+    "itineraryTitle": "Jeguata idea",
+    "itineraries": [
+      {
+        "name": "Jeheka mbyky",
+        "duration": "45 minuto",
+        "text": "Ruka, faro püle, chillka ruka michĩ ka artesanía feria. Jeréia eikuaa hag̃ua iporã, ka pewma ojepe'áramo ojupi avei."
+      },
+      {
+        "name": "Faro ka costanera guata",
+        "duration": "2–3 aravo",
+        "text": "Avenida del Mar ka playa guata emoĩve, Jardín del Corazón-pe epyta ka café jerére epytu'u."
+      },
+      {
+        "name": "La Serena–Coquimbo ára pukukue",
+        "duration": "5–6 aravo",
+        "text": "Pyhareve faro, Plaza de Armas, Catedral ka mercado artesanal embojoaju; ka'aru Coquimbo-pe ehasáta bahía ka Cruz del Tercer Milenio rehecha hag̃ua."
+      }
+    ]
+  },
+  "didYouKnow": {
+    "title": "Marandu ka mba'e pyahu",
+    "subtitle": "Poteĩ marandu mbyky Faro Monumental eikuaa porãve hag̃ua reg̃uahẽ mboyve.",
+    "items": [
+      {
+        "icon": "📏",
+        "title": "28 m yvate ka 4 m püle",
+        "text": "Kütra 28 m rupi yvate ka 4 m diámetro püle: señal marítimo ka ciudad pewma medida ndive."
+      },
+      {
+        "icon": "🏛️",
+        "title": "Patrimonio ñangarekóva faro",
+        "text": "2010 guive Chile Monumento Histórico; Chile faro apytépe ko distinción ojekuaaporãvéva, heta faro ha'e infraestructura navegación patrimonio'ỹva."
+      },
+      {
+        "icon": "🏰",
+        "title": "Faro ha'e avei fortaleza",
+        "text": "Ñi forma castillo almena ndive España colonial fortificación ojojogua, 1544 ciudad ojejapo ára rehegua peteĩ homenaje."
+      },
+      {
+        "icon": "🌫️",
+        "title": "Camanchaca desierto costero mba'e",
+        "text": "Chile norte semiárida mar guive y ombyaty pyhareve niebla ramo. Camanchaca costa oñembo'ýrõ, faro luz navegación rupi hasyve oñeñandu."
+      },
+      {
+        "icon": "🏞️",
+        "title": "Elqui llef",
+        "text": "Pewma gui ojehecha moõ Elqui y Pacífico-pe ome'ẽ, ha'e mba'e La Serena costa forma ome'ẽva."
+      },
+      {
+        "icon": "🐦",
+        "title": "Costa mymba",
+        "text": "Pelícano, cormorán ka gaviota playa ka piedra jerére oĩ jepi; suerte ndive león marino y rembe'y rupi ojehecha."
+      }
     ]
   }
 }

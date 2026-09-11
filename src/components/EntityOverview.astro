@@ -1,0 +1,62 @@
+---
+import { getI18n } from '../i18n/ui';
+import { attraction } from '../config';
+
+const { lang, messages } = getI18n(Astro.url);
+const e = messages.entity;
+
+// Geographic breadcrumb: attraction → city → region → country
+const crumbs = [
+  { label: e.breadcrumbHome, href: `/${lang}` },
+  { label: attraction.fullName, href: `/${lang}#about` },
+  { label: attraction.city, href: `/${lang}#map` },
+  { label: attraction.region, href: `/${lang}#map` },
+  { label: attraction.country, href: `/${lang}#map` },
+];
+---
+
+<section id="about" class="section-padding" style="background: var(--bg-secondary);">
+  <div class="max-w-4xl mx-auto px-4">
+    <nav aria-label={e.breadcrumbLabel} class="text-xs sm:text-sm mb-6 flex flex-wrap items-center gap-x-2 gap-y-1" style="color: var(--text-muted);">
+      {crumbs.map((c, i) => (
+        <>
+          {i > 0 && <span aria-hidden="true">›</span>}
+          <a href={c.href} class="hover:opacity-70" style="color: var(--accent);">{c.label}</a>
+        </>
+      ))}
+    </nav>
+
+    <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-5" style="color: var(--text-primary);">{e.aboutTitle}</h2>
+
+    <p class="text-lg leading-relaxed mb-6" style="color: var(--text-secondary);">
+      {e.welcome}
+    </p>
+
+    <div class="rounded-2xl p-6 border mb-8" style="background: var(--bg-tertiary); border-color: var(--border-color);">
+      <h3 class="font-semibold mb-2" style="color: var(--text-primary);">{e.hierarchyTitle}</h3>
+      <p class="text-sm sm:text-base break-words" style="color: var(--text-secondary);">{e.hierarchy}</p>
+    </div>
+
+    <h3 class="font-display text-2xl font-semibold mb-3" style="color: var(--text-primary);">{e.nearbyTitle}</h3>
+    <p class="text-base sm:text-lg leading-relaxed mb-5" style="color: var(--text-secondary);">{e.nearbyText}</p>
+
+    <div class="flex flex-wrap gap-3">
+      <a
+        href={attraction.mapsShareUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold border"
+        style="border-color: var(--border-color); color: var(--text-primary); background: var(--card-bg);"
+      >
+        📍 {attraction.nearbyLandmark1}
+      </a>
+      <a
+        href={`/${lang}#recommendations`}
+        class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white"
+        style="background: var(--accent);"
+      >
+        {e.nearbyMore} →
+      </a>
+    </div>
+  </div>
+</section>
