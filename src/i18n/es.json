@@ -5,8 +5,19 @@
     "schemaDescription": "Guía de visitantes del Faro Monumental de La Serena (La Serena, Región de Coquimbo, Chile): altura de 28 m, historia y patrimonio cultural, horarios, cómo llegar y qué ver en la Avenida del Mar."
   },
   "visitorSnapshot": {
-    "title": "Resumen en inglés para visitantes internacionales",
-    "subtitle": "Datos esenciales en inglés —dirección, horario, entrada y cómo llegar— para quienes llegan desde el extranjero.",
+    "title": "Datos rápidos del Faro de La Serena",
+    "subtitle": "Lo esencial antes de ir: dirección, horario, entrada y cómo llegar.",
+    "facts": [
+      { "label": "Nombre oficial", "value": "Faro de La Serena (Faro Monumental de La Serena)" },
+      { "label": "Dirección", "value": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile" },
+      { "label": "Código Plus", "value": "3PVG+Q7 La Serena, Chile" },
+      { "label": "Horario", "value": "Martes a domingo, 10:00–14:00 y 14:30–17:00 · Lunes cerrado" },
+      { "label": "Entrada", "value": "Acceso libre o de costo simbólico según el sector" },
+      { "label": "Duración", "value": "30–45 minutos para la visita esencial" },
+      { "label": "Altura", "value": "Cerca de 28 m, con unos 4 m de diámetro en la base" },
+      { "label": "Cómo llegar", "value": "Avenida del Mar, frente a la playa; 10–15 min desde la Plaza de Armas" }
+    ],
+    "summary": "El Faro Monumental de La Serena mide cerca de 28 m y fue declarado Monumento Histórico de Chile en 2010. Está en la Avenida del Mar, frente a la playa, a unos 10–15 minutos en auto desde la Plaza de Armas y a 15–20 minutos en taxi desde el aeropuerto de La Florida (LSC). El acceso al entorno y a la base es libre o de costo simbólico.",
     "mapsCta": "Ver ubicación en Google Maps"
   },
   "header": {

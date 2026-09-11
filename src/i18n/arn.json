@@ -5,8 +5,19 @@
     "schemaDescription": "Faro Monumental de La Serena jeguata kuatia (La Serena, Coquimbo, Chile): 28 m yvate, jeréia ka patrimonio cultural, horario, mba'éichapa reg̃uahẽ ka mba'e ehecha hag̃ua Avenida del Mar-pe."
   },
   "visitorSnapshot": {
-    "title": "Inglés-pe marandu pytagua visitante-kuérape g̃uarã",
-    "subtitle": "Inglés-pe: tenda, horario, entrada ka mba'éichapa reg̃uahẽ.",
+    "title": "Faro de La Serena: mba'e reikuaava'erã",
+    "subtitle": "Mba'e reikuaava'erã resẽ mboyve: tenda, horario, entrada ka mba'éichapa reg̃uahẽ.",
+    "facts": [
+      { "label": "Téra", "value": "Faro de La Serena (Faro Monumental de La Serena)" },
+      { "label": "Tenda", "value": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile" },
+      { "label": "Plus Code", "value": "3PVG+Q7 La Serena, Chile" },
+      { "label": "Horario", "value": "Martes guive domingo peve, 10:00–14:00 ka 14:30–17:00 · Lunes oñembotýva" },
+      { "label": "Entrada", "value": "Libre térã miti pëllu, tenda rehegua" },
+      { "label": "Aravo", "value": "30–45 minuto jeguata tee" },
+      { "label": "Yvate", "value": "28 m rupi, 4 m diámetro püle" },
+      { "label": "Reg̃uahẽ", "value": "Avenida del Mar-pe, playa renondépe; 10–15 min Plaza de Armas guive" }
+    ],
+    "summary": "Faro Monumental de La Serena 28 m rupi yvate ka 2010 guive Chile Monumento Histórico. Oĩ Avenida del Mar-pe, playa renondépe, Plaza de Armas guive 10–15 minuto auto rupi ka La Florida Aeropuerto (LSC) guive 15–20 minuto taxi rupi. Tenda ka ñi püle libre térã miti pëllu.",
     "mapsCta": "Ehecha tenda Google Maps-pe"
   },
   "header": {
