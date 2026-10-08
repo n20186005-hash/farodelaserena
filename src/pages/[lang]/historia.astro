@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import InfoSection from '../../components/InfoSection.astro';
+import Timeline from '../../components/Timeline.astro';
+import TopicNav from '../../components/TopicNav.astro';
+import { getI18n, languagesList } from '../../i18n/ui';
+import { attraction } from '../../config';
+
+export function getStaticPaths() {
+  return languagesList.map((lang) => ({ params: { lang } }));
+}
+
+const { lang, messages } = getI18n(Astro.url);
+const topic = messages.topics.historia;
+const homeUrl = `${attraction.baseUrl}/${lang}/`;
+const topicUrl = `${attraction.baseUrl}/${lang}/historia/`;
+
+const schemas: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    '@id': `${topicUrl}#breadcrumb`,
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: messages.entity.breadcrumbHome, item: homeUrl },
+      { '@type': 'ListItem', position: 2, name: topic.title, item: topicUrl },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={topic.title}
+  description={topic.intro}
+  path="historia"
+  jsonLd={schemas}
+>
+  <section class="section-padding" style="background: var(--bg-primary);">
+    <div class="max-w-4xl mx-auto px-4">
+      <h1 class="font-display text-4xl sm:text-5xl font-semibold mb-4" style="color: var(--text-primary);">{topic.title}</h1>
+      <p class="text-lg leading-relaxed" style="color: var(--text-secondary);">{topic.intro}</p>
+      {topic.source && (
+        <p class="mt-5 rounded-xl border p-4 text-sm" style="border-color: var(--border-color); color: var(--text-muted);">
+          {topic.source}
+        </p>
+      )}
+    </div>
+  </section>
+
+  <InfoSection />
+  <Timeline />
+  <TopicNav current="historia" />
+</BaseLayout>

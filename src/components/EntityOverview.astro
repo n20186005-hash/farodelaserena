@@ -7,11 +7,11 @@ const e = messages.entity;
 
 // Geographic breadcrumb: attraction → city → region → country
 const crumbs = [
-  { label: e.breadcrumbHome, href: `/${lang}` },
-  { label: attraction.fullName, href: `/${lang}#about` },
-  { label: attraction.city, href: `/${lang}#map` },
-  { label: attraction.region, href: `/${lang}#map` },
-  { label: attraction.country, href: `/${lang}#map` },
+  { label: e.breadcrumbHome, href: `/${lang}/` },
+  { label: attraction.fullName, href: `/${lang}/#about` },
+  { label: attraction.city, href: `/${lang}/#map` },
+  { label: attraction.region, href: `/${lang}/#map` },
+  { label: attraction.country, href: `/${lang}/#map` },
 ];
 ---
 
@@ -51,7 +51,7 @@ const crumbs = [
         📍 {attraction.nearbyLandmark1}
       </a>
       <a
-        href={`/${lang}#recommendations`}
+        href={`/${lang}/#recommendations`}
         class="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white"
         style="background: var(--accent);"
       >

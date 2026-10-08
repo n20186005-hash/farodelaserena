@@ -1,0 +1,25 @@
+---
+import { getI18n } from '../i18n/ui';
+const { lang, messages } = getI18n(Astro.url);
+const t = messages.topics;
+const base = `/${lang}/`;
+const pages = [
+  { slug: 'como-llegar', title: t.comoLlegar.title },
+  { slug: 'historia', title: t.historia.title },
+  { slug: 'horarios-y-entrada', title: t.horarios.title },
+];
+---
+
+<section class="section-padding" style="background: var(--bg-tertiary);">
+  <div class="max-w-4xl mx-auto px-4">
+    <h2 class="font-display text-2xl font-semibold mb-4" style="color: var(--text-primary);">{t.guidesTitle}</h2>
+    <div class="grid gap-4 sm:grid-cols-3">
+      {pages.map((p) => (
+        <a href={`${base}${p.slug}/`} class="rounded-2xl border p-5 hover:opacity-80" style="background: var(--card-bg); border-color: var(--border-color);">
+          <span class="text-sm" style="color: var(--accent);">→</span>
+          <span class="block mt-1 font-semibold" style="color: var(--text-primary);">{p.title}</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

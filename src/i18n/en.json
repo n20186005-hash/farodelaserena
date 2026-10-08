@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "La Serena Lighthouse: Faro Monumental Guide & Directions",
-    "description": "La Serena Lighthouse (Faro Monumental de La Serena) is 28 m tall and a National Historic Monument since 2010. Map, opening hours and how to get there.",
+    "title": "La Serena Lighthouse: Faro Monumental Hours, History & Directions",
+    "description": "Plan your visit to La Serena Lighthouse (Faro Monumental de La Serena): its history, location, how to get there and tips for visiting. Check opening hours and access before you go.",
     "schemaDescription": "Visitor guide to the Faro Monumental de La Serena (La Serena Lighthouse, La Serena, Coquimbo Region, Chile): its 28-metre height, history and cultural heritage, opening hours, how to get there and what to see along Avenida del Mar."
   },
   "visitorSnapshot": {
@@ -17,7 +17,8 @@
       { "label": "Height", "value": "About 28 m tall, with a base roughly 4 m in diameter" },
       { "label": "Getting there", "value": "On Avenida del Mar, facing the beach; 10–15 min from Plaza de Armas" }
     ],
-    "summary": "The Faro Monumental de La Serena (La Serena Lighthouse) is a 28-metre neocolonial lighthouse-monument on Avenida del Mar, declared a National Historic Monument of Chile in 2010. It stands at the meeting point of Avenida Francisco de Aguirre and Avenida del Mar, facing the beach, about 10–15 minutes by car from Plaza de Armas and 15–20 minutes by taxi from La Florida Airport (LSC). Access to the grounds and the base is free or of symbolic cost.",
+    "summary": "The Faro Monumental de La Serena (La Serena Lighthouse) is a 28-metre neocolonial lighthouse-monument on Avenida del Mar, declared a National Historic Monument of Chile in 2011 (Law No. 42). It stands at the meeting point of Avenida Francisco de Aguirre and Avenida del Mar, facing the beach, about 10–15 minutes by car from Plaza de Armas and 15–20 minutes by taxi from La Florida Airport (LSC). Access to the grounds and the base is free or of symbolic cost.",
+    "hoursNote": "The hours shown refer to access to the interior of the lighthouse, the viewpoint and the small museum. The plaza and surroundings of the monument remain publicly accessible. Confirm the current hours before your visit.",
     "mapsCta": "View location on Google Maps"
   },
   "header": {
@@ -41,8 +42,8 @@
   "hero": {
     "title": "Faro Monumental de La Serena",
     "subtitle": "A neocolonial lighthouse-monument built by the Chilean Navy between 1950 and 1951 — a viewpoint and symbol of La Serena facing the Pacific.",
-    "rating": "4.2(26,009)",
-    "reviewCount": "26,009 reviews",
+    "rating": "4.2(26,050)",
+    "reviewCount": "26,050 reviews",
     "hours": "Tue–Sun 10:00–14:00 and 14:30–17:00 · Mon closed",
     "location": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
     "openMaps": "View Location",
@@ -51,7 +52,7 @@
   },
   "intro": {
     "title": "Discover the Faro Monumental de La Serena",
-    "description": "The Faro Monumental de La Serena is a neocolonial tower built by the Chilean Navy between 1950 and 1951, following the design of engineer Jorge Cisternas Larenas, within the framework of the Plan Serena promoted by President Gabriel González Videla. Around 28 metres tall and 4 metres in diameter at its base, it blends the silhouette of a lighthouse with that of a colonial fortress. It was declared a National Historic Monument of Chile on 9 June 2010 for its architectural value. Today it is one of the most photographed icons of La Serena and a public viewpoint over the Pacific Ocean.",
+    "description": "The Faro Monumental de La Serena is a neocolonial tower built by the Chilean Navy between 1950 and 1951, following the design of engineer Jorge Cisternas Larenas, within the framework of the Plan Serena promoted by President Gabriel González Videla. Around 28 metres tall and 4 metres in diameter at its base, it blends the silhouette of a lighthouse with that of a colonial fortress. It was declared a National Historic Monument of Chile in 2011 (Law No. 42) for its architectural value. Today it is one of the most photographed icons of La Serena and a public viewpoint over the Pacific Ocean.",
     "visitGuide": {
       "title": "Visitor Guide",
       "items": [
@@ -66,7 +67,7 @@
       "items": [
         "Lighthouse built by the Chilean Navy between 1950 and 1951",
         "Neocolonial style imitating a Spanish fortress",
-        "About 28 m tall and a National Monument since 2010",
+        "About 28 m tall and a National Monument since 2011",
         "Viewpoint and symbol of La Serena facing the Pacific"
       ]
     }
@@ -171,7 +172,7 @@
   },
   "knowledge": {
     "title": "History & Cultural Heritage of the Lighthouse",
-    "intro": "The Faro Monumental de La Serena is more than a viewpoint: it is the landmark that sums up the city's urban history, its neocolonial architecture and its status as cultural heritage of Chile. These sections cover its origins in the Plan Serena (1948–1952), the reasoning behind its fortress-shaped design, the legend the coast tells about it, and the heritage protection it has held since 2010.",
+    "intro": "The Faro Monumental de La Serena is more than a viewpoint: it is the landmark that sums up the city's urban history, its neocolonial architecture and its status as cultural heritage of Chile. These sections cover its origins in the Plan Serena (1948–1952), the reasoning behind its fortress-shaped design, the legend the coast tells about it, and the heritage protection it has held since 2011.",
     "sections": [
       {
         "id": "history",
@@ -191,7 +192,7 @@
       {
         "id": "significance",
         "title": "A Symbol of La Serena",
-        "content": "Today the Faro Monumental, alongside the neocolonial Cathedral and the Plaza de Armas, is the most recognisable face of La Serena. Its battlemented silhouette presides over Avenida del Mar and appears on postcards, souvenirs and in the memory of those who grew up watching the Pacific from its feet. Declared a National Monument in 2010, it is also the only lighthouse in Chile to hold that distinction while functioning at the same time as a public viewpoint."
+        "content": "Today the Faro Monumental, alongside the neocolonial Cathedral and the Plaza de Armas, is the most recognisable face of La Serena. Its battlemented silhouette presides over Avenida del Mar and appears on postcards, souvenirs and in the memory of those who grew up watching the Pacific from its feet. Declared a National Monument in 2011 (Law No. 42), it is also the only lighthouse in Chile to hold that distinction while functioning at the same time as a public viewpoint."
       },
       {
         "id": "architecture",
@@ -211,7 +212,7 @@
       {
         "id": "heritage",
         "title": "Heritage and conservation",
-        "content": "On 9 June 2010 the Faro Monumental de La Serena was declared a National Historic Monument of Chile, an acknowledgement of both its architectural value and its role in local identity. The designation protects it as heritage and requires any intervention to preserve its original features. In recent decades the site has been adapted for visitors: waymarked routes, heritage panels and space for exhibitions and crafts, always with the tower as the centrepiece. When you visit, treat it as what it is: a monument, not merely a viewpoint with a view."
+        "content": "In 2011 (Law No. 42) the Faro Monumental de La Serena was declared a National Historic Monument of Chile, an acknowledgement of both its architectural value and its role in local identity. The designation protects it as heritage and requires any intervention to preserve its original features. In recent decades the site has been adapted for visitors: waymarked routes, heritage panels and space for exhibitions and crafts, always with the tower as the centrepiece. When you visit, treat it as what it is: a monument, not merely a viewpoint with a view."
       },
       {
         "id": "culture",
@@ -234,32 +235,30 @@
     "declaration": "Visitor feedback is available on Google Maps (external link).",
     "moreReviews": "View on Google Maps",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7",
-    "items": [
-      {
-        "name": "Camila R.",
-        "date": "March 2026",
-        "rating": 5,
-        "text": "You can't come to La Serena without climbing the lighthouse. The views over the Pacific and the Elqui River mouth are incredible, and the neocolonial architecture gives it a unique touch."
-      },
-      {
-        "name": "Diego M.",
-        "date": "February 2026",
-        "rating": 4,
-        "text": "Very pretty and well kept. We climbed to the viewpoint in the afternoon; go early because it gets busy in season. The craft fair at the base is fun."
-      },
-      {
-        "name": "Francisca L.",
-        "date": "January 2026",
-        "rating": 5,
-        "text": "I loved the Plan Serena history explained in the small museum. It's a family-friendly spot with good shade to rest, close to the beach."
-      },
-      {
-        "name": "Tomás G.",
-        "date": "December 2025",
-        "rating": 4,
-        "text": "A city icon. The climb is short and the reward is the panorama of the whole bay. Free or nearly, so it's absolutely worth it."
-      }
-    ]
+    "ratingValue": "4.2",
+    "ratingCount": "26,050",
+    "ratingNote": "Rating and number of reviews per Google Maps, retrieved in October 2026. We do not publish named reviews on the site.",
+    "items": []
+  },
+  "topics": {
+    "comoLlegar": {
+      "title": "How to Get to the Faro Monumental de La Serena",
+      "intro": "A practical guide with the most direct routes to the Faro Monumental de La Serena: from downtown, the bus terminal and the airport, by car, taxi, local bus and on foot. Includes a map and tips for parking near Avenida del Mar.",
+      "relatedTitle": "Related pages"
+    },
+    "historia": {
+      "title": "History of the Faro Monumental de La Serena",
+      "intro": "From an operational lighthouse to a heritage symbol: we review the origin of the Faro Monumental de La Serena in the Plan Serena, its neocolonial fortress-shaped design and its designation as a National Historic Monument of Chile.",
+      "source": "The designation as a National Historic Monument of Chile is recorded in Law No. 42 of 2011 (Biblioteca del Congreso Nacional de Chile).",
+      "relatedTitle": "Related pages"
+    },
+    "horarios": {
+      "title": "Opening Hours & Entry to the Faro Monumental de La Serena",
+      "intro": "All the practical information about visiting hours, access to the viewpoint and museum, and whether there is an entry fee to visit the Faro Monumental de La Serena.",
+      "note": "The hours and entry described refer to access to the interior of the lighthouse, the viewpoint and the small museum; the plaza and surroundings of the monument are publicly accessible. Information reviewed in October 2026: confirm the current hours before your visit.",
+      "relatedTitle": "Related pages"
+    },
+    "guidesTitle": "Faro Monumental Guides"
   },
   "mapSection": {
     "title": "Map & Location of the Lighthouse",
@@ -681,9 +680,9 @@
         "text": "On 7 November the Navy transfers the site to the Municipality of La Serena for tourist and cultural use, opening the viewpoint to the public."
       },
       {
-        "year": "2010",
+        "year": "2011",
         "title": "National Historic Monument",
-        "text": "On 9 June the lighthouse is declared a National Historic Monument of Chile, an exceptional distinction among the country's lighthouses."
+        "text": "The lighthouse is declared a National Historic Monument of Chile (Law No. 42), an exceptional distinction among the country's lighthouses."
       },
       {
         "year": "Today",
@@ -778,7 +777,7 @@
       {
         "icon": "🏛️",
         "title": "A lighthouse with heritage protection",
-        "text": "Since 2010 it has been a National Historic Monument of Chile, an exceptional distinction among the country's lighthouses, most of which are navigation infrastructure with no heritage protection."
+        "text": "Since 2011 it has been a National Historic Monument of Chile, an exceptional distinction among the country's lighthouses, most of which are navigation infrastructure with no heritage protection."
       },
       {
         "icon": "🏰",

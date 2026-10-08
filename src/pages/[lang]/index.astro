@@ -14,6 +14,7 @@ import DidYouKnow from '../../components/DidYouKnow.astro';
 import Gallery from '../../components/Gallery.astro';
 import Reviews from '../../components/Reviews.astro';
 import Recommendations from '../../components/Recommendations.astro';
+import RelatedGuides from '../../components/RelatedGuides.astro';
 import MapEmbed from '../../components/MapEmbed.astro';
 import FAQ from '../../components/FAQ.astro';
 import Sources from '../../components/Sources.astro';
@@ -25,7 +26,7 @@ export function getStaticPaths() {
 }
 
 const { lang, messages } = getI18n(Astro.url);
-const homeUrl = `${attraction.baseUrl}/${lang}`;
+const homeUrl = `${attraction.baseUrl}/${lang}/`;
 
 /* FAQPage — reuses the on-page FAQ content so the schema always matches the visible copy */
 const faqQuestions = (messages.faq.categories ?? [])
@@ -83,18 +84,19 @@ const schemas: Record<string, unknown>[] = [
   <Hero />
   <EntityOverview />
   <VisitorSnapshot />
-  <Intro />
-  <Weather />
   <Transport />
   <MapEmbed />
-  <PracticalInfo />
+  <Intro />
+  <Planning />
   <InfoSection />
   <Timeline />
-  <Planning />
+  <PracticalInfo />
+  <Weather />
   <DidYouKnow />
   <Gallery />
   <Reviews />
   <Recommendations />
+  <RelatedGuides />
   <FAQ />
   <Sources />
 </BaseLayout>

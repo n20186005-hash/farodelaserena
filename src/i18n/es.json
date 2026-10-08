@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Faro Monumental de La Serena: Guía, Historia y Cómo Llegar",
-    "description": "El Faro Monumental de La Serena mide 28 m, es Monumento Histórico desde 2010 y está en la Avenida del Mar. Horarios, cómo llegar, mapa y qué ver cerca.",
+    "title": "Faro Monumental de La Serena: Horarios, Historia y Cómo Llegar",
+    "description": "Conoce el Faro Monumental de La Serena, su historia, ubicación, cómo llegar y consejos para visitarlo. Consulta información de horarios y acceso antes de ir.",
     "schemaDescription": "Guía de visitantes del Faro Monumental de La Serena (La Serena, Región de Coquimbo, Chile): altura de 28 m, historia y patrimonio cultural, horarios, cómo llegar y qué ver en la Avenida del Mar."
   },
   "visitorSnapshot": {
@@ -17,7 +17,8 @@
       { "label": "Altura", "value": "Cerca de 28 m, con unos 4 m de diámetro en la base" },
       { "label": "Cómo llegar", "value": "Avenida del Mar, frente a la playa; 10–15 min desde la Plaza de Armas" }
     ],
-    "summary": "El Faro Monumental de La Serena mide cerca de 28 m y fue declarado Monumento Histórico de Chile en 2010. Está en la Avenida del Mar, frente a la playa, a unos 10–15 minutos en auto desde la Plaza de Armas y a 15–20 minutos en taxi desde el aeropuerto de La Florida (LSC). El acceso al entorno y a la base es libre o de costo simbólico.",
+    "summary": "El Faro Monumental de La Serena mide cerca de 28 m y fue declarado Monumento Histórico de Chile en 2011 (Ley N° 42). Está en la Avenida del Mar, frente a la playa, a unos 10–15 minutos en auto desde la Plaza de Armas y a 15–20 minutos en taxi desde el aeropuerto de La Florida (LSC). El acceso al entorno y a la base es libre o de costo simbólico.",
+    "hoursNote": "El horario indicado corresponde al acceso al interior del faro, al mirador y al pequeño museo. La explanada y el entorno del monumento permanecen accesibles de forma pública. Confirma el horario vigente antes de tu visita.",
     "mapsCta": "Ver ubicación en Google Maps"
   },
   "header": {
@@ -41,8 +42,8 @@
   "hero": {
     "title": "Faro Monumental de La Serena",
     "subtitle": "Un faro-monumento de estilo neocolonial construido por la Armada de Chile entre 1950 y 1951, mirador y símbolo de La Serena frente al Pacífico.",
-    "rating": "4.2(26.009)",
-    "reviewCount": "26.009 opiniones",
+    "rating": "4.2(26.050)",
+    "reviewCount": "26.050 opiniones",
     "hours": "Mar–Dom 10:00–14:00 y 14:30–17:00 · Lun cerrado",
     "location": "Avda. Francisco de Aguirre, Avenida del Mar, La Serena, Coquimbo, Chile",
     "openMaps": "Ver ubicación",
@@ -51,7 +52,7 @@
   },
   "intro": {
     "title": "Descubre el Faro Monumental de La Serena",
-    "description": "El Faro Monumental de La Serena es una torre de estilo neocolonial construida por la Armada de Chile entre 1950 y 1951 según el diseño del ingeniero Jorge Cisternas Larenas, en el marco del Plan Serena impulsado por el presidente Gabriel González Videla. Con cerca de 28 metros de altura y 4 metros de diámetro en su base, fusiona la silueta de un faro con la de una fortaleza colonial. Fue declarado Monumento Histórico de Chile el 9 de junio de 2010 por su valor arquitectónico. Hoy es uno de los íconos más fotografiados de La Serena y un mirador abierto al océano Pacífico.",
+    "description": "El Faro Monumental de La Serena es una torre de estilo neocolonial construida por la Armada de Chile entre 1950 y 1951 según el diseño del ingeniero Jorge Cisternas Larenas, en el marco del Plan Serena impulsado por el presidente Gabriel González Videla. Con cerca de 28 metros de altura y 4 metros de diámetro en su base, fusiona la silueta de un faro con la de una fortaleza colonial. Fue declarado Monumento Histórico de Chile en 2011 (Ley N° 42) por su valor arquitectónico. Hoy es uno de los íconos más fotografiados de La Serena y un mirador abierto al océano Pacífico.",
     "visitGuide": {
       "title": "Guía de visita",
       "items": [
@@ -66,7 +67,7 @@
       "items": [
         "Faro construido por la Armada de Chile entre 1950 y 1951",
         "Estilo neocolonial que imita una fortaleza española",
-        "Cerca de 28 m de altura y Monumento Histórico desde 2010",
+        "Cerca de 28 m de altura y Monumento Histórico desde 2011",
         "Mirador y símbolo de La Serena frente al Pacífico"
       ]
     }
@@ -171,7 +172,7 @@
   },
   "knowledge": {
     "title": "Historia y Patrimonio Cultural del Faro Monumental",
-    "intro": "El Faro Monumental de La Serena es más que un mirador: es el hito que resume la historia urbana de la ciudad, su arquitectura neocolonial y su condición de patrimonio cultural de Chile. Estas secciones recorren sus orígenes en el Plan Serena (1948–1952), el sentido de su diseño con forma de fortaleza, la leyenda que le atribuye la costa y el valor patrimonial que lo protege desde 2010.",
+    "intro": "El Faro Monumental de La Serena es más que un mirador: es el hito que resume la historia urbana de la ciudad, su arquitectura neocolonial y su condición de patrimonio cultural de Chile. Estas secciones recorren sus orígenes en el Plan Serena (1948–1952), el sentido de su diseño con forma de fortaleza, la leyenda que le atribuye la costa y el valor patrimonial que lo protege desde 2011.",
     "sections": [
       {
         "id": "history",
@@ -191,7 +192,7 @@
       {
         "id": "significance",
         "title": "Un símbolo de La Serena",
-        "content": "Hoy el Faro Monumental es, junto a la Catedral neocolonial y la Plaza de Armas, el rostro más reconocible de La Serena. Su silueta almenada preside la Avenida del Mar y aparece en postales, souvenirs y en la memoria de quienes crecieron viendo el Pacífico desde sus pies. Declarado Monumento Histórico en 2010, es además el único faro de Chile que ostenta esa distinción y que funciona a la vez como mirador público."
+        "content": "Hoy el Faro Monumental es, junto a la Catedral neocolonial y la Plaza de Armas, el rostro más reconocible de La Serena. Su silueta almenada preside la Avenida del Mar y aparece en postales, souvenirs y en la memoria de quienes crecieron viendo el Pacífico desde sus pies. Declarado Monumento Histórico en 2011 (Ley N° 42), es además el único faro de Chile que ostenta esa distinción y que funciona a la vez como mirador público."
       },
       {
         "id": "architecture",
@@ -211,7 +212,7 @@
       {
         "id": "heritage",
         "title": "Patrimonio y conservación",
-        "content": "El 9 de junio de 2010, el Faro Monumental de La Serena fue declarado Monumento Histórico de Chile, un reconocimiento que destacó tanto su valor arquitectónico como su papel en la identidad local. La declaratoria lo protege como bien patrimonial y obliga a que cualquier intervención resguarde sus características originales. En las últimas décadas el recinto se ha ido adaptando al uso turístico: recorridos señalizados, paneles patrimoniales y espacios para exposiciones y artesanía, siempre con la torre como protagonista. Al visitarlo, conviene tratarlo como lo que es: un monumento, no solo un mirador con vistas."
+        "content": "En 2011 (Ley N° 42), el Faro Monumental de La Serena fue declarado Monumento Histórico de Chile, un reconocimiento que destacó tanto su valor arquitectónico como su papel en la identidad local. La declaratoria lo protege como bien patrimonial y obliga a que cualquier intervención resguarde sus características originales. En las últimas décadas el recinto se ha ido adaptando al uso turístico: recorridos señalizados, paneles patrimoniales y espacios para exposiciones y artesanía, siempre con la torre como protagonista. Al visitarlo, conviene tratarlo como lo que es: un monumento, no solo un mirador con vistas."
       },
       {
         "id": "culture",
@@ -234,32 +235,30 @@
     "declaration": "Las opiniones de los visitantes están disponibles en Google Maps (enlace externo).",
     "moreReviews": "Ver en Google Maps",
     "mapsUrl": "https://maps.app.goo.gl/Rq1B1SE2QZhjdUvt7",
-    "items": [
-      {
-        "name": "Camila R.",
-        "date": "Marzo 2026",
-        "rating": 5,
-        "text": "Imposible venir a La Serena y no subir al Faro. Las vistas al Pacífico y a la desembocadura del Elqui son increíbles, y la arquitectura neocolonial le da un toque único."
-      },
-      {
-        "name": "Diego M.",
-        "date": "Febrero 2026",
-        "rating": 4,
-        "text": "Muy lindo y bien cuidado. Subimos al mirador en la tarde; conviene ir temprano porque se llena en temporada. La feria de artesanías de la base es entretenida."
-      },
-      {
-        "name": "Francisca L.",
-        "date": "Enero 2026",
-        "rating": 5,
-        "text": "Me encantó la historia del Plan Serena que explican en el pequeño museo. Es un lugar familiar, con buenas sombras para descansar y cerca de la playa."
-      },
-      {
-        "name": "Tomás G.",
-        "date": "Diciembre 2025",
-        "rating": 4,
-        "text": "Un ícono de la ciudad. La subida es corta y la recompensa es la panorámica de toda la bahía. Gratis o casi, así que vale totalmente la pena."
-      }
-    ]
+    "ratingValue": "4.2",
+    "ratingCount": "26.050",
+    "ratingNote": "Calificación y número de opiniones según Google Maps, consultado en octubre de 2026. No publicamos reseñas nominativas en el sitio.",
+    "items": []
+  },
+  "topics": {
+    "comoLlegar": {
+      "title": "Cómo llegar al Faro Monumental de La Serena",
+      "intro": "Guía práctica con las rutas más directas al Faro Monumental de La Serena: desde el centro, el terminal de buses y el aeropuerto, en auto, taxi, micro y a pie. Incluye mapa y consejos para estacionar cerca de la Avenida del Mar.",
+      "relatedTitle": "Páginas relacionadas"
+    },
+    "historia": {
+      "title": "Historia del Faro Monumental de La Serena",
+      "intro": "De faro operativo a símbolo patrimonial: repasamos el origen del Faro Monumental de La Serena en el Plan Serena, su diseño neocolonial con forma de fortaleza y su declaratoria como Monumento Histórico de Chile.",
+      "source": "La declaratoria como Monumento Histórico de Chile consta en la Ley N° 42 de 2011 (Biblioteca del Congreso Nacional de Chile).",
+      "relatedTitle": "Páginas relacionadas"
+    },
+    "horarios": {
+      "title": "Horarios y entrada del Faro Monumental de La Serena",
+      "intro": "Toda la información práctica sobre el horario de visita, el acceso al mirador y al museo, y si se paga entrada para visitar el Faro Monumental de La Serena.",
+      "note": "El horario y la entrada descritos corresponden al acceso al interior del faro, al mirador y al pequeño museo; la explanada y el entorno del monumento son de acceso público. Información revisada en octubre de 2026: confirma el horario vigente antes de tu visita.",
+      "relatedTitle": "Páginas relacionadas"
+    },
+    "guidesTitle": "Guías del Faro Monumental"
   },
   "mapSection": {
     "title": "Mapa y ubicación del Faro Monumental",
@@ -681,9 +680,9 @@
         "text": "El 7 de noviembre la Armada entrega el recinto a la Municipalidad de La Serena para uso turístico y cultural, abriendo el mirador a la ciudadanía."
       },
       {
-        "year": "2010",
+        "year": "2011",
         "title": "Monumento Histórico Nacional",
-        "text": "El 9 de junio el Faro es declarado Monumento Histórico de Chile, una distinción excepcional entre los faros del país."
+        "text": "El Faro es declarado Monumento Histórico de Chile (Ley N° 42), una distinción excepcional entre los faros del país."
       },
       {
         "year": "Hoy",
@@ -778,7 +777,7 @@
       {
         "icon": "🏛️",
         "title": "Un faro con protección patrimonial",
-        "text": "Desde 2010 es Monumento Histórico de Chile, una distinción excepcional entre los faros del país, la mayoría de los cuales son infraestructura de navegación sin protección patrimonial."
+        "text": "Desde 2011 es Monumento Histórico de Chile, una distinción excepcional entre los faros del país, la mayoría de los cuales son infraestructura de navegación sin protección patrimonial."
       },
       {
         "icon": "🏰",

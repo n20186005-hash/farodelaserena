@@ -2,7 +2,7 @@
 import { getI18n } from '../i18n/ui';
 const { messages } = getI18n(Astro.url);
 const r = messages.reviews;
-const stars = (n) => Array.from({ length: 5 }, (_, i) => i < n ? 'star-filled' : 'star-empty');
+const ratingNum = Math.round(parseFloat(r.ratingValue || '0'));
 ---
 
 <section id="reviews" class="section-padding" style="background: var(--bg-primary);">
@@ -10,26 +10,17 @@ const stars = (n) => Array.from({ length: 5 }, (_, i) => i < n ? 'star-filled' :
     <h2 class="font-display text-3xl sm:text-4xl font-semibold mb-3 text-center" style="color: var(--text-primary);">{r.title}</h2>
     <p class="text-center text-base mb-10" style="color: var(--text-secondary);">{r.declaration}</p>
 
-    <div class="grid md:grid-cols-2 gap-6">
-      {r.items.map((item) => (
-        <div class="rounded-2xl p-6 border" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
-          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-3">
-            <div class="flex items-center gap-3">
-              <div class="w-10 h-10 rounded-full flex items-center justify-center font-bold text-white" style="background: var(--accent);">
-                {item.name.charAt(0)}
-              </div>
-              <div>
-                <div class="font-semibold text-sm" style="color: var(--text-primary);">{item.name}</div>
-                <div class="text-xs" style="color: var(--text-muted);">{item.date}</div>
-              </div>
-            </div>
-            <div class="flex gap-0.5 text-lg sm:justify-end">
-              {stars(item.rating).map((c) => <span class={c}>★</span>)}
-            </div>
-          </div>
-          <p class="text-base leading-relaxed" style="color: var(--text-secondary);">{item.text}</p>
+    <div class="rounded-2xl p-6 border max-w-xl mx-auto" style="background: var(--card-bg); border-color: var(--border-color); box-shadow: var(--card-shadow);">
+      <div class="flex items-center gap-4">
+        <span class="text-4xl font-display font-bold" style="color: var(--accent);">{r.ratingValue}</span>
+        <div>
+          <div class="text-lg tracking-wide" style="color: var(--accent);">{'★'.repeat(ratingNum)}<span style="color: var(--text-muted);">{'★'.repeat(5 - ratingNum)}</span></div>
+          <p class="text-sm" style="color: var(--text-secondary);">{r.ratingCount} opiniones · Google Maps</p>
         </div>
-      ))}
+      </div>
+      {r.ratingNote && (
+        <p class="mt-4 text-sm leading-relaxed" style="color: var(--text-secondary);">{r.ratingNote}</p>
+      )}
     </div>
 
     <div class="text-center mt-10">

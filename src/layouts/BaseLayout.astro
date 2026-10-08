@@ -115,7 +115,7 @@ const websiteSchema = {
   '@id': `${attraction.baseUrl}/#website`,
   url: attraction.baseUrl,
   name: attraction.fullName,
-  inLanguage: ['es', 'en', 'zh', 'arn'],
+  inLanguage: ['es', 'en', 'zh'],
   about: { '@id': `${attraction.baseUrl}/#attraction` },
   publisher: { '@id': `${attraction.baseUrl}/#attraction` },
 };
@@ -136,7 +136,6 @@ const schemas = [attractionSchema, websiteSchema, ...jsonLd];
     <link rel="alternate" hreflang="es" href={alts.es} />
     <link rel="alternate" hreflang="en" href={alts.en} />
     <link rel="alternate" hreflang="zh" href={alts.zh} />
-    <link rel="alternate" hreflang="arn" href={alts.arn} />
     <link rel="alternate" hreflang="x-default" href={alts.xDefault} />
 
     {preloadHero && (

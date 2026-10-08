@@ -4,13 +4,12 @@ import zh from './zh.json';
 import arn from './arn.json';
 
 export const defaultLang = 'es';
-export const languagesList = ['es', 'en', 'zh', 'arn'] as const;
+export const languagesList = ['es', 'en', 'zh'] as const;
 
 export const languages: Record<string, string> = {
   es: 'Español',
   en: 'English',
   zh: '中文',
-  arn: 'Mapudungun',
 };
 
 const ui: Record<string, any> = { en, es, zh, arn };
@@ -36,12 +35,12 @@ export function getI18n(url: URL) {
 export function buildAlternates(path = ''): Record<string, string> {
   const base = 'https://farodelaserena.com';
   const clean = path.replace(/^\/+/, '').replace(/\/+$/, '');
-  const mk = (l: string) => `${base}/${l}${clean ? '/' + clean : ''}`;
+  const suffix = clean ? '/' + clean + '/' : '/';
+  const mk = (l: string) => `${base}/${l}${suffix}`;
   return {
     es: mk('es'),
     en: mk('en'),
     zh: mk('zh'),
-    arn: mk('arn'),
     xDefault: mk('es'),
   };
 }
