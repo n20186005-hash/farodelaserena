@@ -1,7 +1,6 @@
 import en from './en.json';
 import es from './es.json';
 import zh from './zh.json';
-import arn from './arn.json';
 
 export const defaultLang = 'es';
 export const languagesList = ['es', 'en', 'zh'] as const;
@@ -12,7 +11,7 @@ export const languages: Record<string, string> = {
   zh: '中文',
 };
 
-const ui: Record<string, any> = { en, es, zh, arn };
+const ui: Record<string, any> = { en, es, zh };
 
 export function getLangFromUrl(url: URL): string {
   const seg = url.pathname.split('/').filter(Boolean);
